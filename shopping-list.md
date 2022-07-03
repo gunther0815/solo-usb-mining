@@ -35,3 +35,7 @@
 - ggf. [Adapterkabel](https://www.amazon.de/dp/B07RQZCM3W/?coliid=I35TUA7ET1AAS9&colid=2T41OJ30CGSGL&ref_=lv_ov_lig_dp_it&th=1)
 - ggf. [Infrarot Thermometer](https://amzn.eu/d/eGU0y0o)
 - ggf. [USB Spannungsprüfer Amperemeter Messgerät 5.1A 30V](https://amzn.eu/d/chAaRMf)
+
+---
+
+#### [Inhalt](/readme.md)  ᐊ  previous | next  ᐅ  Voraussetzungen
