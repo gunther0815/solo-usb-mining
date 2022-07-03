@@ -20,7 +20,9 @@ Damit die Einrichtung für das Solo-Mining unkompliziert wird und die Schnittste
 
 Für das Lottery-Mining bieten sich USB-Miner aufgrund des geringen Stromverbrauchs besonders an. Das ganze Projekt kann aber auch mit leistungsstärkeren Minern umgesetzt werden, um die Gewinnwahrscheinlichkeit zu erhöhen. Dies lohnt sich aber nur wenn man den dafür benötigten Strom gratis oder sehr günstig bekommen kann.
 
+## [Einkaufsliste](shopping-list.md)
+
 # Autoren:
 - 4plus17 (Telegram, ...,)
 - Ursli
-- ...
+- gunther0815
