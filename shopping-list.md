@@ -38,4 +38,4 @@
 
 ---
 
-#### [Inhalt](/readme.md)  ᐊ  previous | next  ᐅ  Voraussetzungen
+#### [Inhalt](/README.md)  ᐊ  previous | next  ᐅ  Voraussetzungen
