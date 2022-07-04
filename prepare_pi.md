@@ -26,3 +26,7 @@ Der Raspberry Pi benötigt ein Betriebssystem (OS) welches auf eine Micro-SD Kar
 9.	Nun die Strom- und Internetversorgung des Raspberry Pis anschließen und ca. 2 Minuten warten
 
 Das wars. Nun ist der Raspberry Pi bereit.
+
+---
+
+####  [Voraussetzungen](/requirements.md)  ᐊ  previous | next  ᐅ  [Mining Software installieren](/install_miner.md)
