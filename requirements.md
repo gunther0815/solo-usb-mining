@@ -11,4 +11,4 @@ Im Folgenden wird der Weg beschrieben um mit der ersten Methode, also Via SSH, d
 
 ---
 
-#### [Einkaufsliste](/shopping-list.md)  ᐊ  previous | next  ᐅ  [Raspberry Pi vorbereiten](/install_miner.md)
+#### [Einkaufsliste](/shopping-list.md)  ᐊ  previous | next  ᐅ  [Raspberry Pi vorbereiten](/prepare_pi.md)
