@@ -60,3 +60,7 @@ nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:333
 Dabei müssen die zuvor gefundenen Bus- und Device Nummern eingetragen werden (Im obigen Beispiel wäre die gefundene Bus Nummer „001“ und die Device Nummer „007“, daher dann „--usb 1:7“)
 
 Möchte man die Miner verschieden ansteuern, dann sollte man zunächst durch Ausprobieren ermitteln welcher Miner welcher Device Nummer zugeordnet ist. Dazu einfach den cgminer wie in Schritt 2 beschrieben für ein bestimmtes Gerät starten und beobachten welcher Mining Stick anfängt zu blinken.
+
+---
+
+####  [Mining Software installieren](/install_miner.md)  ᐊ  previous | next  ᐅ  [Miner Einstellungen MHz/ mV]()
