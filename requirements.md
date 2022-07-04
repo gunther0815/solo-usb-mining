@@ -8,3 +8,7 @@ Um den Raspberry Pi einzurichten und alles Nötige zu installieren, muss auf das
 Die erste Methode ist die bequemere, da der Raspberry Pi nur an Strom und Internet angeschlossen sein muss. Dadurch kann er überall stehen, solange er im selben Netzwerk ist (möglichst über LAN), wie der Computer, von dem aus der Raspberry Pi bedient werden soll.
 Die zweite Methode ist die zunächst intuitivere für alle die noch nie in der Kommandozeile (Terminal) auf einem Computer waren. Für die Einrichtung wird der Raspberry Pi dann an einem Display angeschlossen und die Eingaben werden mit einer direkt angeschlossenen Tastatur gemacht. Ein großer Nachteil ist, dass alle Befehle entweder manuell eingetippt werden oder auf den Raspberry gebracht werden müssen (als Datei oder über Internet).
 Im Folgenden wird der Weg beschrieben um mit der ersten Methode, also Via SSH, den Raspberry Pi fürs Mining vorzubereiten und das Mining zu starten. Die ganze Einrichtung ist nur „Copy&Paste“, sodass auch jeder Anfänger sich an die Methode via SSH wagen sollte, bevor er direkt ein Display und eine Tastatur für den Raspberry Pi frei macht.
+
+---
+
+#### [Einkaufsliste](/shopping-list.md)  ᐊ  previous | next  ᐅ  [Raspberry Pi vorbereiten](/install_miner.md)
