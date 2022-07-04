@@ -50,4 +50,7 @@ Product: 'NewPac Bitcoin Miner'
 ```
 
 Nun ist alles installiert und das Mining kann beginnen!
-In dem Kapitel [Mining Software starten](start_mining.md) wird beschrieben wie das funktioniert und welche Möglichkeiten es dabei gibt.
+
+---
+
+#### [Raspberry Pi vorbereiten](/prepare_pi.md)  ᐊ  previous | next  ᐅ  [Mining Software starten](start_mining.md)
