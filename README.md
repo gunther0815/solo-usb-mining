@@ -3,10 +3,10 @@
 - Warum USB-Mining
 - Was ist Lottery-Mining?
 - [Einkaufsliste](shopping-list.md)
-- Voraussetzungen
-- Raspberry Pi vorbereiten
-- Mining Software installieren
-- Mining Software starten
+- [Voraussetzungen](requirements.md)
+- [Raspberry Pi vorbereiten](prepare_pi.md)
+- [Mining Software installieren](install_miner.md)
+- [Mining Software starten](start_mining.md)
 - Mehrere USB Miner einzeln ansteuern
 - Miner Einstellungen MHz/ mV
 - Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/solo_usb_mining)
