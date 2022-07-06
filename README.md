@@ -7,8 +7,7 @@
 - [Raspberry Pi vorbereiten](prepare_pi.md)
 - [Mining Software installieren](install_miner.md)
 - [Mining Software starten](start_mining.md)
-- Mehrere USB Miner einzeln ansteuern
-- Miner Einstellungen MHz/ mV
+- [Miner Einstellungen MHz/ mV](miner-settings.md)
 - Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/solo_usb_mining)
 
 ### Warum Solo-USB-Mining?
