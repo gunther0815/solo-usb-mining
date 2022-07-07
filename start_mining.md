@@ -8,7 +8,11 @@ cd mining/newpac/cgminer
 ```
 Um den cgminer und damit das Mining zu starten, muss folgender Befehl ausgeführt werden:
 ```
-sudo ./cgminer --compact -real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u bc1qhierkommtdeinebitcoinadressehin417 -p x --suggest-diff 32 --gekko-newpac-freq 100
+sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u bc1qhierkommtdeinebitcoinadressehin417 -p x --suggest-diff 32 --gekko-newpac-freq 100
+```
+für CompacF:
+```
+sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u bc1qhierkommtdeinebitcoinadressehin417 -p x --suggest-diff 32 --gekko-compacf-freq 400
 ```
 - „bc1qhierkommtdeinebitcoinadressehin417“ muss mit der eigenen Bitcoin Adresse ausgetauscht werden
 - Die Zahl hinter „--gekko-newpac-freq“ kann erhöht werden, um den USB-Miner mit einer höheren Taktrate laufen zu lassen (dadurch erhöht sich die Hashrate aber gleichzeitig auch die Temperatur, die der Miner erreicht)
