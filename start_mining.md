@@ -63,4 +63,4 @@ Möchte man die Miner verschieden ansteuern, dann sollte man zunächst durch Aus
 
 ---
 
-####  [Mining Software installieren](/install_miner.md)  ᐊ  previous | next  ᐅ  [Miner Einstellungen MHz/ mV]()
+####  [Mining Software installieren](/install_miner.md)  ᐊ  previous | next  ᐅ  [Miner Einstellungen MHz/ mV](/miner-settings.md)
