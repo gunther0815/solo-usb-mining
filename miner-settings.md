@@ -5,6 +5,12 @@ Möchte man übertakten, ersetzt man die ,,100” von diesem Befehl:
 ```
 --gekko-newpac-freq 100
 ```
+und für andere Modelle:
+```
+--gekko-2pac-freq <arg> Set GekkoScience 2Pac BM1384 frequency in MHz, range 6.25-500 (default 100.0)
+--gekko-compac-freq <arg> Set GekkoScience Compac BM1384 frequency in MHz, range 6.25-500 (default 150.0)
+--gekko-terminus-freq <arg> Set GekkoScience Terminus BM1384 frequency in MHz, range 6.25-500 (default 150.0)
+```
 mit einer anderen Zahl. Beispielsweise 200. 
 Hier ist zu sagen, dass die Stromaufnahme steigt und damit ebenfalls die Temperatur des Miners.
 Stellt man die Frequenz höher als 100, so sollte man einen [Lüfter](shopping-list.md) anbringen.
