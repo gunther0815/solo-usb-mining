@@ -2,7 +2,7 @@
 Wenn der Raspberry Pi bereits eingerichtet ist, kann dieser Schritt übersprungen werden.
 SSH sollte aktiviert sein.
 Der Raspberry Pi benötigt ein Betriebssystem (OS) welches auf eine Micro-SD Karte gesielt wird, die dann in den Raspberry Pi kommt. Beim Vorbereiten der SD-Karte können bereits einige praktische Grundeinstellungen für später vorgenommen werden.
-1.	Raspberry Pi Imager herunterladen
+1.	[Raspberry Pi Imager herunterladen](https://www.raspberrypi.com/software/)
 2.	Micro-SD-Karte mit dem Computer verbinden
 3.	Raspberry Pi Imager starten
 4.	„**OS wählen**“ -> „**Raspberry Pi OS (other)**“ -> „**Raspberry Pi OS Lite (32-bit)**“
