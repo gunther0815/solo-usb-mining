@@ -20,7 +20,7 @@ sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u b
 **Achtung!** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
 Damit das Mining im Hintergrund weiter läuft startet man das ganze einfach mit folgendem Befehl:
 ```
-nohup sudo ./cgminer --compact -real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u bc1qhierkommtdeinebitcoinadressehin417 -p x --suggest-diff 32 --gekko-newpac-freq 100 &
+nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u bc1qhierkommtdeinebitcoinadressehin417 -p x --suggest-diff 32 --gekko-newpac-freq 100 &
 ```
 Um zu überprüfen, ob der Mining Prozess läuft, kann folgender Befehl ausgeführt werden:
 ```
