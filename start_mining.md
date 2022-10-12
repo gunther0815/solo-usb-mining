@@ -19,6 +19,8 @@ sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u B
 - „bc1qhierkommtdeinebitcoinadressehin417“ muss mit der eigenen Bitcoin Adresse ausgetauscht werden
 - Die Zahl hinter „--gekko-newpac-freq“ bzw. "--gekko-compacf-freq" kann erhöht werden, um den USB-Miner mit einer höheren Taktrate laufen zu lassen (dadurch erhöht sich die Hashrate aber gleichzeitig auch die Temperatur, die der Miner erreicht)
 
+Die Befehle compact & real-quiet solltet ihr am Anfang weglassen um zu sehen ob der Miner gut läuft. Ihr seht im Falle des Compac F-Miners z.B. auf welcher Frequenz er sich einpendelt. Je nach USB-Hub werden verschiedene Frequenzen nicht erreichet. Nochmal der Hinweis: Compac F NIE ohne Kühlung betreiben!
+
 Kurzer Auszug der Erklärung der Befehle:
 ```
 --compact           Use compact display without per device statistics
