@@ -7,6 +7,7 @@ Man muss sich in dem Ordner vom cgminer befinden damit der Befehl zum Start funk
 cd mining/cgminer
 ```
 Um den cgminer und damit das Mining zu starten, muss folgender Befehl ausgeführt werden:
+
 für NewPac:
 ```
 sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u bc1qhierkommtdeinebitcoinadressehin417 -p x --suggest-diff 32 --gekko-newpac-freq 100 --gekko-newpac-boost
