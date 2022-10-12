@@ -19,7 +19,7 @@ sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u B
 - Die Zahl hinter „--gekko-newpac-freq“ bzw. "--gekko-compacf-freq" kann erhöht werden, um den USB-Miner mit einer höheren Taktrate laufen zu lassen (dadurch erhöht sich die Hashrate aber gleichzeitig auch die Temperatur, die der Miner erreicht)
 
 Kurzer Auszug der Erklärung der Befehle:
-
+```
 --compact           Use compact display without per device statistics
 --real-quiet        Disable all output
 Newpac:
@@ -31,7 +31,7 @@ Compac F
 --gekko-start-freq  Ramp start frequency MHz 25-500 
 --gekko-mine2 
 --gekko-tune2 60
-
+```
 **Achtung!** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
 Damit das Mining im Hintergrund weiter läuft startet man das ganze einfach mit folgendem Befehl:
 ```
