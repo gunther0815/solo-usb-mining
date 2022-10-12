@@ -24,8 +24,8 @@ sudo apt-get install -y build-essential git autoconf automake libtool pkg-config
 ```
 4.	Jetzt kann der CGMiner Branch aus GIT geklont werden:
 ```
-mkdir -p mining/newpac; cd mining/newpac 
-git clone https://github.com/vthoang/cgminer.git 
+mkdir -p mining; cd mining 
+git clone https://github.com/kanoi/cgminer.git
 cd cgminer
 ```
 5.	Nach erfolgreichem Klonen aus GIT kann der CGMiner nun kompiliert werden:
