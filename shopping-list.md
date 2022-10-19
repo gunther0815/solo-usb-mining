@@ -22,7 +22,8 @@
 ### - Kühlung des Miners 
 - zwingend notwendig ab einer Taktfrequenz von 100 MHz! Der Compac F Miner muss immer mit einer Kühlung verwendet werden!
 - Amazon: [ARCTIC Breeze Mobile - 92 mm USB-Ventilator mit flexiblem Hals](https://amzn.eu/d/hDWkNy5)
-- Gehäuse für 3D-Druck: [Thingiverse](https://www.thingiverse.com/thing:4947599)
+- Gehäuse für 3D-Druck: [Thingiverse](https://www.thingiverse.com/thing:4947599) - PLA, PETG,... (Befestigung mit Kabelbinder)
+- Gehäuse für 3D-Druck: [Thingiverse](https://www.thingiverse.com/thing:2694546) - PETG o.ä. verwenden! PLA wird schneller weich und könnte abrutschen!
 - ggfs. [größere Lüfter für Gehäuse](https://www.digitalo.de/products/1120184/BeQuiet-Pure-Wings-2-PWM-PC-Gehaeuse-Luefter-Schwarz-B-x-H-x-T-120-x-120-x-25mm.html)
 - ggfs. [Lüftersteuerung](https://www.ejoker.de/lamptron-cp120-v2-pci-blende-lueftersteuerung-schwarz/14-2933639)
 
