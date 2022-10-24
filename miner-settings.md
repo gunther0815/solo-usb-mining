@@ -29,4 +29,4 @@ Dort kann man sehen, wie die Spannung verändert werden kann.
 
 ---
 
-#### [Mining Software starten](start_mining.md)  ᐊ  previous | Inhalt  ᐅ  [Inhaltsverzeichnis](/)
+#### [Mining Software starten](start_mining.md)  ᐊ  previous | next  ᐅ  [Weiterführende Links & Github Projekte](additional-links.md)
