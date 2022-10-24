@@ -8,7 +8,8 @@
 - [Mining Software installieren](install_miner.md)
 - [Mining Software starten](start_mining.md)
 - [Miner Einstellungen MHz/ mV](miner-settings.md)
-- Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/solo_usb_mining)
+- [PV/HomeAssistent/InfoTicker etc.](additional-links.md)
+- Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
 
 ### Warum Solo-USB-Mining?
 
@@ -31,3 +32,13 @@ Da es ohne einen Mining-Pool für eine Einzelperson extrem unwahrscheinlich ist 
 Damit die Einrichtung für das Solo-Mining unkompliziert wird und die Schnittstelle zu den anderen Minern im Bitcoin Netzwerk gewährleistet ist, greift man normalerweise auf den sogenannten „[solo-ckpool](https://solo.ckpool.org/)“ zurück. Dies ist kein üblicher Mining-Pool (wie oben beschrieben), sondern ein speziell eingerichteter Pool für Solo-Miner. Dabei bekommt derjenige der den Block findet die Belohnung alleine und gibt lediglich 2% an den „solo-ckpool“ ab (solange man keinen Block findet geht keinerlei Bezahlung an den Poolbetreiber).
 
 Für das Lottery-Mining bieten sich USB-Miner aufgrund des geringen Stromverbrauchs besonders an. Das ganze Projekt kann aber auch mit leistungsstärkeren Minern umgesetzt werden, um die Gewinnwahrscheinlichkeit zu erhöhen. Dies lohnt sich aber nur wenn man den dafür benötigten Strom gratis oder sehr günstig bekommen kann.
+
+### Value 4 value
+
+Du kannst hier für das Projekt spenden und dafür sorgen, dass es weiterhin dokumentiert und ausgebaut wird
+
+LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHKUETPWFNX2CTJXYUQ9YYGKX
+
+<img width="330" alt="qr" src="https://user-images.githubusercontent.com/108099690/197496656-55d2d453-34d4-475a-83c0-1c1aa55bb963.png">
+
+
