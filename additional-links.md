@@ -12,6 +12,10 @@
 
 * https://github.com/max21h/BTC-Info-LEDMatrix
 
+## OLED Display for cgminer
+
+* https://github.com/max21h/CGMiner-OLED-Display
+
 
 # Lasst Liebe und Sats bei den Jungs für ihre großartige Arbeit! 
 
