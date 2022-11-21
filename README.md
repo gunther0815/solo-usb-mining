@@ -4,7 +4,7 @@
 - Was ist Lottery-Mining?
 - [Einkaufsliste](shopping-list.md)
 - [Voraussetzungen](requirements.md)
-- [Raspberry Pi vorbereiten](prepare_pi.md)
+- [Raspberry Pi vorbereiten](prepare_pi.md) bzw. [Installation von cgminer auf dem RaspiBlitz](cgminer_on_raspiblitz.md)
 - [Mining Software installieren](install_miner.md)
 - [Mining Software starten](start_mining.md)
 - [Miner Einstellungen MHz/ mV](miner-settings.md)
