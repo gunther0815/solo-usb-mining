@@ -1,17 +1,17 @@
 # Inhalt
 
-- Warum USB-Mining
-- Was ist Lottery-Mining?
-- [Einkaufsliste](shopping-list.md)
-- [Voraussetzungen](requirements.md)
-- [Raspberry Pi vorbereiten](prepare_pi.md) bzw. [Installation von cgminer auf dem RaspiBlitz](cgminer_on_raspiblitz.md)
-- [Mining Software installieren](install_miner.md)
-- [Mining Software starten](start_mining.md)
-- [Miner Einstellungen MHz/ mV](miner-settings.md)
-- [PV/HomeAssistent/InfoTicker etc.](additional-links.md)
-- Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
+* Warum USB-Mining
+* Was ist Lottery-Mining?
+* [Einkaufsliste](shopping-list.md)
+* [Voraussetzungen](requirements.md)
+* [Raspberry Pi vorbereiten](prepare_pi.md) bzw. [Installation von cgminer auf dem RaspiBlitz](cgminer_on_raspiblitz.md)
+* [Mining Software installieren](install_miner.md)
+* [Mining Software starten](start_mining.md)
+* [Miner Einstellungen MHz/ mV](miner-settings.md)
+* [PV/HomeAssistent/InfoTicker etc.](additional-links.md)
+* Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
 
-### Warum Solo-USB-Mining?
+## Warum Solo-USB-Mining?
 
 Beim USB-Mining macht das „Drumherum“ eher Spaß als der Gewinn. Die 6,25 BTC + Transaction Fees sind aber immer noch eine tolle Sache. Denkt dran, ab etwa Mai 2024 sind es nur noch 3,125 BTC + Transaction fees.
 
@@ -21,7 +21,7 @@ Das Schöne beim USB-Mining ist die niedrige Einstiegshürde, es ist also mit re
 
 Außerdem verbraucht der kleine USB-Miner wenig Strom, macht wenig Lärm und er nimmt wenig Platz weg.
 
-### Was ist Lottery-Mining?
+## Was ist Lottery-Mining?
 
 Beim Bitcoin Mining hat grundsätzlich jeder die Möglichkeit einen Block zu finden. Da die Industrie um das Mining weltweit sehr groß geworden ist und es bei jedem Block purer Zufall ist wer diesen findet, ist es üblich in einem Pool mit vielen anderen zusammen zu minen. Dort wird die Blockbelohnung dann bei einem gefundenen Block auf alle Poolteilnehmer aufgeteilt (anteilig je nach Hashrate).
 
@@ -33,7 +33,7 @@ Damit die Einrichtung für das Solo-Mining unkompliziert wird und die Schnittste
 
 Für das Lottery-Mining bieten sich USB-Miner aufgrund des geringen Stromverbrauchs besonders an. Das ganze Projekt kann aber auch mit leistungsstärkeren Minern umgesetzt werden, um die Gewinnwahrscheinlichkeit zu erhöhen. Dies lohnt sich aber nur wenn man den dafür benötigten Strom gratis oder sehr günstig bekommen kann.
 
-### Value 4 value
+## Value 4 value
 
 Du kannst hier für das Projekt spenden und dafür sorgen, dass es weiterhin dokumentiert und ausgebaut wird
 
