@@ -39,6 +39,8 @@ Du kannst hier für das Projekt spenden und dafür sorgen, dass es weiterhin dok
 
 LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHKUETPWFNX2CTJXYUQ9YYGKX
 
-<img width="330" alt="qr" src="https://user-images.githubusercontent.com/108099690/197496656-55d2d453-34d4-475a-83c0-1c1aa55bb963.png">
+<figure><img width="120" alt="qr" src="https://user-images.githubusercontent.com/108099690/197496656-55d2d453-34d4-475a-83c0-1c1aa55bb963.png" />
+  <figurecaption>nearfear18@walletofsatoshi.com</figurecaption>
+</figure>
 
 
