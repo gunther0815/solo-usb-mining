@@ -26,7 +26,9 @@ How to install cgminer on Raspiblitz...
 Ich werde versuchen den Inhalt zu erweitern und zu verbessern.
 
 ---
+## Value 4 Value
+
 <figure>
     <img src=".assets/V4V.png" alt="Donate" width="100" />
-    <figcaption>value-4-value</figcaption>
+    <figcaption>lumpycarp37@walletofsatoshi.com</figcaption>
 </figure>
