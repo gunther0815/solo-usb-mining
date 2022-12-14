@@ -11,16 +11,16 @@ Von daher die dringende Empfehlung zu einem ähnlichen Setup für mehrere USB-Mi
 
 Der Gekkoscience USB-Hub benötigt ein externes Netzteil, welches im Original gekauft werden kann, der Hub bietet aber auch einen Anschluß für einen PCIe-6-Stecker wie er bei jedem ATX-Netzteil vorkommt.
 
-<img src="../.assets/GekkoHub.jpg" alt="Gekkoscience USB-Hub" width="400" />
+<img src=".assets/GekkoHub.jpg" alt="Gekkoscience USB-Hub" width="400" />
 
 Das Netzteil funktioniert nur wenn der Mainborad-Connector überbrückt wird, sonst läuft das Netzteil nicht an.
 
-<img src="../.assets/ATXNetzteil.jpg" alt="ATX Netzteil" width="400" />
+<img src=".assets/ATXNetzteil.jpg" alt="ATX Netzteil" width="400" />
 
 Dazu reicht es in meinme Fall Pin 16 (PS_ON) und 18 (Masse) zu überbrücken:
 
-<img src="../.assets/ATXStecker.jpg" alt="Stecker des ATX-Netzteils" width="400" />
+<img src=".assets/ATXStecker.jpg" alt="Stecker des ATX-Netzteils" width="400" />
 
 Standard-Pin-Belegung eines 24poligen ATX-Steckers:
 
-<img src="../.assets/ATXPinBelegung.png" alt="ATX Pinbelegung" width="200" />
+<img src=".assets/ATXPinBelegung.png" alt="ATX Pinbelegung" width="200" />
