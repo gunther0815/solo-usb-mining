@@ -71,7 +71,7 @@ cd /home/<USER>/cgminer
 sudo ./cgminer -c /home/admin/.cgminer/cgminer.comf 2> "run-`date +%Y%m%d%H%M%S`.log"
 ```
 
-Hier wurde der gekürzte Startbefehl für cgminer verwendet, die Konfiguration wird aus der Konfigurationsdatei `cgminer.conf` gelesen. Der Befehl `2> "run-`date +%Y%m%d%H%M%S`.log"` lenkt die Ausgabe, wenn der Prozess mit screen im Hintergrund läuft in eine log-Datei um, welche sich auch im cgminer-Verzeichnis befindet.
+Hier wurde der gekürzte Startbefehl für cgminer verwendet, die Konfiguration wird aus der Konfigurationsdatei `cgminer.conf` gelesen. Der Befehl `2> "run-'date +%Y%m%d%H%M%S'.log"` lenkt die Ausgabe, wenn der Prozess mit screen im Hintergrund läuft in eine log-Datei um, welche sich auch im cgminer-Verzeichnis befindet.
 
 Nun muss nur noch das Skript ausführbar gemacht werden (`<USER>` einsetzen):
 
@@ -159,7 +159,7 @@ Es bietet sich an auf mehreren Hochzeiten zu tanzen, um z.B. 70% der Zeit in ein
 Anpassen der Konfigurationsdatei `/root/.cgminer/cgminer.conf` um die Pools und Quotas bekannt zu geben:
 
 ```shell
-// sudo nano -w /root/.cgminer/cgminer.conf
+sudo nano -w /root/.cgminer/cgminer.conf
 ```
 
 Eintragen der Pools ähnlich meinem Beispiel:
