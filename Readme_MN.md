@@ -6,13 +6,13 @@ Im Grunde ist es keine hohe Kunst einen USB-Miner lauffähig zu machen, jedoch g
 
 How to install cgminer on Raspiblitz... 
 
-## ⛏ [USB-Mining](usb-mining/README_MN.md)
+## ⛏ USB-Mining
   
-* [☀ Single USB-Miner](usb-mining/single-usb-miner.md) beschäftigt sich mit der Erstinbetriebnahme eines USB-Miners mit bereits vorhandenem USB-Hub und möglichen Tuningmaßnahmen.
-* [☀ Multiple USB-Miner](usb-mining/multiple-usb-miner.md) hebt bereits die schwächen der meisten USB-Hubs hervor und zeigt wie hier Abhilfe geschaffen werden kann.
-* [☀ cgminer starten](usb-mining/CGMiner-starten.md) soll bei der Inbetriebnahme der Software helfen.
-* [🌩 Übertakten](usb-mining/uebertakten.md) hier widmen wir uns dem Tuning.
-* [❄ Troubleshooting](usb-mining/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
+* [☀ Single USB-Miner](single-usb-miner.md) beschäftigt sich mit der Erstinbetriebnahme eines USB-Miners mit bereits vorhandenem USB-Hub und möglichen Tuningmaßnahmen.
+* [☀ Multiple USB-Miner](/multiple-usb-miner.md) hebt bereits die schwächen der meisten USB-Hubs hervor und zeigt wie hier Abhilfe geschaffen werden kann.
+* [☀ cgminer starten](/CGMiner-starten.md) soll bei der Inbetriebnahme der Software helfen.
+* [🌩 Übertakten](/uebertakten.md) hier widmen wir uns dem Tuning.
+* [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
 
 ## Verwendete Hard- und Software
 
