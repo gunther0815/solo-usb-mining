@@ -12,7 +12,9 @@ Um möglichst detaillierte Informationen vor allem beim erstmaligen Setup zu bek
 
 In diesem Modus kann man übersichtlich die Leistung der angeschlossenen Miner beobachten, das Hotplugging-Verhalten untersuchen aber auch einfach nur Einstellungen on-the-fly vornehmen.
 
-## CGMiner in silent mode
+## CGMiner im Hintergrund
+
+### mit nohup &
 
 Der Betrieb im Hintergrund ist notwendig, wenn man nicht permanent eine remote Verbindung via SSH offen halten kann oder will, z.B. beim Betrieb von CGMiner auf einem Raspberry Pi. Der cgminer-Dienst kann einfach mit **nohup** im Hintergrund gestartet werden:
 
@@ -31,14 +33,58 @@ Man beachte hierbei das abschliessende &. Der Prozess läuft nun im Hintergrund 
 Um den Prozess zu beenden, muss die Prozess-ID mittels **kill** terminiert werden. Dazu sucht man zuwerst die Prozess-ID:
 
 ```shell
-// ps aux | grep cgminer
+ps aux | grep cgminer
 ```
 
 Dies zeigt entsprechende Prozess-IDs von CGMiner an und können wie folgt beendet werden:
 
 ```shell
-// sudo kill <PROZESSID>
+sudo kill <PROZESSID>
 ```
+
+### mit screen (der elegantere Ansatz)
+
+zuerst muss screen installiert werden, wie zuvor auch mittels apt-get:
+
+```shell
+sudo apt-get update
+
+sudo apt-get upgrade -y
+
+sudo apt-get install screen
+```
+
+Zuerst generieren wir ein ausführbares Shellskript zum Start des Miners mit einem Editor wie nano (<USER> mit namen des erzeugenden Users ersetzen):
+
+```shell
+sudo nano -w /home/<USER>/cgminer/cgminer.sh
+```
+
+Der Inhalt des Skriptes ist der Startbefehl für die Mining-Software cgminer (<USER> einsetzen):
+
+```shell
+#!/bin/bash
+cd /home/<USER>/cgminer
+
+sudo ./cgminer -c /home/admin/.cgminer/cgminer.comf 2> "run-`date +%Y%m%d%H%M%S`.log"
+```
+
+Hier wurde der gekürzte Startbefehl für cgminer verwendet, die Konfiguration wird aus der Konfigurationsdatei cgminer.conf gelesen. Der Befehl 2> "run-`date +%Y%m%d%H%M%S`.log" lenkt die Ausgabe, wenn der Prozess mit screen im Hintergrund läuft in eine log-Datei um, welche sich auch im cgminer-Verzeichnis befindet.
+
+Nun muss nur noch das Skript ausführbar gemacht werden (<USER> einsetzen):
+
+```shell
+sudo chmod +x /home/<USER>/cgminer/cgminer.sh
+```
+
+Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halten wenn die SSH-Session beendet wird, rufen wir nun das Shellskript mit dem Startbefehl des Miners mittels screen auf:
+
+```shell
+screen -dm -S miner /home/admin/cgminer/cgminer.sh
+```
+
+
+        
 
 ## cgminer mit mehreren Pools betreiben
 
