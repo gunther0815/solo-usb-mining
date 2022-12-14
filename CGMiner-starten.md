@@ -16,23 +16,23 @@ In diesem Modus kann man übersichtlich die Leistung der angeschlossenen Miner b
 
 ## CGMiner im Hintergrund...
 
-### ...mit nohup &
+### ...mit `nohup &`
 
-Der Betrieb im Hintergrund ist notwendig, wenn man nicht permanent eine remote Verbindung via SSH offen halten kann oder will, z.B. beim Betrieb von CGMiner auf einem Raspberry Pi. Der cgminer-Dienst kann einfach mit **nohup** im Hintergrund gestartet werden:
+Der Betrieb im Hintergrund ist notwendig, wenn man nicht permanent eine remote Verbindung via SSH offen halten kann oder will, z.B. beim Betrieb von CGMiner auf einem Raspberry Pi. Der cgminer-Dienst kann einfach mit `nohup` im Hintergrund gestartet werden:
 
 ```shell
 // nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60 &
 ```
 
-Man beachte hier die Optionen **--compact** und **--real-quiet**. Diese Optionen verringern das zu loggende Datenvolumen auf ein Minimum.
+Man beachte hier die Optionen `--compact` und `--real-quiet`. Diese Optionen verringern das zu loggende Datenvolumen auf ein Minimum.
 
-Man beachte hierbei das abschliessende &. Der Prozess läuft nun im Hintergrund und leitet seine Ausgabe in die Datei /home/admin/nohup.out um. Diese kann mit cat in der Konsole ausgegeben werden:
+Man beachte hierbei das abschliessende &. Der Prozess läuft nun im Hintergrund und leitet seine Ausgabe in die Datei `/home/admin/nohup.out` um. Diese kann mit `cat` in der Konsole ausgegeben werden:
 
 ```shell
 // cat /home/admin/nohup.out
 ```
 
-Um den Prozess zu beenden, muss die Prozess-ID mittels **kill** terminiert werden. Dazu sucht man zuwerst die Prozess-ID:
+Um den Prozess zu beenden, muss die Prozess-ID mittels `kill` terminiert werden. Dazu sucht man zuwerst die Prozess-ID:
 
 ```shell
 ps aux | grep cgminer
@@ -44,7 +44,7 @@ Dies zeigt entsprechende Prozess-IDs von CGMiner an und können wie folgt beende
 sudo kill <PROZESSID>
 ```
 
-### ...mit screen (der elegantere Ansatz)
+### ...mit `screen` (der elegantere Ansatz)
 
 zuerst muss screen installiert werden, wie zuvor auch mittels apt-get:
 
@@ -56,13 +56,13 @@ sudo apt-get upgrade -y
 sudo apt-get install screen
 ```
 
-Zuerst generieren wir ein ausführbares Shellskript zum Start des Miners mit einem Editor wie nano (<USER> mit namen des erzeugenden Users ersetzen):
+Zuerst generieren wir ein ausführbares Shellskript zum Start des Miners mit einem Editor wie nano (`<USER>` mit namen des erzeugenden Users ersetzen):
 
 ```shell
 sudo nano -w /home/<USER>/cgminer/cgminer.sh
 ```
 
-Der Inhalt des Skriptes ist der Startbefehl für die Mining-Software cgminer (<USER> einsetzen):
+Der Inhalt des Skriptes ist der Startbefehl für die Mining-Software cgminer (`<USER>` einsetzen):
 
 ```shell
 #!/bin/bash
@@ -71,15 +71,15 @@ cd /home/<USER>/cgminer
 sudo ./cgminer -c /home/admin/.cgminer/cgminer.comf 2> "run-`date +%Y%m%d%H%M%S`.log"
 ```
 
-Hier wurde der gekürzte Startbefehl für cgminer verwendet, die Konfiguration wird aus der Konfigurationsdatei cgminer.conf gelesen. Der Befehl 2> "run-`date +%Y%m%d%H%M%S`.log" lenkt die Ausgabe, wenn der Prozess mit screen im Hintergrund läuft in eine log-Datei um, welche sich auch im cgminer-Verzeichnis befindet.
+Hier wurde der gekürzte Startbefehl für cgminer verwendet, die Konfiguration wird aus der Konfigurationsdatei `cgminer.conf` gelesen. Der Befehl `2> "run-`date +%Y%m%d%H%M%S`.log"` lenkt die Ausgabe, wenn der Prozess mit screen im Hintergrund läuft in eine log-Datei um, welche sich auch im cgminer-Verzeichnis befindet.
 
-Nun muss nur noch das Skript ausführbar gemacht werden (<USER> einsetzen):
+Nun muss nur noch das Skript ausführbar gemacht werden (`<USER>` einsetzen):
 
 ```shell
 sudo chmod +x /home/<USER>/cgminer/cgminer.sh
 ```
 
-Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halten wenn die SSH-Session beendet wird, rufen wir nun das Shellskript mit dem Startbefehl des Miners mittels screen auf:
+Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halten wenn die SSH-Session beendet wird, rufen wir nun das Shellskript mit dem Startbefehl des Miners mittels `screen` auf:
 
 ```shell
 screen -dm -S miner /home/admin/cgminer/cgminer.sh
@@ -97,25 +97,25 @@ Der Screen kann auch in den Vordergrund gebracht und angezeigt werden:
 sudo screen -r miner
 ```       
 
-Die Angabe von miner ist bei einem screen nicht notwendig.
+Die Angabe von `miner` ist bei einem screen nicht notwendig.
         
-Mittels <CTRL><A> und anschließendem <CTRL><D> kann der Prozess wieder in den Hintergrund gebracht werden.
+Mittels `<CTRL><A>` und anschließendem `<CTRL><D>` kann der Prozess wieder in den Hintergrund gebracht werden.
         
 ### Automatischer Start des Miners nach einem Reboot
         
-Damit die Mining-Software nach jedem Neustart automatisch wieder anläuft, können wir den obigen screen-Befehl auch in die rc.local mit aufnehmen. Diese editieren wir mit nano:
+Damit die Mining-Software nach jedem Neustart automatisch wieder anläuft, können wir den obigen screen-Befehl auch in die `rc.local` mit aufnehmen. Diese editieren wir mit nano:
 
 ```shell
 sudo nano -w /etc/rc.local
 ``` 
         
-Vor dem Exit 0 fügen wir folgende Codezeile ein:
+Vor dem `Exit 0` fügen wir folgende Codezeile ein:
         
 ```shell
 sudo su - -c "screen -dm -S miner /home/user einsetzen/cgminer/cgminer.sh"
 ```         
 
-Mittels -c wird dem Superuser ein Kommando mitgegeben, in unserem Fall der Aufruf des Miners via Shellskript. Die rc.local sieht dann aus wie folgt:
+Mittels `-c` wird dem Superuser ein Kommando mitgegeben, in unserem Fall der Aufruf des Miners via Shellskript. Die `rc.local` sieht dann aus wie folgt:
         
 ```shell
 #!/bin/sh -e
@@ -148,7 +148,7 @@ Zur Überprüfung nun lediglich neustarten, im Falle von Raspiblitz unbedingt pe
 restart
 ```    
 
-Ob es funktioniert hat kann wieder mittels sudo screen -r geprüft werden.
+Ob es funktioniert hat kann wieder mittels `sudo screen -r` geprüft werden.
         
 ---        
         
@@ -156,7 +156,7 @@ Ob es funktioniert hat kann wieder mittels sudo screen -r geprüft werden.
 
 Es bietet sich an auf mehreren Hochzeiten zu tanzen, um z.B. 70% der Zeit in einen Pool zu minen (Solo-Pool-Mining), 30% aber auf eigene Faust zu minen (echtes Solomining). Dies hat den Vorteil, dass man im Falle eines Blockfundes des Pools seinen Beitrag bekommt, also entweder den Anteil der geleisteten Shares wenn jemand anderes einen Block findet ODER die vereinbarte Blockbelohnung des Solo-Mining-Pools wenn man den Block selbst findet, gleichzeitig aber auch sein Glück ausreizt um ganz alleine einen Block zu finden. Das muss jeder für sich selbst herausfinden, die Anleitung dazu gibt es trotzdem hier.
 
-Anpassen der Konfigurationsdatei **/root/.cgminer/cgminer.conf** um die Pools und Quotas bekannt zu geben:
+Anpassen der Konfigurationsdatei `/root/.cgminer/cgminer.conf` um die Pools und Quotas bekannt zu geben:
 
 ```shell
 // sudo nano -w /root/.cgminer/cgminer.conf
@@ -185,4 +185,4 @@ Eintragen der Pools ähnlich meinem Beispiel:
 }
 ```
 
-Wichtig hierbei die quotas (in meinem Beispiel 70% und 30%), aber auch die Option **load-balance** auf **true** zu setzen.
+Wichtig hierbei die quotas (in meinem Beispiel 70% und 30%), aber auch die Option `load-balance` auf `true` zu setzen.
