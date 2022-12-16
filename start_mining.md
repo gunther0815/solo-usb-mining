@@ -3,25 +3,35 @@
 **WICHTIG:**
 
 Man muss sich in dem Ordner vom cgminer befinden damit der Befehl zum Start funktioniert. Befindet man sich nicht im Ordner, weil z.B. der Raspberry Pi neugestartet wurde, gelangt man mit folgendem Befehl in den Ordner:
+
 ```
 cd mining/cgminer
 ```
+
 Um den cgminer und damit das Mining zu starten, muss folgender Befehl ausgeführt werden:
 
 für NewPac:
-```
-sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u BTCADRESSE -p x --suggest-diff 32 --gekko-newpac-freq 100 --gekko-newpac-boost
-```
-für CompacF:
-```
-sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u BTCADRESSE -p x --gekko-compacf-freq 500 --gekko-start-freq 450 --gekko-mine2 --gekko-tune2 60
-```
-- „bc1qhierkommtdeinebitcoinadressehin417“ muss mit der eigenen Bitcoin Adresse ausgetauscht werden
-- Die Zahl hinter „--gekko-newpac-freq“ bzw. "--gekko-compacf-freq" kann erhöht werden, um den USB-Miner mit einer höheren Taktrate laufen zu lassen (dadurch erhöht sich die Hashrate aber gleichzeitig auch die Temperatur, die der Miner erreicht)
 
-Die Befehle compact & real-quiet solltet ihr am Anfang weglassen um zu sehen ob der Miner gut läuft. Ihr seht im Falle des Compac F-Miners z.B. auf welcher Frequenz er sich einpendelt. Je nach USB-Hub werden verschiedene Frequenzen nicht erreichet. Nochmal der Hinweis: Compac F NIE ohne Kühlung betreiben!
+```
+sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESSE> -p x --suggest-diff 32 --gekko-newpac-freq 100 --gekko-newpac-boost
+```
+
+für CompacF:
+
+```
+sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESSE> -p x --gekko-compacf-freq 500 --gekko-start-freq 450 --gekko-mine2 --gekko-tune2 60
+```
+
+> `<BTCADRESSE>` muss mit der eigenen Bitcoin Adresse ausgetauscht werden
+
+> Die Zahl hinter `--gekko-newpac-freq` bzw. `--gekko-compacf-freq` kann erhöht werden, um den USB-Miner mit einer höheren Taktrate laufen zu lassen (dadurch erhöht sich die Hashrate aber gleichzeitig auch die Temperatur, die der Miner erreicht)
+
+Die Befehle `compact` und `real-quiet` solltet ihr am Anfang weglassen um zu sehen ob der Miner gut läuft. Ihr seht im Falle des Compac F-Miners z.B. auf welcher Frequenz er sich einpendelt. Je nach USB-Hub werden verschiedene Frequenzen nicht erreichet. 
+
+> Nochmal der Hinweis: Compac F NIE ohne Kühlung betreiben!
 
 Kurzer Auszug der Erklärung der Befehle:
+
 ```
 --compact           Use compact display without per device statistics
 --real-quiet        Disable all output
@@ -35,46 +45,66 @@ Compac F
 --gekko-mine2 
 --gekko-tune2 60
 ```
-**Achtung!** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
-Damit das Mining im Hintergrund weiter läuft startet man das ganze einfach mit folgendem Befehl:
+
+> :warning: **Achtung:** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
+> Damit das Mining im Hintergrund weiter läuft startet man das ganze einfach mit folgendem Befehl:
+
 ```
 nohup (der gesamte Befehl) &
 ```
+
 Um zu überprüfen, ob der Mining Prozess läuft, kann folgender Befehl ausgeführt werden:
+
 ```
 cat nohup.out
 ```
+
 Es wird ein Standbild von dem Prozess gezeigt.
 Der USB-Miner blinkt mit einer weißen LED, wenn das Mining aktiv ist. Dadurch kann unkompliziert und visuell überprüft werden, ob das Mining läuft.
 
 Die aktiven Prozesse des Raspberry Pis können mit diesem Befehl angezeigt werden:
+
 ```
 top
 ```
-Um die Prozess Übersicht zu beenden einfach die „Q“-Taste drücken.
+
+Um die Prozess Übersicht zu beenden einfach die `Q`-Taste drücken.
 
 Damit der cgminer beendet werden kann muss folgender Befehl ausgeführt werden:
+
 ```
 sudo kill 1234
 ```
+
 Anstelle von „1234“ muss die Prozess-Nummer vom cgminer eingefügt werden (Diese steht links in der Prozess Übersicht)
 
 Wenn man den Befehl für den cgminer im Hintergrund mehrmals gestartet hat, läuft der cgminer mehrfach im Hintergrund. Es ist dann zu empfehlen die Prozesse zu beenden damit nur einer aktiv ist.
 
-Statistiken abrufen:
-https://solo.ckpool.org/
-Seite aufrufen und unter „**Statistics**“ seine BTC Adresse eingeben, die im Befehl verwendet wurde. Dort sind dann alle relevanten Daten hinterlegt.
-Fertig! Prost und Glückauf beim Block finden! 👷
+---
 
-## Mehrere USB Miner einzeln ansteuern
+## Statistiken abrufen:
+
+https://solo.ckpool.org/
+Seite aufrufen und unter `Statistics` seine BTC Adresse eingeben, die im Befehl verwendet wurde. Dort sind dann alle relevanten Daten hinterlegt.
+
+> :bulb: **Fertig!** Prost und Glückauf beim Block finden! 👷
+
+---
+
+## Mehrere USB Miner einzeln ansteuern:
+
 Wenn mehrere Gekko Miner gleichzeitig betrieben werden, diese aber unterschiedlich angesteuert werden sollen dann kann dies folgendermaßen gemacht werden:
-1.	Bus Nummer und Device Nummer herausfinden
+
+1. Bus Nummer und Device Nummer herausfinden
+
 ```
 lsusb
 ```
+
 Es werden alle verbundenen Geräte aufgelistet. Der Gekko Newpac erscheint z.B. als „Future Technology Devices International, Ltd Bridge(I2C/SPI/UART/FIFO)“
 
-2.	Durch den Zusatz „--usb BusNummer:DeviceNummer“ wird ein einzelner USB Miner angesprochen
+2. Durch den Zusatz „--usb BusNummer:DeviceNummer“ wird ein einzelner USB Miner angesprochen
+
 ```
 nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u BTCADRESSE -p x --suggest-diff 32 --usb 1:7 --gekko-newpac-freq 100 &
 ```
@@ -85,4 +115,4 @@ Möchte man die Miner verschieden ansteuern, dann sollte man zunächst durch Aus
 
 ---
 
-####  [Mining Software installieren](/install_miner.md)  ᐊ  previous | next  ᐅ  [Miner Einstellungen MHz/ mV](/miner-settings.md)
+####  [Mining Software installieren](/install_miner.md)  ᐊ  previous | next  ᐅ  [Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md)

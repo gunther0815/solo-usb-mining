@@ -1,4 +1,4 @@
-# cgminer auf RaspiBlitz installieren
+# cgminer auf Raspberry Pi/RaspiBlitz installieren
 
 Wir verbinden uns mit dem Raspiblitz und sehen das Menu oder den Download der Blockchain
 

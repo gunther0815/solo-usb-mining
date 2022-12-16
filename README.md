@@ -1,15 +1,71 @@
+<!--# Inhalt
+
+Im Grunde ist es keine hohe Kunst einen USB-Miner lauffähig zu machen, jedoch gibt es kleinere Fallstricke die zu Fehlinterpretationen führen können. Diese Anleitung dient der Hilfestellung für Neulinge im USB-Mining und richtet sich an diese. Alle Informationen sind ohne Gewähr, **Ausprobieren erfolgt auf eigenes Risiko!**
+
+## ⛏ [CGMiner on Raspiblitz Full Node](usb-mining/CGMiner-on-Raspiblitz-Full-Node.md)
+
+How to install cgminer on Raspiblitz... 
+
+## ⛏ USB-Mining
+  
+* [☀ Single USB-Miner](single-usb-miner.md) beschäftigt sich mit der Erstinbetriebnahme eines USB-Miners mit bereits vorhandenem USB-Hub und möglichen Tuningmaßnahmen.
+* [☀ Multiple USB-Miner](/multiple-usb-miner.md) hebt bereits die schwächen der meisten USB-Hubs hervor und zeigt wie hier Abhilfe geschaffen werden kann.
+* [☀ cgminer starten](/CGMiner-starten.md) soll bei der Inbetriebnahme der Software helfen.
+* [🌩 Übertakten](/uebertakten.md) hier widmen wir uns dem Tuning.
+* [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
+
+## Verwendete Hard- und Software
+
+* 1x Raspberry Pi 4GB mit Raspiblitz 1.8.0 ([https://github.com/rootzoll/raspiblitz](https://github.com/rootzoll/raspiblitz))
+* 1x Gekkoscience Compaq F USB-Miner
+* verschiedene USB-Hubs
+* cgminer version 4.12 ([https://github.com/kanoi/cgminer](https://github.com/kanoi/cgminer))
+* 1x Digital Multimeter
+* 1x USB Tester
+
+Ich werde versuchen den Inhalt zu erweitern und zu verbessern.
+
+---
+## Value 4 Value
+
+<figure>
+    <img src=".assets/V4V.png" alt="Donate" width="100" />
+    <figcaption>lumpycarp37@walletofsatoshi.com</figcaption>
+</figure>
+
+--- -->
+
 # Inhalt
 
+## Allgemeines
+   
 * Warum USB-Mining
 * Was ist Lottery-Mining?
-* [Einkaufsliste](shopping-list.md)
-* [Voraussetzungen](requirements.md)
-* [Raspberry Pi vorbereiten](prepare_pi.md) bzw. [Installation von cgminer auf dem RaspiBlitz](cgminer_on_raspiblitz.md)
-* [Mining Software installieren](install_miner.md)
-* [Mining Software starten](start_mining.md)
-* [Miner Einstellungen MHz/ mV](miner-settings.md)
+
+## Vorbereitung
+
+* [☀ Einkaufsliste](shopping-list.md)
+* [☀ Voraussetzungen](requirements.md)
+
+## Installation
+
+* [☀ Raspberry Pi vorbereiten](prepare_pi.md) bzw. [Installation von cgminer auf dem RaspiBlitz](cgminer_on_raspiblitz.md)
+* [☀ Mining Software installieren](install_miner.md)
+
+## Konfiguration
+
+* [⛏ Mining Software starten](start_mining.md)
+* [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md)
+* [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)
+* [🌩 Übertakten](/uebertakten.md): Hier widmen wir uns dem Tuning.
+* [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
+
+## Weitere Links
+
 * [PV/HomeAssistent/InfoTicker etc.](additional-links.md)
 * Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
+
+---
 
 ## Warum Solo-USB-Mining?
 
@@ -20,6 +76,8 @@ Das Ganze sollte als ein Projekt gesehen werden, um sich in den Gang des Minings
 Das Schöne beim USB-Mining ist die niedrige Einstiegshürde, es ist also mit relativ wenig Kosten verbunden und es gibt viel zu Lernen. :)
 
 Außerdem verbraucht der kleine USB-Miner wenig Strom, macht wenig Lärm und er nimmt wenig Platz weg.
+
+---
 
 ## Was ist Lottery-Mining?
 
@@ -33,14 +91,19 @@ Damit die Einrichtung für das Solo-Mining unkompliziert wird und die Schnittste
 
 Für das Lottery-Mining bieten sich USB-Miner aufgrund des geringen Stromverbrauchs besonders an. Das ganze Projekt kann aber auch mit leistungsstärkeren Minern umgesetzt werden, um die Gewinnwahrscheinlichkeit zu erhöhen. Dies lohnt sich aber nur wenn man den dafür benötigten Strom gratis oder sehr günstig bekommen kann.
 
+---
+
 ## Value 4 value
 
 Du kannst hier für das Projekt spenden und dafür sorgen, dass es weiterhin dokumentiert und ausgebaut wird
 
-LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHKUETPWFNX2CTJXYUQ9YYGKX
+<table border=1>
+<tr><td>nearfear18@walletofsatoshi.com</td><td>lumpycarp37@walletofsatoshi.com</td><td></td></tr>
+<tr><td><img width="150" alt="qr" src="https://user-images.githubusercontent.com/108099690/197496656-55d2d453-34d4-475a-83c0-1c1aa55bb963.png" /></td><td><img src=".assets/V4V.png" alt="Donate" width="150" /></td><td></td></tr>
+<!--<tr><td></td><td></td><td></td></tr>-->
+<!--<tr><td></td><td></td><td></td></tr>-->
+</table>
 
-<figure><img width="120" alt="qr" src="https://user-images.githubusercontent.com/108099690/197496656-55d2d453-34d4-475a-83c0-1c1aa55bb963.png" />
-  <figurecaption>nearfear18@walletofsatoshi.com</figurecaption>
-</figure>
+---
 
-
+####     | next  ᐅ  [Einkaufsliste](/shopping-list.md)

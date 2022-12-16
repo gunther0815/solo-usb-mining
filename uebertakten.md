@@ -8,7 +8,7 @@
 
 <!-- > :bulb: **Tip:** Remember to appreciate the little things in life.  -->
 
-> **ACHTUNG**: Übertakten sorgt für eine höhere Leistungsaufnahme. Es ist dringend anzuraten sich **vorher** über ein geeignetes Kühlkonzept Gedanken zu machen, da man Gefahr läuft den Chip **dauerhaft zu schädigen**. Ich rate niemandem zum Tunen des Systems, vor allem da der Mehrwert relativ gering ist.
+> :warning: **ACHTUNG**: Übertakten sorgt für eine höhere Leistungsaufnahme. Es ist dringend anzuraten sich **vorher** über ein geeignetes Kühlkonzept Gedanken zu machen, da man Gefahr läuft den Chip **dauerhaft zu schädigen**. Ich rate niemandem zum Tunen des Systems, vor allem da der Mehrwert relativ gering ist.
 
 Eine kleine Anregung für ausreichende Kühlung:
 
@@ -46,3 +46,7 @@ Die Kühlung zu überprüfen ist hier schon eine größere Herausforderung. Dies
 
 <figure><img src="../.assets/IMG-1181.JPG" alt="Wärmeentwicklung" width="400" /><figcaption>Wärmeentwicklung mit Standard-USB-Hub: ca. 8W</figcaption></figure>
 <figure><img src="../.assets/IMG-1183.JPG" alt="Wärmeentwicklung" width="400" /><figcaption>Wärmeentwicklung mit Standard-USB-Hub: ca. 8W</figcaption></figure>
+
+---
+
+#### [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
