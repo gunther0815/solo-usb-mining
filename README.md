@@ -39,8 +39,8 @@ Ich werde versuchen den Inhalt zu erweitern und zu verbessern.
 
 ## Allgemeines
    
-* Warum USB-Mining
-* Was ist Lottery-Mining?
+* 💡 Warum USB-Mining
+* 💡 Was ist Lottery-Mining?
 
 ## Vorbereitung
 
@@ -63,8 +63,8 @@ Ich werde versuchen den Inhalt zu erweitern und zu verbessern.
 
 ## Weitere Links
 
-* [PV/HomeAssistent/InfoTicker etc.](additional-links.md)
-* Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
+* [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
+* 💡 Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
 
 ---
 
