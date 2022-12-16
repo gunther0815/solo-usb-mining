@@ -1,8 +1,8 @@
 # Mining Software installieren
 
-> Strom und Internet des Raspberry Pis müssen verbunden sein.
-
-> USB Miner verbinden bzw. USB Hub einschalten.
+> :bulb: Strom und Internet des Raspberry Pis müssen verbunden sein.
+> 
+> :bulb: USB Miner verbinden bzw. USB Hub einschalten.
 
 Um nun vom eigenen Computer auf den Raspberry Pi via SSH zugreifen zu können muss sich der Computer im selben Netzwerk befinden. Ist dies der Fall öffnet man das Terminal. Dazu einfach auf dem PC nach dem Programm „Terminal“ suchen. Im Terminal geht es dann los:
 
