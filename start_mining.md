@@ -32,18 +32,30 @@ Die Befehle `compact` und `real-quiet` solltet ihr am Anfang weglassen um zu seh
 
 Kurzer Auszug der Erklärung der Befehle:
 
-```shell
---compact           Use compact display without per device statistics
---real-quiet        Disable all output
+```
+Allgemein:
+
+  --compact                   Use compact display without per device statistics
+  
+  --real-quiet                Disable all output
+
 Newpac:
---suggest-diff <arg> Suggest miner difficulty for pool to user (default: none)
---compac-freq <arg> Set GekkoScience Compac frequency in MHz, range 100-500 (default: 150.0)
---gekko-newpac-boost
-Compac F
---gekko-compacf-freq <arg> Set GekkoScience CompacF BM1397 frequency in MHz, range 100-800 (default 200.0)
---gekko-start-freq  Ramp start frequency MHz 25-500 
---gekko-mine2 
---gekko-tune2 60
+
+  --suggest-diff <arg>        Suggest miner difficulty for pool to user (default: none)
+ 
+  --compac-freq <arg>         Set GekkoScience Compac frequency in MHz, range 100-500 (default: 150.0)
+  
+  --gekko-newpac-boost
+
+Compac F:
+
+  --gekko-compacf-freq <arg>  Set GekkoScience CompacF BM1397 frequency in MHz, range 100-800 (default 200.0)
+  
+  --gekko-start-freq <arg>    Ramp start frequency MHz 25-500
+  
+  --gekko-mine2
+  
+  --gekko-tune2 60
 ```
 
 > :warning: **Achtung:** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
