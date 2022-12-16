@@ -47,7 +47,7 @@ Compac F
 ```
 
 > :warning: **Achtung:** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
-> Damit das Mining im Hintergrund weiter läuft, kann man `` oder `` verwenden, mehr Inormationen dazu im Kapitel [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md).
+> Damit das Mining im Hintergrund weiter läuft, kann man `nohup` oder `screen` verwenden, mehr Inormationen dazu im Kapitel [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md).
 
 <!--
 ```shell
