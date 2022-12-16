@@ -33,4 +33,4 @@ Dort kann man sehen, wie die Spannung verändert werden kann.
 
 ---
 
-#### [Mining Software starten](start_mining.md)  ᐊ  previous | next  ᐅ  [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)
+#### [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md)  ᐊ  previous | next  ᐅ  [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)
