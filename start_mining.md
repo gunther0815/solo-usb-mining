@@ -107,7 +107,7 @@ Es werden alle verbundenen Geräte aufgelistet. Der Gekko Newpac erscheint z.B. 
 2. Durch den Zusatz `--usb BusNummer:DeviceNummer` wird ein einzelner USB Miner angesprochen:
 
 ```shell
-nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u BTCADRESSE -p x --suggest-diff 32 --usb 1:7 --gekko-newpac-freq 100 &
+sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u <BTCADRESSE> -p x --suggest-diff 32 --usb 1:7 --gekko-newpac-freq 100
 ```
 
 Dabei müssen die zuvor gefundenen `Bus-` und `Device Nummern` eingetragen werden (Im obigen Beispiel wäre die gefundene Bus Nummer `001` und die Device Nummer `007`, daher dann `--usb 1:7`)
