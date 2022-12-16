@@ -1,21 +1,25 @@
 Achtung: Alle Angaben sind ohne Gewähr und sollten daher mit Vorsicht genossen werden. 
 Vieles wurde von dem [Bitcointalk Thread](https://bitcointalk.org/index.php?topic=5053833.0) entnommen.
 
-Möchte man übertakten, ersetzt man die ,,100” von diesem Befehl:
-```
+Möchte man übertakten, ersetzt man die `100` von diesem Befehl:
+
+```shell
 --gekko-newpac-freq 100
 ```
+
 und für andere Modelle:
-```
+
+```shell
 --gekko-2pac-freq <arg> Set GekkoScience 2Pac BM1384 frequency in MHz, range 6.25-500 (default 100.0)
 --gekko-compac-freq <arg> Set GekkoScience Compac BM1384 frequency in MHz, range 6.25-500 (default 150.0)
 --gekko-terminus-freq <arg> Set GekkoScience Terminus BM1384 frequency in MHz, range 6.25-500 (default 150.0)
 ```
-mit einer anderen Zahl. Beispielsweise 200. 
-Hier ist zu sagen, dass die Stromaufnahme steigt und damit ebenfalls die Temperatur des Miners.
-Stellt man die Frequenz höher als 100, so sollte man einen [Lüfter](shopping-list.md) anbringen.
 
-Die Hashrate steigt dabei linear mit dem Takt: Doppelter Takt -> doppelte Hashrate 
+mit einer anderen Zahl, beispielsweise `200`. 
+Hier ist zu sagen, dass die Stromaufnahme steigt und damit ebenfalls die Temperatur des Miners.
+Stellt man die Frequenz höher als `100`, so sollte man einen [Lüfter](shopping-list.md) anbringen.
+
+Die Hashrate steigt dabei linear mit dem Takt: Doppelter Takt -> doppelte Hashrate.
 Jeder Chip ist jedoch individuell. So hat der eine oder andere aus dem Forum den Miner auf 500 oder sogar 600 Mhz bringen können. Andere schaffen jedoch nur 450 Mhz oder weniger 
 mit der Standardspannung.
 
@@ -29,4 +33,4 @@ Dort kann man sehen, wie die Spannung verändert werden kann.
 
 ---
 
-#### [Mining Software starten](start_mining.md)  ᐊ  previous | next  ᐅ  [🌩 Übertakten](/uebertakten.md)
+#### [Mining Software starten](start_mining.md)  ᐊ  previous | next  ᐅ  [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)

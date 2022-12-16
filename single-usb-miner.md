@@ -7,7 +7,7 @@ Hier wird die Basis zum Mining geschaffen mit Fokus auf die Hardware.
 Zur Ermittlung der Leistungsfähigkeit des USB-Miners in der jeweiligen Hardware-Konfiguration wird das Auto-tuning der cgminer-Software verwendet:
 
 ```shell
-// sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60
+sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60
 ```
 
 Die Start- und Endfrequenz kann man jederzeit ändern, sobald man ein Gefühl dafür hat was die eigene Hardware leistet. Ein Standard-USB-Hub kann sich durchaus bei 280MHz einpendeln (Nicht genug Strom vergfügbar), bei geschickt gewählter Hardware sind auch deutlich höhere Taktraten möglich.

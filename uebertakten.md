@@ -49,4 +49,4 @@ Die Kühlung zu überprüfen ist hier schon eine größere Herausforderung. Dies
 
 ---
 
-#### [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
+#### [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)

@@ -17,8 +17,7 @@
 * https://github.com/max21h/CGMiner-OLED-Display
 
 
-# Lasst Liebe und Sats bei den Jungs für ihre großartige Arbeit! 
-
+> :bulb: Lasst Liebe und Sats bei den Jungs für ihre großartige Arbeit! 
 
 ---
 

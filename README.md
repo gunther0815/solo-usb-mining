@@ -57,6 +57,7 @@ Ich werde versuchen den Inhalt zu erweitern und zu verbessern.
 * [⛏ Mining Software starten](start_mining.md)
 * [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md)
 * [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)
+* [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)
 * [🌩 Übertakten](/uebertakten.md): Hier widmen wir uns dem Tuning.
 * [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
 
@@ -95,13 +96,13 @@ Für das Lottery-Mining bieten sich USB-Miner aufgrund des geringen Stromverbrau
 
 ## Value 4 value
 
-Du kannst hier für das Projekt spenden und dafür sorgen, dass es weiterhin dokumentiert und ausgebaut wird
+Du kannst hier für das Projekt spenden und dafür sorgen, dass es weiterhin dokumentiert und ausgebaut wird:
 
 <table border=1>
-<tr><td>nearfear18@walletofsatoshi.com</td><td>lumpycarp37@walletofsatoshi.com</td><td></td></tr>
-<tr><td><img width="150" alt="qr" src="https://user-images.githubusercontent.com/108099690/197496656-55d2d453-34d4-475a-83c0-1c1aa55bb963.png" /></td><td><img src=".assets/V4V.png" alt="Donate" width="150" /></td><td></td></tr>
-<!--<tr><td></td><td></td><td></td></tr>-->
-<!--<tr><td></td><td></td><td></td></tr>-->
+<tr><td>nearfear18@walletofsatoshi.com</td><td>lumpycarp37@walletofsatoshi.com</td></tr>
+<tr><td><img width="150" alt="qr" src="https://user-images.githubusercontent.com/108099690/197496656-55d2d453-34d4-475a-83c0-1c1aa55bb963.png" /></td><td><img src=".assets/V4V.png" alt="Donate" width="150" /></td></tr>
+<!--<tr><td></td><td></td></tr>-->
+<!--<tr><td></td><td></td></tr>-->
 </table>
 
 ---

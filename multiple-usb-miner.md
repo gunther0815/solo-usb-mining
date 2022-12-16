@@ -24,3 +24,7 @@ Dazu reicht es in meinme Fall Pin 16 (PS_ON) und 18 (Masse) zu überbrücken:
 Standard-Pin-Belegung eines 24poligen ATX-Steckers:
 
 <img src=".assets/ATXPinBelegung.png" alt="ATX Pinbelegung" width="200" />
+
+---
+
+#### [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)  ᐊ  previous | next  ᐅ  [🌩 Übertakten](/uebertakten.md)

@@ -1,10 +1,10 @@
 # Mining Software starten
 
-**WICHTIG:**
+> :memo: **WICHTIG:**
 
 Man muss sich in dem Ordner vom cgminer befinden damit der Befehl zum Start funktioniert. Befindet man sich nicht im Ordner, weil z.B. der Raspberry Pi neugestartet wurde, gelangt man mit folgendem Befehl in den Ordner:
 
-```
+```shell
 cd mining/cgminer
 ```
 
@@ -12,13 +12,13 @@ Um den cgminer und damit das Mining zu starten, muss folgender Befehl ausgeführ
 
 für NewPac:
 
-```
+```shell
 sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESSE> -p x --suggest-diff 32 --gekko-newpac-freq 100 --gekko-newpac-boost
 ```
 
 für CompacF:
 
-```
+```shell
 sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESSE> -p x --gekko-compacf-freq 500 --gekko-start-freq 450 --gekko-mine2 --gekko-tune2 60
 ```
 
@@ -32,7 +32,7 @@ Die Befehle `compact` und `real-quiet` solltet ihr am Anfang weglassen um zu seh
 
 Kurzer Auszug der Erklärung der Befehle:
 
-```
+```shell
 --compact           Use compact display without per device statistics
 --real-quiet        Disable all output
 Newpac:
@@ -49,13 +49,13 @@ Compac F
 > :warning: **Achtung:** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
 > Damit das Mining im Hintergrund weiter läuft startet man das ganze einfach mit folgendem Befehl:
 
-```
+```shell
 nohup (der gesamte Befehl) &
 ```
 
 Um zu überprüfen, ob der Mining Prozess läuft, kann folgender Befehl ausgeführt werden:
 
-```
+```shell
 cat nohup.out
 ```
 
@@ -64,7 +64,7 @@ Der USB-Miner blinkt mit einer weißen LED, wenn das Mining aktiv ist. Dadurch k
 
 Die aktiven Prozesse des Raspberry Pis können mit diesem Befehl angezeigt werden:
 
-```
+```shell
 top
 ```
 
@@ -72,7 +72,7 @@ Um die Prozess Übersicht zu beenden einfach die `Q`-Taste drücken.
 
 Damit der cgminer beendet werden kann muss folgender Befehl ausgeführt werden:
 
-```
+```shell
 sudo kill 1234
 ```
 

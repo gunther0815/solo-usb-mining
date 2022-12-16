@@ -50,7 +50,7 @@ Für die Installation gibt es bereits eine ausführliche Anleitung auf Github ([
 
 ---
 
-Das wars. Nun ist der Raspberry Pi bereit.
+> :bulb: Das wars. Nun ist der Raspberry Pi bereit.
 
 ---
 
