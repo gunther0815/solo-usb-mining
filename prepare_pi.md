@@ -45,6 +45,8 @@ Der Raspberry Pi benötigt ein Betriebssystem (OS) welches auf eine Micro-SD Kar
 
 ## Möglichkeit 2: Raspiblitz verwenden
 
+Wenn es gewünscht ist auch andere Bitcoin-Technologien zu erlernen oder zu unterstützen, eignet sich das Raspiblitz-Image für die Insatllation auf dem Raspberry Pi. Raspiblitz ist ein Raspberry Pi Os-Image speziell angepasst für den Betrieb einer Bitcoin Full Node, einer Lightning Node und diverser anderer Tools aus dem Bitcoin Ökkosystem.
+
 ### Installieren von Raspiblitz auf einem Raspberry Pi (4GB oder 8GB empfohlen)
 
 Die folgende Hardware und Software wurden verwendet:
