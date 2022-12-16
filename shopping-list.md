@@ -22,7 +22,7 @@
 
 * Amazon: [RSHTECH Aluminium USB Hub Aktiv 3.0 mit 36W (12V / 3A)](https://amzn.eu/d/7eHrU5X)
 * Amazon: [USB Hub Aktiv 3.0 mit 24W (12V/2A) Netzteil, USB 3.0 Hub Aktiver mit 5 Ports (USB 3.0 Datenport x 4, Schnelllade Port x 1) mit Unabhängige EIN/AusSchalter und LED, Grau](https://amzn.eu/d/9QPdNLB)
-* Bitshopper: [7-Port USB Hub mit 6-Pin PCIe Anschluss](https://www.bitshopper.de/shop/zubehoer/7-port-usb-hub/)
+* Bitshopper: [7-Port USB Hub mit 6-Pin PCIe Anschluss](https://www.bitshopper.de/shop/zubehoer/7-port-usb-hub/) (Referenz wenn mehrere USB-Miner betrieben werden sollen) 
 
 ## - Kühlung des Miners 
 
