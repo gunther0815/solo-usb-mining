@@ -29,7 +29,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y build-essential git autoconf automake libtool pkg-config libcurl4-openssl-dev libudev-dev libusb-1.0-0-dev libncurses5-dev
 ```
 
-4.	Jetzt kann der CGMiner Branch aus GIT geklont werden:
+4. Jetzt kann der CGMiner Branch aus GIT geklont werden:
 
 ```shell
 mkdir -p mining; cd mining 
@@ -37,7 +37,7 @@ git clone https://github.com/kanoi/cgminer.git
 cd cgminer
 ```
 
-5.	Nach erfolgreichem Klonen aus GIT kann der CGMiner nun kompiliert werden:
+5. Nach erfolgreichem Klonen aus GIT kann der CGMiner nun kompiliert werden:
 
 ```shell
 ./autogen.sh
@@ -47,7 +47,7 @@ sudo make
 
 (An dieser Stelle den Raspberry Pi mit sudo reboot neustarten, falls der nächste Schritt nicht funktioniert)
 
-6.	Nun kann der Fortschritt folgendermaßen getestet werden:
+6. Nun kann der Fortschritt folgendermaßen getestet werden:
 
 ```shell
 sudo ./cgminer -n

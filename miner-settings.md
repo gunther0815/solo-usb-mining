@@ -28,8 +28,8 @@ Wird zu viel Takt eingestellt, kommt entweder eine Fehlermeldung "missing nonce"
 > :memo: Anmerkung: Im Antminer S9 ist der gleiche Chip wie im Newpac verbaut. Dort läuft er mit 900 mV und etwa 600 Mhz. Dieser wird jedoch die Temperatur überwacht und im Notfall abgeschaltet.
 Es gibt noch die Möglichkeit mit Autotune den Miner selbst den maximalen Takt auszuprobieren. Dazu tastet er sich selbst langsam hoch. 
 
-Im Forum wird erklärt, wie es geht
-https://manualzz.com/doc/52944452/gekkoscience-newpac-usb-flash-drive-user-manual
+Im Forum wird erklärt, wie es geht:
+> https://manualzz.com/doc/52944452/gekkoscience-newpac-usb-flash-drive-user-manual
 Dort kann man sehen, wie die Spannung verändert werden kann.
 
 ---

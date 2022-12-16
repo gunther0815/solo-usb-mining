@@ -7,7 +7,7 @@ Diese Seite beschreibt mögliche Konfigurationen von CGMIner auf einem Raspbery 
 Um möglichst detaillierte Informationen vor allem beim erstmaligen Setup zu bekommen, bietet es sich an CGMiner wie folgt zu starten:
 
 ```shell
-// sudo ./cgminer -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60
+sudo ./cgminer -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60
 ```
 
 In diesem Modus kann man übersichtlich die Leistung der angeschlossenen Miner beobachten, das Hotplugging-Verhalten untersuchen aber auch einfach nur Einstellungen on-the-fly vornehmen.
@@ -21,24 +21,24 @@ In diesem Modus kann man übersichtlich die Leistung der angeschlossenen Miner b
 Der Betrieb im Hintergrund ist notwendig, wenn man nicht permanent eine remote Verbindung via SSH offen halten kann oder will, z.B. beim Betrieb von CGMiner auf einem Raspberry Pi. Der cgminer-Dienst kann einfach mit `nohup` im Hintergrund gestartet werden:
 
 ```shell
-// nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60 &
+nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60 &
 ```
 
 Man beachte hier die Optionen `--compact` und `--real-quiet`. Diese Optionen verringern das zu loggende Datenvolumen auf ein Minimum.
 
-Man beachte hierbei das abschliessende &. Der Prozess läuft nun im Hintergrund und leitet seine Ausgabe in die Datei `/home/admin/nohup.out` um. Diese kann mit `cat` in der Konsole ausgegeben werden:
+Man beachte hierbei das abschliessende `&`. Der Prozess läuft nun im Hintergrund und leitet seine Ausgabe in die Datei `/home/admin/nohup.out` um. Diese kann mit `cat` in der Konsole ausgegeben werden:
 
 ```shell
-// cat /home/admin/nohup.out
+cat /home/admin/nohup.out
 ```
 
-Um den Prozess zu beenden, muss die Prozess-ID mittels `kill` terminiert werden. Dazu sucht man zuwerst die Prozess-ID:
+Um den Prozess zu beenden, muss die Prozess-ID mittels `kill` terminiert werden. Dazu sucht man zuerst die Prozess-ID:
 
 ```shell
 ps aux | grep cgminer
 ```
 
-Dies zeigt entsprechende Prozess-IDs von CGMiner an und können wie folgt beendet werden:
+Dies zeigt entsprechende Prozess-IDs von cgminer an und können wie folgt beendet werden:
 
 ```shell
 sudo kill <PROZESSID>
