@@ -96,7 +96,7 @@ Seite aufrufen und unter `Statistics` seine BTC Adresse eingeben, die im Befehl 
 
 Wenn mehrere Gekko Miner gleichzeitig betrieben werden, diese aber unterschiedlich angesteuert werden sollen dann kann dies folgendermaßen gemacht werden:
 
-1. Bus Nummer und Device Nummer herausfinden
+1. `Bus Nummer` und `Device Nummer` herausfinden
 
 ```shell
 lsusb
@@ -104,13 +104,13 @@ lsusb
 
 Es werden alle verbundenen Geräte aufgelistet. Der Gekko Newpac erscheint z.B. als „Future Technology Devices International, Ltd Bridge(I2C/SPI/UART/FIFO)“
 
-2. Durch den Zusatz „--usb BusNummer:DeviceNummer“ wird ein einzelner USB Miner angesprochen
+2. Durch den Zusatz `--usb BusNummer:DeviceNummer` wird ein einzelner USB Miner angesprochen:
 
 ```shell
 nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u BTCADRESSE -p x --suggest-diff 32 --usb 1:7 --gekko-newpac-freq 100 &
 ```
 
-Dabei müssen die zuvor gefundenen Bus- und Device Nummern eingetragen werden (Im obigen Beispiel wäre die gefundene Bus Nummer „001“ und die Device Nummer „007“, daher dann „--usb 1:7“)
+Dabei müssen die zuvor gefundenen `Bus-` und `Device Nummern` eingetragen werden (Im obigen Beispiel wäre die gefundene Bus Nummer `001` und die Device Nummer `007`, daher dann `--usb 1:7`)
 
 Möchte man die Miner verschieden ansteuern, dann sollte man zunächst durch Ausprobieren ermitteln welcher Miner welcher Device Nummer zugeordnet ist. Dazu einfach den cgminer wie in Schritt 2 beschrieben für ein bestimmtes Gerät starten und beobachten welcher Mining Stick anfängt zu blinken.
 
