@@ -56,8 +56,6 @@ Die folgende Hardware und Software wurden verwendet:
 
 Für die Installation gibt es bereits eine ausführliche Anleitung auf Github ([https://github.com/rootzoll/raspiblitz](https://github.com/rootzoll/raspiblitz)). Im Falle von Problemen hilft hier auch die Raspiblitz Telegram Gruppe: [https://t.me/raspiblitz\_DE.](https://t.me/raspiblitz\_DE)
 
----
-
 > :bulb: Das wars. Nun ist der Raspberry Pi bereit.
 
 ---
