@@ -28,7 +28,7 @@ sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <
 
 Die Befehle `compact` und `real-quiet` solltet ihr am Anfang weglassen um zu sehen ob der Miner gut läuft. Ihr seht im Falle des Compac F-Miners z.B. auf welcher Frequenz er sich einpendelt. Je nach USB-Hub werden verschiedene Frequenzen nicht erreichet. 
 
-> Nochmal der Hinweis: Compac F NIE ohne Kühlung betreiben!
+> :warning: **Nochmal der Hinweis**: Compac F nie ohne Kühlung betreiben!
 
 Kurzer Auszug der Erklärung der Befehle:
 
