@@ -24,4 +24,4 @@ Bei angestecktem USB-Tester sehen wir die angelegte Spannung (in Volt), den verw
 
 Aktive (mit Netzteil) Standard-USB-Hubs mit einem Gekkoscience Compaq F können hierbei extrem unterschiedlich sein. Ich habe Taktraten von 270MHz bis 545MHz gesehen, je nach verwendetem USB-Hub.
 
-**ACHTUNG**: höhere Taktraten erfordern aktive Kühlung (siehe dazu auch Kapitel [uebertakten.md](uebertakten.md "mention")).
+> :warning: **ACHTUNG**: höhere Taktraten erfordern aktive Kühlung (siehe dazu auch Kapitel [uebertakten.md](uebertakten.md "mention")).

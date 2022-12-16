@@ -1,7 +1,9 @@
 # Voraussetzungen
+
 Da der üblichste Weg fürs Solo-Mining ein Raspberry Pi ist, wird ab hier ausführlich beschrieben, wie man einen solchen einrichtet und damit das Mining später startet.
 
 Um den Raspberry Pi einzurichten und alles Nötige zu installieren, muss auf das Gerät zugegriffen werden. Dafür gibt es zwei verschiedene gängige Methoden.
+
 * Über das Netzwerk vom eigenen Computer aus (SSH)
 * Am Raspberry Pi angeschlossenes Display, Tastatur und ggf. Maus
 

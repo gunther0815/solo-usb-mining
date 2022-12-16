@@ -47,10 +47,11 @@ Compac F
 ```
 
 > :warning: **Achtung:** Wenn das Terminal geschlossen wird, wird auch der Mining Prozess beendet!
-> Damit das Mining im Hintergrund weiter läuft startet man das ganze einfach mit folgendem Befehl:
+> Damit das Mining im Hintergrund weiter läuft, kann man `` oder `` verwenden, mehr Inormationen dazu im Kapitel [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md).
 
+<!--
 ```shell
-nohup (der gesamte Befehl) &
+nohup <COMMAND> &
 ```
 
 Um zu überprüfen, ob der Mining Prozess läuft, kann folgender Befehl ausgeführt werden:
@@ -76,10 +77,10 @@ Damit der cgminer beendet werden kann muss folgender Befehl ausgeführt werden:
 sudo kill 1234
 ```
 
-Anstelle von „1234“ muss die Prozess-Nummer vom cgminer eingefügt werden (Diese steht links in der Prozess Übersicht)
+Anstelle von `1234` muss die Prozess-Nummer vom cgminer eingefügt werden (Diese steht links in der Prozess Übersicht).
 
 Wenn man den Befehl für den cgminer im Hintergrund mehrmals gestartet hat, läuft der cgminer mehrfach im Hintergrund. Es ist dann zu empfehlen die Prozesse zu beenden damit nur einer aktiv ist.
-
+-->
 ---
 
 ## Statistiken abrufen:
@@ -97,7 +98,7 @@ Wenn mehrere Gekko Miner gleichzeitig betrieben werden, diese aber unterschiedli
 
 1. Bus Nummer und Device Nummer herausfinden
 
-```
+```shell
 lsusb
 ```
 
@@ -105,7 +106,7 @@ Es werden alle verbundenen Geräte aufgelistet. Der Gekko Newpac erscheint z.B. 
 
 2. Durch den Zusatz „--usb BusNummer:DeviceNummer“ wird ein einzelner USB Miner angesprochen
 
-```
+```shell
 nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u BTCADRESSE -p x --suggest-diff 32 --usb 1:7 --gekko-newpac-freq 100 &
 ```
 
