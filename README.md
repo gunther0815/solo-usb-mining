@@ -107,4 +107,4 @@ Du kannst hier für das Projekt spenden und dafür sorgen, dass es weiterhin dok
 
 ---
 
-####     | next  ᐅ  [Einkaufsliste](/shopping-list.md)
+####    [Inhalt](/README.md)  ᐊ  previous | next  ᐅ  [Einkaufsliste](/shopping-list.md)
