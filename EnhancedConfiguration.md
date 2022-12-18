@@ -189,8 +189,7 @@ Eintragen der Pools ähnlich meinem Beispiel:
 
 Wichtig hierbei die quotas (in meinem Beispiel 70% und 30%), aber auch die Option `load-balance` auf `true` zu setzen.
 
-Das Verwenden der Config-Datei hat den weiteren Charme, dass man nicht mehr sämtliche Parameter an den Miner übergeben muss, es reicht lediglich `s
-udo ./cgminer` aufzurufen und die weitere Parametrierung findet über die onfigurationsdatei statt. Durch die Option `sudo ./cgminer -c /root/.cgminer/cgminer.conf` önnen außerdem unterschiedliche Konfigurationen geladen werden.
+Das Verwenden der Config-Datei hat den weiteren Charme, dass man nicht mehr sämtliche Parameter an den Miner übergeben muss, es reicht lediglich `sudo ./cgminer` aufzurufen und die weitere Parametrierung findet über die onfigurationsdatei statt. Durch die Option `sudo ./cgminer -c /root/.cgminer/cgminer.conf` önnen außerdem unterschiedliche Konfigurationen geladen werden.
 
 ---
 
