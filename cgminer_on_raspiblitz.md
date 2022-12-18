@@ -64,4 +64,20 @@ Und wir sind bereit für den Betrieb des Miners vom Raspiblitz aus.
 
 ---
 
+Des Öfteren scheint es unter Linux Probleme mit dem `sudo make` zu geben. Der ompiliervorgang bricht ab mit dem Hinweis dass auf eine fehlende Bibliothek verlinkt wird.
+
+```shell
+/usr/bin/ld: cannot find -lz: No such file or directory
+```
+
+Hier hilft es herauszufinden welche Bibliothek fehlt, diese nachzuinstallieren und den obigen Vorgang zu wiederholen. In unserem Fall fehlt `zliblg-dev`.
+
+```shell
+sudo apt install zliblg-dev
+```
+
+Und schon schliesst der Kompiliervorgang ohne Fehler ab.
+
+---
+
 #### [Raspberry Pi vorbereiten](/prepare_pi.md)  ᐊ  previous | next  ᐅ  [Mining Software starten](start_mining.md)
