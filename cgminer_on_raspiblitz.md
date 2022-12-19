@@ -64,7 +64,7 @@ Und wir sind bereit für den Betrieb des Miners vom Raspiblitz aus.
 
 ---
 
-Des Öfteren scheint es unter Linux Probleme mit dem `sudo make` zu geben. Der ompiliervorgang bricht ab mit dem Hinweis dass auf eine fehlende Bibliothek verlinkt wird.
+Des Öfteren scheint es unter Linux Probleme mit dem `sudo make` zu geben. Der Kompiliervorgang bricht ab mit dem Hinweis dass auf eine fehlende Bibliothek verlinkt wird.
 
 ```shell
 /usr/bin/ld: cannot find -lz: No such file or directory
