@@ -15,7 +15,7 @@ Dies gilt auch für alle anderen Modelle:
 
 `--gekko-terminus-freq <arg>`: Set GekkoScience Terminus BM1384 frequency in MHz, range 6.25-500 (default 150.0)
 
-> :warning: Eine höhere Frtequenz bedeutet eine höhere Leistungsaufnahme, dadurch steigt die Temperatur des Mining-Chips u.U. erheblich.
+> :warning: Eine höhere Frequenz bedeutet eine höhere Leistungsaufnahme, dadurch steigt die Temperatur des Mining-Chips u.U. erheblich.
 
 > :warning: Stellt man die Frequenz höher als `100`, so sollte man einen Lüfter anbringen (Siehe dazu auch die Kapitel [Einkaufsliste](shopping-list.md) und [🌩 Übertakten](/uebertakten.md)).
 
