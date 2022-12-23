@@ -62,4 +62,4 @@ Für die Installation gibt es bereits eine ausführliche Anleitung auf Github ([
 
 ---
 
-####  [Voraussetzungen](/requirements.md)  ᐊ  previous | next  ᐅ  [Mining Software installieren](/install_miner.md)
+####  [Voraussetzungen](/requirements.md)  ᐊ  previous | next  ᐅ  [Installation von cgminer auf dem RaspiBlitz](cgminer_on_raspiblitz.md)
