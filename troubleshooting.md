@@ -12,4 +12,4 @@
 
 ---
 
-#### [🌩 Übertakten](/uebertakten.md)  ᐊ  previous | next  ᐅ  [PV/HomeAssistent/InfoTicker etc.](additional-links.md)
+#### [🌩 Übertakten](/uebertakten.md)  ᐊ  previous | next  ᐅ  [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)

@@ -26,7 +26,7 @@
 
 ## Weitere Links
 
-* 💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi
+* [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
 * [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
 * 💡 Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
 
