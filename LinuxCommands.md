@@ -2,7 +2,7 @@
 
 Linux ist vor allem in der Kommandozeile stark. Um auch weniger versierten Bastlern ein paar hilfreiche Befehle mit an die Hand zu geben, die ihr Arbeitsleben unter Linux so komfortable wie möglich gestalten sollen, werde ich hier ein paar dieser Befehle aulisten.
 
-## `history`, `grep` und `tail`
+## `history`, `!`, `grep` und `tail`
 
 `history` zeigt alle Befehle die bereits einmal eingegeben wurden, als Liste an:
 
