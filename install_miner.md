@@ -66,4 +66,4 @@ Product: 'NewPac Bitcoin Miner'
 
 ---
 
-#### [Raspberry Pi vorbereiten](/prepare_pi.md)  ᐊ  previous | next  ᐅ  [Mining Software starten](start_mining.md)
+#### [Installation von cgminer auf dem RaspiBlitz](cgminer_on_raspiblitz.md)  ᐊ  previous | next  ᐅ  [Mining Software starten](start_mining.md)
