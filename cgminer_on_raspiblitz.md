@@ -48,7 +48,26 @@ Nun befindet sich der `cgminer` Ordner in unserem `home` Verzeichnis:
     <!--<figcaption></figcaption>-->
 </figure>
 
-Jetzt wird noch kompiliert mit:
+Alternativ bietet es sich an einen Sammelordner für mehrere Versionen von cgminer anzulegen, z.B. `/home/admin/Mining`, wenn man z.B. die Versionen 4.12.0 und 4.12.1 im Wechsel betreiben möchte. Dazu müsste ein Ordner `Mining` angelegt werden und nach einem Wechsel in dieses Unterverzeichnis mittels `cd /home/admin/Mining` dort den obigen `git clone....`-Befehl auzuführen:
+
+```shell
+mkdir -p /home/admin/Mining
+```
+
+```shell
+cd /home/admin/Mining
+```
+
+```shell
+sudo git clone https://github.com/kanoi/cgminer.git
+```
+Falls mehrere Versionen installiert werden sollen, empfiehlt es sich den Ordner cgminer umzubenennen in z.B. `/home/admin/Mining/cgminer_4.12.1`. Dies kann man mit `mv /home/admin/Mining/cgminer /home/admin/Mining/cgminer_4.12.1`erledigen (ggf. `sudo` voranstellen falls höhere Rechte benötigt werden.
+
+Nun wechseln wir in das Verzeichnis um die Konfiguration und Kompilierung zu starten:
+
+```shell
+cd /home/admin/Mining/cgminer
+```
 
 ```shell
 sudo CFLAGS="-O2 -march=native -fcommon" ./autogen.sh --enable-gekko --enable-icarus
