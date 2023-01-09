@@ -49,4 +49,4 @@ Die Kühlung zu überprüfen ist hier schon eine größere Herausforderung. Dies
 
 ---
 
-#### [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
+#### [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)  ᐊ  previous | next  ᐅ  [⚙️ R909](R909.md)
