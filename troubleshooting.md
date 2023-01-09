@@ -12,4 +12,4 @@
 
 ---
 
-#### [🌩 Übertakten](/uebertakten.md)  ᐊ  previous | next  ᐅ  [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
+#### [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md)  ᐊ  previous | next  ᐅ  [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
