@@ -22,8 +22,8 @@
 * [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)
 * [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)
 * [🌩 Übertakten](/uebertakten.md): Hier widmen wir uns dem Tuning.
-* [🌩 R909](/R909.md): Hier widmen wir uns dem dem Gekkoscience Terminus R909.
-* [🌩 cgminer JAVA API](/cgminer_JAVA_API.md): Details zur Java API für cgminer.
+* [⚙️ R909](/R909.md): Hier widmen wir uns dem dem Gekkoscience Terminus R909.
+* [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md): Details zur Java API für cgminer.
 * [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
 
 ## Weitere Links
