@@ -92,7 +92,7 @@ Des Öfteren scheint es unter Linux Probleme mit dem `sudo make` zu geben. Der K
 Hier hilft es herauszufinden welche Bibliothek fehlt, diese nachzuinstallieren und den obigen Vorgang zu wiederholen. In unserem Fall fehlt `zliblg-dev`.
 
 ```shell
-sudo apt install zliblg-dev
+sudo apt-get install zliblg-dev
 ```
 
 Und schon schliesst der Kompiliervorgang ohne Fehler ab.
