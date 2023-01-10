@@ -89,13 +89,31 @@ Des Öfteren scheint es unter Linux Probleme mit dem `sudo make` zu geben. Der K
 /usr/bin/ld: cannot find -lz: No such file or directory
 ```
 
-Hier hilft es herauszufinden welche Bibliothek fehlt, diese nachzuinstallieren und den obigen Vorgang zu wiederholen. In unserem Fall fehlt `zliblg-dev`.
+Hier hilft es herauszufinden welche Bibliothek fehlt, diese nachzuinstallieren und den obigen Vorgang zu wiederholen. In unserem Fall fehlt `zliblg-dev` auf Raspiblitz (Embedded Debian Linux).
 
 ```shell
 sudo apt-get install zliblg-dev
 ```
 
 Und schon schliesst der Kompiliervorgang ohne Fehler ab.
+
+Dies gilt natürlich ähnlich für andere Linux Distributionen. Eventuell heißen die Bibliotheken anders, z.B. unter dem regulären Debian, der Einfachheit halber sucht man nach der richtigen Bibliothek:
+
+```shell
+sudo apt-cache search zlib
+...
+zlib1g - Kompressions-Bibliothek - Laufzeit
+zlib1g-dev - Kompressionsbibliothek - Entwicklung
+...
+```
+
+Mit ein bisschen Raten und Internetrecherche sollte man dies auf anderen Distributionen ähnlich hinbekommen. Nun wieder installieren:
+
+```shell
+sudo apt-get install zlib1g zlib1g-dev
+```
+
+und anschliessend (hoffentlich ohne weitere Fehler) konfigurieren und kompilieren (`autogen.sh` und `make`).
 
 ---
 
