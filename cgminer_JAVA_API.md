@@ -89,7 +89,7 @@ Um API-Befehle ausführen zu können, muss man entweder den Pfad von cgminer mit
 
 ergibt folgenden Output:
 
-```
+```text
 [STATUS] =>
 (
    [STATUS] => S
@@ -254,7 +254,7 @@ java API summary
 
 oder `java api` ohne Parameter ergibt folgenden Output:
 
-```
+```text
 [STATUS] =>
 (
    [STATUS] => S
