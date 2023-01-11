@@ -254,7 +254,7 @@ java API summary
 
 oder `java api` ohne Parameter ergibt folgenden Output:
 
-```json
+```console
 [STATUS] =>
 (
    [STATUS] => S
