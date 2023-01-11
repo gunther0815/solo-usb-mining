@@ -65,7 +65,7 @@ In meinem Beispiel erlaube ich Anfragen vom Raspi selbst aus via localhost `127.
 
 Diese Einstellung kann auch in der Konfigurationsdatei `cgminer.conf` gemacht werden:
 
-```shell
+```json
 ...
 "api-description" : "cgminer 4.12.1",
 "api-mcast-addr" : "224.0.0.75",
@@ -89,7 +89,7 @@ Um API-Befehle ausführen zu können, muss man entweder den Pfad von cgminer mit
 
 ergibt folgenden Output:
 
-```text
+```json
 [STATUS] =>
 (
    [STATUS] => S
@@ -254,7 +254,7 @@ java API summary
 
 oder `java api` ohne Parameter ergibt folgenden Output:
 
-```text
+```json
 [STATUS] =>
 (
    [STATUS] => S
