@@ -89,7 +89,7 @@ Um API-Befehle ausführen zu können, muss man entweder den Pfad von cgminer mit
 
 ergibt folgenden Output:
 
-```bash
+```
 [STATUS] =>
 (
    [STATUS] => S
@@ -254,7 +254,7 @@ java API summary
 
 oder `java api` ohne Parameter ergibt folgenden Output:
 
-```shell
+```
 [STATUS] =>
 (
    [STATUS] => S
@@ -296,6 +296,8 @@ oder `java api` ohne Parameter ergibt folgenden Output:
    [Pool Stale%] => 0.0000
    [Last getwork] => 1673473153
 )
+```
+
 ---
 
 #### [⚙️ R909](R909.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
