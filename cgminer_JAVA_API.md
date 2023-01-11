@@ -14,7 +14,7 @@ apt-cache search jre
 
 Was zu folgendem Output in der Konsole führt:
 
-```shell
+```
 libanimal-sniffer-java - JDK/API verification tools
 libcommons-exec-java - Java library to reliably execute external processes from within the JVM
 docbook-xsl - stylesheets for processing DocBook XML to various output formats
