@@ -8,7 +8,7 @@ Für die Benutzung der API muss die Java Laufzeitumgebung installiert werden. Wi
 
 Zuerst muss die passende Laufzeitumgebung für das System gesucht werden, das macht man mittels `apt` über den folgenden Befehl:
 
-```bash
+```console
 apt-cache search jre
 ```
 
@@ -47,7 +47,7 @@ java-package - Utility for creating Java Debian packages
 
 Nun haben wir die richtige Laufzeitumgebung ermittelt (`openjdk-11-jre-headless`) und installieren diese wiederum mittels `apt` (Ich habe während der Installtion `openjdk-11-jre-headless` verwendet, `openjdk-17-jre-headless` sollte auch ohne weiteres möglich sein.):
 
-```shell
+```console
 apt-get install openjdk-11-jre-headless
 ```
 
@@ -57,7 +57,7 @@ Nun sind wir bereit für die Konfiguration der Java API für cgminer.
 
 Um die API benutzen zu können müssen wir cgminer mitteilen, dass Anfragen von außen (entweder vom Raspberry Pi selbst via 'localhost' oder aus einem privaten Adressbereich zu Hause (subnet xxx.xxx.xxx.0/24) akzeptiert werden und die Software Informationen über den Miningprozess nach außen mitteilt). Die Konfiguration kann entweder beim Start von cgminer als Parameter mitgegeben werden:
 
-```shell
+```console
 sudo ./cgminer_4.12.1/cgminer --api-listen --api-allow "W:192.168.2.0/24,W:127.0.0.1"
 ```
 
@@ -83,7 +83,7 @@ Um API-Befehle ausführen zu können, muss man entweder den Pfad von cgminer mit
 
 ### java API estats
 
-```shell
+```console
 ~/Mining/cgminer_4.12.1/java API estats
 ```
 
@@ -248,7 +248,7 @@ ergibt folgenden Output:
 
 ### java API summary
 
-```shell
+```console
 java API summary
 ```
 
