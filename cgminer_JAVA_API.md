@@ -8,13 +8,13 @@ Für die Benutzung der API muss die Java Laufzeitumgebung installiert werden. Wi
 
 Zuerst muss die passende Laufzeitumgebung für das System gesucht werden, das macht man mittels `apt` über den folgenden Befehl:
 
-```shell
+```bash
 apt-cache search jre
 ```
 
 Was zu folgendem Output in der Konsole führt:
 
-```
+```console
 libanimal-sniffer-java - JDK/API verification tools
 libcommons-exec-java - Java library to reliably execute external processes from within the JVM
 docbook-xsl - stylesheets for processing DocBook XML to various output formats
@@ -65,7 +65,7 @@ In meinem Beispiel erlaube ich Anfragen vom Raspi selbst aus via localhost `127.
 
 Diese Einstellung kann auch in der Konfigurationsdatei `cgminer.conf` gemacht werden:
 
-```json
+```console
 ...
 "api-description" : "cgminer 4.12.1",
 "api-mcast-addr" : "224.0.0.75",
