@@ -22,7 +22,7 @@ Aktuell befindet sich also kein CG Mining Ordner im Verzeichnis `home`.
 
 Erst einmal installieren wir die benötigten Pakete, für die CGMiner Software, wie im Github beschrieben, mit:
 
-```shell
+```console
 sudo apt-get install -y build-essential git autoconf automake libtool pkg-config libcurl4-openssl-dev libudev-dev libusb-1.0-0-dev libncurses5-dev screen
 ```
 
@@ -30,7 +30,7 @@ sudo apt-get install -y build-essential git autoconf automake libtool pkg-config
 
 Nun klonen wir die Mining Software, von Github, auf unseren Raspiblitz, mit:
 
-```shell
+```console
 sudo git clone https://github.com/kanoi/cgminer.git
 ```
 
@@ -50,32 +50,32 @@ Nun befindet sich der `cgminer` Ordner in unserem `home` Verzeichnis:
 
 Alternativ bietet es sich an einen Sammelordner für mehrere Versionen von cgminer anzulegen, z.B. `/home/admin/Mining`, wenn man z.B. die Versionen 4.12.0 und 4.12.1 im Wechsel betreiben möchte. Dazu müsste ein Ordner `Mining` angelegt werden und nach einem Wechsel in dieses Unterverzeichnis mittels `cd /home/admin/Mining` dort den obigen `git clone....`-Befehl auzuführen:
 
-```shell
+```console
 mkdir -p /home/admin/Mining
 ```
 
-```shell
+```console
 cd /home/admin/Mining
 ```
 
-```shell
+```console
 sudo git clone https://github.com/kanoi/cgminer.git
 ```
 Falls mehrere Versionen installiert werden sollen, empfiehlt es sich den Ordner cgminer umzubenennen in z.B. `/home/admin/Mining/cgminer_4.12.1`. Dies kann man mit `mv /home/admin/Mining/cgminer /home/admin/Mining/cgminer_4.12.1`erledigen (ggf. `sudo` voranstellen falls höhere Rechte benötigt werden.
 
 Nun wechseln wir in das Verzeichnis um die Konfiguration und Kompilierung zu starten:
 
-```shell
+```console
 cd /home/admin/Mining/cgminer
 ```
 
-```shell
+```console
 sudo CFLAGS="-O2 -march=native -fcommon" ./autogen.sh --enable-gekko --enable-icarus
 ```
 
 und danach:
 
-```shell 
+```console 
 sudo make
 ```
 
@@ -85,13 +85,13 @@ Und wir sind bereit für den Betrieb des Miners vom Raspiblitz aus.
 
 Des Öfteren scheint es unter Linux Probleme mit dem `sudo make` zu geben. Der Kompiliervorgang bricht ab mit dem Hinweis dass auf eine fehlende Bibliothek verlinkt wird.
 
-```shell
+```console
 /usr/bin/ld: cannot find -lz: No such file or directory
 ```
 
 Hier hilft es herauszufinden welche Bibliothek fehlt, diese nachzuinstallieren und den obigen Vorgang zu wiederholen. In unserem Fall fehlt `zliblg-dev` auf Raspiblitz (Embedded Debian Linux).
 
-```shell
+```console
 sudo apt-get install zliblg-dev
 ```
 
@@ -99,7 +99,7 @@ Und schon schliesst der Kompiliervorgang ohne Fehler ab.
 
 Dies gilt natürlich ähnlich für andere Linux Distributionen. Eventuell heißen die Bibliotheken anders, z.B. unter dem regulären Debian, der Einfachheit halber sucht man nach der richtigen Bibliothek:
 
-```shell
+```console
 sudo apt-cache search zlib
 ...
 zlib1g - Kompressions-Bibliothek - Laufzeit
@@ -109,7 +109,7 @@ zlib1g-dev - Kompressionsbibliothek - Entwicklung
 
 Mit ein bisschen Raten und Internetrecherche sollte man dies auf anderen Distributionen ähnlich hinbekommen. Nun wieder installieren:
 
-```shell
+```console
 sudo apt-get install zlib1g zlib1g-dev
 ```
 

@@ -6,7 +6,7 @@ Linux ist vor allem in der Kommandozeile stark. Um auch weniger versierten Bastl
 
 `history` zeigt alle Befehle die bereits einmal eingegeben wurden, als Liste an:
 
-```shell
+```console
 history | tail -n 10
   938  sudo screen -r miner
   939  cd Mining/cgminer_4.12.1/
@@ -24,7 +24,7 @@ Wie man anhand der fortlaufenden Nummer sehen kann, kann diese Befehlshistorie s
 
 Ebenso ist es möglich nach bestimmten Befehlen in der Befehlshistorie zu suchen. Ich suche nun nach einem Befehl der in meienr Erinnerung mit dem Skript `cgminer.sh` zu tun hatte. Wieder begrenze ich die Anzahl der gefundenen Einträge auf die letzten 10:
 
-```shell
+```console
 history | grep cgminer.sh | tail -n 10
   844  sudo su - -c "screen -dm -S miner /home/admin/Mining/cgminer.sh"
   846  sudo su - -c "screen -dm -S miner /home/admin/Mining/cgminer.sh"
@@ -40,7 +40,7 @@ history | grep cgminer.sh | tail -n 10
 
 Damit ich nun einen aufwendigen Befehl wie in Zeile 921 `sudo su - -c "screen -dm -S miner /home/admin/Mining/cgminer.sh"` nicht erneut eintippen muss, genügt es die Zeilennummer hinter ein Ausrufezeichen `!` zu setzen, und der entsprechende Befehl wird unmittelbar ausgeführt. Der Anschaulichkeit halber, weil der Befehl `cat` auch eine Rückgabe liefert, verwende ich `!952` als Demonstration:
 
-```shell
+```console
 !952
 cat /home/admin/Mining/cgminer.sh
 #!/bin/bash

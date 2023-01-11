@@ -6,7 +6,7 @@ Diese Seite beschreibt mögliche Konfigurationen von CGMIner auf einem Raspbery 
 
 Um möglichst detaillierte Informationen vor allem beim erstmaligen Setup zu bekommen, bietet es sich an CGMiner wie folgt zu starten:
 
-```shell
+```console
 sudo ./cgminer -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60
 ```
 
@@ -20,7 +20,7 @@ In diesem Modus kann man übersichtlich die Leistung der angeschlossenen Miner b
 
 Der Betrieb im Hintergrund ist notwendig, wenn man nicht permanent eine remote Verbindung via SSH offen halten kann oder will, z.B. beim Betrieb von CGMiner auf einem Raspberry Pi. Der cgminer-Dienst kann einfach mit `nohup` im Hintergrund gestartet werden:
 
-```shell
+```console
 nohup sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BITCOINADDRESS>.<OPTIONAL_NAME> -p x --gekko-compacf-freq 500 --gekko-start-freq 200 --gekko-mine2 --gekko-tune2 60 &
 ```
 
@@ -28,19 +28,19 @@ Man beachte hier die Optionen `--compact` und `--real-quiet`. Diese Optionen ver
 
 Man beachte hierbei das abschliessende `&`. Der Prozess läuft nun im Hintergrund und leitet seine Ausgabe in die Datei `/home/admin/nohup.out` um. Diese kann mit `cat` in der Konsole ausgegeben werden:
 
-```shell
+```console
 cat /home/admin/nohup.out
 ```
 
 Um den Prozess zu beenden, muss die Prozess-ID mittels `kill` terminiert werden. Dazu sucht man zuerst die Prozess-ID:
 
-```shell
+```console
 ps aux | grep cgminer
 ```
 
 Dies zeigt entsprechende Prozess-IDs von cgminer an und können wie folgt beendet werden:
 
-```shell
+```console
 sudo kill <PROZESSID>
 ```
 
@@ -48,7 +48,7 @@ sudo kill <PROZESSID>
 
 zuerst muss screen installiert werden, wie zuvor auch mittels apt-get:
 
-```shell
+```console
 sudo apt-get update
 
 sudo apt-get upgrade -y
@@ -58,13 +58,13 @@ sudo apt-get install screen
 
 Zuerst generieren wir ein ausführbares Shellskript zum Start des Miners mit einem Editor wie nano (`<USER>` mit namen des erzeugenden Users ersetzen):
 
-```shell
+```console
 sudo nano -w /home/<USER>/cgminer/cgminer.sh
 ```
 
 Der Inhalt des Skriptes ist der Startbefehl für die Mining-Software cgminer (`<USER>` einsetzen):
 
-```shell
+```console
 #!/bin/bash
 cd /home/<USER>/cgminer
 
@@ -75,13 +75,13 @@ Hier wurde der gekürzte Startbefehl für cgminer verwendet, die Konfiguration w
 
 Nun muss nur noch das Skript ausführbar gemacht werden (`<USER>` einsetzen):
 
-```shell
+```console
 sudo chmod +x /home/<USER>/cgminer/cgminer.sh
 ```
 
 Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halten wenn die SSH-Session beendet wird, rufen wir nun das Shellskript mit dem Startbefehl des Miners mittels `screen` auf:
 
-```shell
+```console
 screen -dm -S miner /home/admin/cgminer/cgminer.sh
 ```
 
@@ -89,13 +89,13 @@ screen -dm -S miner /home/admin/cgminer/cgminer.sh
 
 Zur Überprüfung des im Hintergrund nun laufenden Screens kann folgender Befehl verwendet werden:
 
-```shell
+```console
 sudo screen -ls
 ```
 
 Der Screen kann auch in den Vordergrund gebracht und angezeigt werden:
 
-```shell
+```console
 sudo screen -r miner
 ```
 
@@ -107,19 +107,19 @@ Mittels `<CTRL><A>` und anschließendem `<CTRL><D>` kann der Prozess wieder in d
 
 Damit die Mining-Software nach jedem Neustart automatisch wieder anläuft, können wir den obigen screen-Befehl auch in die `rc.local` mit aufnehmen. Diese editieren wir mit nano:
 
-```shell
+```console
 sudo nano -w /etc/rc.local
 ``` 
 
 Vor dem `Exit 0` fügen wir folgende Codezeile ein:
 
-```shell
+```console
 sudo su - -c "screen -dm -S miner /home/user einsetzen/cgminer/cgminer.sh"
 ```
 
 Mittels `-c` wird dem Superuser ein Kommando mitgegeben, in unserem Fall der Aufruf des Miners via Shellskript. Die `rc.local` sieht dann aus wie folgt:
 
-```shell
+```console
 #!/bin/sh -e
 #
 # rc.local
@@ -146,7 +146,7 @@ exit 0
 
 Zur Überprüfung nun lediglich neustarten, im Falle von Raspiblitz unbedingt per Software-Befehl, so dass bitcoind und lnd sauber gestoppt werden: 
 
- ```shell
+ ```console
 restart
 ```
 
@@ -160,13 +160,13 @@ Es bietet sich an auf mehreren Hochzeiten zu tanzen, um z.B. 70% der Zeit in ein
 
 Anpassen der Konfigurationsdatei `/root/.cgminer/cgminer.conf` um die Pools und Quotas bekannt zu geben:
 
-```shell
+```console
 sudo nano -w /root/.cgminer/cgminer.conf
 ```
 
 Eintragen der Pools ähnlich meinem Beispiel:
 
-```shell
+```console
 {
 "pools" : [
         {

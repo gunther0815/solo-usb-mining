@@ -2,7 +2,7 @@
 
 > :memo: **WICHTIG:** Man muss sich in dem Ordner vom cgminer befinden damit der Befehl zum Start funktioniert. Befindet man sich nicht im Ordner, weil z.B. der Raspberry Pi neugestartet wurde, gelangt man mit folgendem Befehl in den Ordner:
 
-```shell
+```console
 cd mining/cgminer
 ```
 
@@ -10,13 +10,13 @@ Um den cgminer und damit das Mining zu starten, muss folgender Befehl ausgeführ
 
 für NewPac:
 
-```shell
+```console
 sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESSE> -p x --suggest-diff 32 --gekko-newpac-freq 100 --gekko-newpac-boost
 ```
 
 für CompacF:
 
-```shell
+```console
 sudo ./cgminer --compact --real-quiet -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESSE> -p x --gekko-compacf-freq 500 --gekko-start-freq 450 --gekko-mine2 --gekko-tune2 60
 ```
 
@@ -60,13 +60,13 @@ Compac F:
 > Damit das Mining im Hintergrund weiter läuft, kann man `nohup` oder `screen` verwenden, mehr Inormationen dazu im Kapitel [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md).
 
 <!--
-```shell
+```console
 nohup <COMMAND> &
 ```
 
 Um zu überprüfen, ob der Mining Prozess läuft, kann folgender Befehl ausgeführt werden:
 
-```shell
+```console
 cat nohup.out
 ```
 
@@ -75,7 +75,7 @@ Der USB-Miner blinkt mit einer weißen LED, wenn das Mining aktiv ist. Dadurch k
 
 Die aktiven Prozesse des Raspberry Pis können mit diesem Befehl angezeigt werden:
 
-```shell
+```console
 top
 ```
 
@@ -83,7 +83,7 @@ Um die Prozess Übersicht zu beenden einfach die `Q`-Taste drücken.
 
 Damit der cgminer beendet werden kann muss folgender Befehl ausgeführt werden:
 
-```shell
+```console
 sudo kill 1234
 ```
 
@@ -108,7 +108,7 @@ Wenn mehrere Gekko Miner gleichzeitig betrieben werden, diese aber unterschiedli
 
 `Bus Nummer` und `Device Nummer` herausfinden
 
-```shell
+```console
 lsusb
 ```
 
@@ -116,7 +116,7 @@ Es werden alle verbundenen Geräte aufgelistet. Der Gekko Newpac erscheint z.B. 
 
 Durch den Zusatz `--usb BusNummer:DeviceNummer` wird ein einzelner USB Miner angesprochen:
 
-```shell
+```console
 sudo ./cgminer --compact --real-quiet -o stratum+tcp://pool.ckpool.org:3333 -u <BTCADRESSE> -p x --suggest-diff 32 --usb 1:7 --gekko-newpac-freq 100
 ```
 

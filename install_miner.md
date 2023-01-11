@@ -8,7 +8,7 @@ Um nun vom eigenen Computer auf den Raspberry Pi via SSH zugreifen zu können mu
 
 Via SSH auf den Raspberry Pi zugreifen:
 
-```shell
+```console
 ssh solominer@miner.local
 ```
 
@@ -18,20 +18,20 @@ yes eingeben und ENTER drücken -> Passwort eingeben und ENTER drücken
 
 Updates durchführen:
 
-```shell
+```console
 sudo apt-get update 
 sudo apt-get upgrade -y
 ```
 
 Pakete installieren:
 
-```shell
+```console
 sudo apt-get install -y build-essential git autoconf automake libtool pkg-config libcurl4-openssl-dev libudev-dev libusb-1.0-0-dev libncurses5-dev
 ```
 
 Jetzt kann der CGMiner Branch aus GIT geklont werden:
 
-```shell
+```console
 mkdir -p mining; cd mining 
 git clone https://github.com/kanoi/cgminer.git
 cd cgminer
@@ -39,7 +39,7 @@ cd cgminer
 
 Nach erfolgreichem Klonen aus GIT kann der CGMiner nun kompiliert werden:
 
-```shell
+```console
 ./autogen.sh
 CFLAGS="-O2 -Wall -march=native -fcommon" ./configure --enable-gekko
 sudo make
@@ -49,13 +49,13 @@ sudo make
 
 Nun kann der Fortschritt folgendermaßen getestet werden:
 
-```shell
+```console
 sudo ./cgminer -n
 ```
 
 In der Antwort sollte dann die Bezeichnung des Miners auftauchen. Hier ein Beispiel:
 
-```shell
+```console
 …
 Manufacteur: 'GekkoScience'
 Product: 'NewPac Bitcoin Miner'
