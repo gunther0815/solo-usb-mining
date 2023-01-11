@@ -89,7 +89,7 @@ Um API-Befehle ausführen zu können, muss man entweder den Pfad von cgminer mit
 
 ergibt folgenden Output:
 
-```json
+```console
 [STATUS] =>
 (
    [STATUS] => S
