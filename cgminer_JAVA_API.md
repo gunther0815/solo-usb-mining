@@ -140,78 +140,15 @@ Description=string
  setconfig\|name,N (\*)    | none |  There is no reply section just the STATUS section<br>stating the results of setting 'name' to N<br>No values are supported any more and only a deprecated message will be returned.
  usbstats  |    USBSTATS   | Stats of all LIBUSB mining devices except ztex e.g. Name=MMQ,ID=0,Stat=SendWork,Count=99,...
  zero\|Which,true/false (\*) | none |There is no reply section just the STATUS sectionvstating that the zero, and optional summary, was done<br>If Which='all', all normal cgminer and API statistics will be zeroed other than the numbers displayed by the usbstats and stats commands<br>If Which='bestshare', only the 'Best Share' values are zeroed for each pool and the global 'Best Share'<br>The true/false option determines if a full summary is shown on the cgminer display like is normally displayed on exit.
-
- asc|N         ASC            The details of a single ASC number N in the same
-                              format and details as for DEVS
-                              This is only available if ASC mining is enabled
-                              Use 'asccount' or 'config' first to see if there
-                              are any
-
- ascenable|N (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of the enable request
-                              You cannot enable a ASC if it's status is not WELL
-                              This is only available if ASC mining is enabled
-
- ascdisable|N (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of the disable request
-                              This is only available if ASC mining is enabled
-
- ascidentify|N (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of the identify request
-                              This is only available if ASC mining is enabled
-                              and currently only BFL ASICs support this command
-                              On a BFL single it will flash the led on the front
-                              of the device for appoximately 4s
-                              All other non BFL ASIC devices will return a
-                              warning status message stating that they dont
-                              support it
-
- asccount      ASCS           Count=N| <- the number of ASCs
-                              Always returns 0 if ASC mining is disabled
-
- ascset|N,opt[,val] (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of setting ASC N with
-                              opt[,val]
-                              This is only available if ASC mining is enabled
-
-                              If the ASC does not support any set options, it
-                              will always return a WARN stating ascset isn't
-                              supported
-
-                              If opt=help it will return an INFO status with a
-                              help message about the options available
-
-                              The current options are:
-                               AVA+BTB opt=freq val=256 to 1024 - chip frequency
-                               BTB opt=millivolts val=1000 to 1400 - corevoltage
-                               MBA opt=reset val=0 to chipcount - reset a chip
-                               BMA opt=volt val=0-9 opt=clock val=0-15
-                               MBA opt=freq val=0-chip:100-1400 - set chip freq
-                               MBA opt=ledcount val=0-100 - chip count for led
-                               MBA opt=ledlimit val=0-200 - led off below GHs
-                               MBA opt=spidelay val=0-9999 - SPI per I/O delay
-                               MBA opt=spireset i|s0-9999 - SPI regular reset
-                               MBA opt=spisleep val=0-9999 - SPI reset sleep ms
-
- lcd           LCD            An all-in-one short status summary of the miner
-                              e.g. Elapsed,GHS av,GHS 5m,GHS 5s,Temp,
-                                   Last Share Difficulty,Last Share Time,
-                                   Best Share,Last Valid Work,Found Blocks,
-                                   Pool,User|
-
- lockstats (*) none           There is no reply section just the STATUS section
-                              stating the results of the request
-                              A warning reply means lock stats are not compiled
-                              into cgminer
-                              The API writes all the lock stats to stderr
+ asc\|N    |     ASC       | The details of a single ASC number N in the same  format and details as for DEVS<br>This is only available if ASC mining is enabled<br>Use 'asccount' or 'config' first to see if there are any
+ ascenable\|N (\*)         | none   | There is no reply section just the STATUS section<br>stating the results of the enable request<br>You cannot enable a ASC if it's status is not WELL<br>This is only available if ASC mining is enabled
+ ascdisable\|N (\*)        | none   | There is no reply section just the STATUS section<br>stating the results of the disable request<br>This is only available if ASC mining is enabled
+ ascidentify\|N (\*)       | none   | There is no reply section just the STATUS section<br>stating the results of the identify request<br>This is only available if ASC mining is enabled and currently only BFL ASICs support this command<br>On a BFL single it will flash the led on the front of the device for appoximately 4s<br>All other non BFL ASIC devices will return a warning status message stating that they dont support it
+ asccount  |    ASCS       | Count=N| <- the number of ASCs<br>Always returns 0 if ASC mining is disabled
+ ascset\|N,opt\[,val\] (\*)| none   | There is no reply section just the STATUS section<br>stating the results of setting ASC N with opt\[,val\]<br>This is only available if ASC mining is enabled<br>If the ASC does not support any set options, it will always return a WARN stating ascset isn't supported<br><br>If opt=help it will return an INFO status with a help message about the options available<br><br>The current options are:<br>opt=freq val=256 to 1024 - chip frequency<br>opt=target val=256 to 1024 - target frequency for autotuning
+ lcd       |    LCD        | An all-in-one short status summary of the miner e.g. Elapsed,GHS av,GHS 5m,GHS 5s,Temp, Last Share Difficulty,Last Share Time, Best Share,Last Valid Work,Found Blocks, Pool,User
+ lockstats (\*) 		   |none    | There is no reply section just the STATUS section<br>stating the results of the request<br>A warning reply means lock stats are not compiled into cgminer<br>The API writes all the lock stats to stderr
  
-
-
-
 ### java API estats
 
 ```console
