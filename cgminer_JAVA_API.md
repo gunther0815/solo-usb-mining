@@ -384,7 +384,10 @@ oder `java api` ohne Parameter ergibt folgenden Output:
 java API "ascset|0,freq,400"
 ```
 
-```JSON
+erzeugt folgenden Status:
+
+
+```console
 [STATUS] =>
 (
    [STATUS] => S
@@ -395,11 +398,11 @@ java API "ascset|0,freq,400"
 )
 ```
 
-
-
 ```console
 java API "ascset|0,freq,400"
 ```
+
+erzeugt ein ähnliches Status-Fenster.
 
 ---
 
