@@ -88,26 +88,26 @@ Alle Rückemdlungen der API sind im `JSON` format, mit der ersten Sektion als St
 Der Status hat folgendes Format:
 
 ```console
- 	STATUS=X,When=NNN,Code=N,Msg=string,Description=string|
+STATUS=X,When=NNN,Code=N,Msg=string,Description=string|
 
-  		STATUS=X Where X is one of:
-   			W - Warning
-   			I - Informational
-   			S - Success
-   			E - Error
-   			F - Fatal (code bug)
+STATUS=X Where X is one of:
+   	W - Warning
+   	I - Informational
+   	S - Success
+   	E - Error
+   	F - Fatal (code bug)
 
-  		When=NNN
-   			Standard long time of request in seconds
+When=NNN
+	Standard long time of request in seconds
 
-  		Code=N
-   			Each unique reply has a unique Code (See api.c - #define MSG_NNNNNN)
+Code=N
+	Each unique reply has a unique Code (See api.c - #define MSG_NNNNNN)
 
-  		Msg=string
-   			Message matching the Code value N
+Msg=string
+	Message matching the Code value N
 
-  		Description=string
-   			This defaults to the cgminer version but is the value of --api-description if it was specified at runtime.
+Description=string
+	This defaults to the cgminer version but is the value of --api-description if it was specified at runtime.
 ```
 
 ## Übersicht der gängigsten und mit cgminer 4.12.1 lauffähigen Befehle
