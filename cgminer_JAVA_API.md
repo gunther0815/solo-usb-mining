@@ -121,27 +121,10 @@ Description=string
  devs      |    DEVS       | Each available PGA and ASC with their details<br>e.g. ASC=0,Accepted=NN,MHS av=NNN,...,Intensity=D<br>Last Share Time=NNN, <- standand long time in sec (or 0 if none) of last accepted share<br>Last Share Pool=N, <- pool number (or -1 if none)<br>Last Valid Work=NNN, <- standand long time in sec of last work returned that wasn't an HW:<br>Will not report PGAs if PGA mining is disabled<br>Will not report ASCs if ASC mining is disabled
  edevs     |    DEVS       | The same as devs, except it ignores blacklisted devices and zombie devices<br>If you specify the optional 'old' parameter, then the output will include zombie devices that became zombies less than 'old' seconds ago<br>A value of zero for 'old', which is the default, means ignore all zombies<br>It will return an empty list of devices if all<br>devices are blacklisted or zombies
  switchpool\|N (\*) |none  | There is no reply section just the STATUS section<br>stating the results of switching pool N to the highest priority (the pool is also enabled)<br>The Msg includes the pool URL
-
- enablepool|N (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of enabling pool N
-                              The Msg includes the pool URL
-
- addpool|URL,USR,PASS (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of attempting to add pool N
-                              The Msg includes the pool number and URL
-                              Use '\\' to get a '\' and '\,' to include a comma
-                              inside URL, USR or PASS
-
- poolpriority|N,... (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of changing pool priorities
-                              See usage below
-
- poolquota|N,Q (*)
-               none           There is no reply section just the STATUS section
-                              stating the results of changing pool quota to Q
+ enablepool\|N (\*) |none  | There is no reply section just the STATUS section<br>stating the results of enabling pool N<br>The Msg includes the pool URL
+ addpool\|URL,USR,PASS (\*)| none | There is no reply section just the STATUS section<br>stating the results of attempting to add pool N<br>The Msg includes the pool number and URL<br>Use '\\' to get a '\' and '\,' to include a comma inside URL, USR or PASS
+ poolpriority\|N,... (\*)  | none | There is no reply section just the STATUS section<br>stating the results of changing pool priorities<br>See usage below
+ poolquota\|N,Q (\*)       | none | There is no reply section just the STATUS section<br>stating the results of changing pool quota to Q
 
  disablepool|N (*)
                none           There is no reply section just the STATUS section
