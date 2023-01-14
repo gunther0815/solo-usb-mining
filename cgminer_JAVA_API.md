@@ -112,21 +112,11 @@ Description=string
 
 ## Übersicht der gängigsten und mit cgminer 4.12.1 lauffähigen Befehle
 
- |Request   |    Reply Section | Details|
- |-------   |    ------------- | -------|
- |version   |    VERSION    | CGMiner=cgminer, version<br>
-                              API=API version|
- |config    |    CONFIG     | Some miner configuration information:<br>
-                              ASC Count=N, <- the number of ASCs<br>
-                              PGA Count=N, <- the number of PGAs<br>
-                              Pool Count=N, <- the number of Pools<br>
-                              Strategy=Name, <- the current pool strategy<br>
-                              Log Interval=N, <- log interval (--log N)<br>
-                              Device Code=ICA , <- spaced list of compiled device drivers<br>
-                              OS=Linux/Apple/..., <- operating System|
-
- summary       SUMMARY        The status summary of the miner
-                              e.g. Elapsed=NNN,Found Blocks=N,Getworks=N,...|
+ Request   |    Reply Section | Details
+ -------   |    ------------- | -------
+ version   |    VERSION    | CGMiner=cgminer, version<br>API=API version
+ config    |    CONFIG     | Some miner configuration information:<br>ASC Count=N, <- the number of ASCs<br>PGA Count=N, <- the number of PGAs<br>Pool Count=N, <- the number of Pools<br>Strategy=Name, <- the current pool strategy<br>Log Interval=N, <- log interval (--log N)<br>Device Code=ICA , <- spaced list of compiled device drivers<br>OS=Linux/Apple/..., <- operating System
+ summary   |    SUMMARY    | The status summary of the miner<br>e.g. Elapsed=NNN,Found Blocks=N,Getworks=N,...
 
  pools         POOLS          The status of each pool e.g.
                               Pool=0,URL=http://pool.com:6311,Status=Alive,...|
