@@ -159,6 +159,8 @@ java API "asc|0"
 ~/Mining/cgminer_4.12.1/java API "ascset|0,freq,400"
 ```
 
+## Beispiele
+
 ### java API estats
 
 ```console
