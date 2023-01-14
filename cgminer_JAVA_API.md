@@ -116,7 +116,6 @@ Description=string
  |-------   |    ------------- | -------|
  |version   |    VERSION    | CGMiner=cgminer, version<br>
                               API=API version|
-
  |config    |    CONFIG     | Some miner configuration information:<br>
                               ASC Count=N, <- the number of ASCs<br>
                               PGA Count=N, <- the number of PGAs<br>
