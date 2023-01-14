@@ -114,16 +114,16 @@ Description=string
 
  |Request   |    Reply Section | Details|
  |-------   |    ------------- | -------|
- |version   |    VERSION    | CGMiner=cgminer, version
+ |version   |    VERSION    | CGMiner=cgminer, version<br>
                               API=API version|
 
- |config    |    CONFIG     | Some miner configuration information:
-                              ASC Count=N, <- the number of ASCs
-                              PGA Count=N, <- the number of PGAs
-                              Pool Count=N, <- the number of Pools
-                              Strategy=Name, <- the current pool strategy
-                              Log Interval=N, <- log interval (--log N)
-                              Device Code=ICA , <- spaced list of compiled device drivers
+ |config    |    CONFIG     | Some miner configuration information:<br>
+                              ASC Count=N, <- the number of ASCs<br>
+                              PGA Count=N, <- the number of PGAs<br>
+                              Pool Count=N, <- the number of Pools<br>
+                              Strategy=Name, <- the current pool strategy<br>
+                              Log Interval=N, <- log interval (--log N)<br>
+                              Device Code=ICA , <- spaced list of compiled device drivers<br>
                               OS=Linux/Apple/..., <- operating System|
 
  summary       SUMMARY        The status summary of the miner
