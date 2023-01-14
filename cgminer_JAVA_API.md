@@ -378,6 +378,29 @@ oder `java api` ohne Parameter ergibt folgenden Output:
 )
 ```
 
+### Setze ASIC-Frequenz und ASIC-Target
+
+```console
+java API "ascset|0,freq,400"
+```
+
+```JSON
+[STATUS] =>
+(
+   [STATUS] => S
+   [When] => 1673727755
+   [Code] => 119
+   [Msg] => ASC 0 set OK
+   [Description] => cgminer 4.12.1
+)
+```
+
+
+
+```console
+java API "ascset|0,freq,400"
+```
+
 ---
 
 #### [⚙️ R909](R909.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
