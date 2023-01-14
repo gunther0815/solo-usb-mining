@@ -61,6 +61,8 @@ Um die API benutzen zu können müssen wir cgminer mitteilen, dass Anfragen von 
 sudo ./cgminer_4.12.1/cgminer --api-listen --api-allow "W:192.168.2.0/24,W:127.0.0.1"
 ```
 
+Das vorangestellte `W` bedeutet dass auch Befehle mit Schreibzugriff auf den Miner von dieser Adresse entgegengenommen werden dürfen.
+
 In meinem Beispiel erlaube ich Anfragen vom Raspi selbst aus via localhost `127.0.0.1` und aus dem privaten Adressbereich meines Subnetzes `192.168.168.xxx`.
 
 Diese Einstellung kann auch in der Konfigurationsdatei `cgminer.conf` gemacht werden:
@@ -73,13 +75,56 @@ Diese Einstellung kann auch in der Konfigurationsdatei `cgminer.conf` gemacht we
 "api-mcast-des" : "",
 "api-mcast-port" : "4028",
 "api-port" : "4028",
-"api-host" : "127.0.0.1",
+"api-host" : "W:127.0.0.1",
 ...
 ```
 
 ## Beschreibung der API
 
-Um API-Befehle ausführen zu können, muss man entweder den Pfad von cgminer mit angeben oder sich im Pfade des Programmes befinden. Dies verdeutliche ich beim ersten Befehl folgend.
+Um API-Befehle ausführen zu können, muss man entweder den Pfad von cgminer mit angeben oder sich im Pfade des Programmes befinden. Dies verdeutliche ich beim ersten Befehl `java API estats` nachfolgend.
+
+Alle Rückemdlungen der API sind im `JSON` format, mit der ersten Sektion als Status und mit der zweiten Sektion die angeforderten Werte beinhaltend.
+
+Der Status hat folgendes Format:
+
+```console
+ 	STATUS=X,When=NNN,Code=N,Msg=string,Description=string|
+
+  		STATUS=X Where X is one of:
+   			W - Warning
+   			I - Informational
+   			S - Success
+   			E - Error
+   			F - Fatal (code bug)
+
+  		When=NNN
+   			Standard long time of request in seconds
+
+  		Code=N
+   			Each unique reply has a unique Code (See api.c - #define MSG_NNNNNN)
+
+  		Msg=string
+   			Message matching the Code value N
+
+  		Description=string
+   			This defaults to the cgminer version but is the value of --api-description if it was specified at runtime.
+```
+
+## Übersicht der gängigsten und mit cgminer 4.12.1 lauffähigen Befehle
+
+Request | Reply Section | Details
+-------- | -------- | --------
+version   | VERSION   | CGMiner=cgminer, version
+                        API=API| version
+config   | CONFIG   | Some miner configuration information:
+                              ASC Count=N, <- the number of ASCs
+                              PGA Count=N, <- the number of PGAs
+                              Pool Count=N, <- the number of Pools
+                              Strategy=Name, <- the current pool strategy
+                              Log Interval=N, <- log interval (--log N)
+                              Device Code=ICA , <- spaced list of compiled device drivers
+                              OS=Linux/Apple/..., <- operating System
+
 
 ### java API estats
 
