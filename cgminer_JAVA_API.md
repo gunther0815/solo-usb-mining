@@ -117,35 +117,10 @@ Description=string
  version   |    VERSION    | CGMiner=cgminer, version<br>API=API version
  config    |    CONFIG     | Some miner configuration information:<br>ASC Count=N, <- the number of ASCs<br>PGA Count=N, <- the number of PGAs<br>Pool Count=N, <- the number of Pools<br>Strategy=Name, <- the current pool strategy<br>Log Interval=N, <- log interval (--log N)<br>Device Code=ICA , <- spaced list of compiled device drivers<br>OS=Linux/Apple/..., <- operating System
  summary   |    SUMMARY    | The status summary of the miner<br>e.g. Elapsed=NNN,Found Blocks=N,Getworks=N,...
-
- pools         POOLS          The status of each pool e.g.
-                              Pool=0,URL=http://pool.com:6311,Status=Alive,...|
-
- devs          DEVS           Each available PGA and ASC with their details
-                              e.g. ASC=0,Accepted=NN,MHS av=NNN,...,Intensity=D|
-                              Last Share Time=NNN, <- standand long time in sec
-                               (or 0 if none) of last accepted share
-                              Last Share Pool=N, <- pool number (or -1 if none)
-                              Last Valid Work=NNN, <- standand long time in sec
-                               of last work returned that wasn't an HW:
-                              Will not report PGAs if PGA mining is disabled
-                              Will not report ASCs if ASC mining is disabled
-
- edevs[|old]   DEVS           The same as devs, except it ignores blacklisted
-                              devices and zombie devices
-                              If you specify the optional 'old' parameter, then
-                              the output will include zombie devices that became
-                              zombies less than 'old' seconds ago
-                              A value of zero for 'old', which is the default,
-                              means ignore all zombies
-                              It will return an empty list of devices if all
-                              devices are blacklisted or zombies
-
- pga|N         PGA            The details of a single PGA number N in the same
-                              format and details as for DEVS
-                              This is only available if PGA mining is enabled
-                              Use 'pgacount' or 'config' first to see if there
-                              are any
+ pools     |    POOLS      | The status of each pool e.g.<br>Pool=0,URL=http://pool.com:6311,Status=Alive,...
+ devs      |    DEVS       | Each available PGA and ASC with their details<br>e.g. ASC=0,Accepted=NN,MHS av=NNN,...,Intensity=D<br>Last Share Time=NNN, <- standand long time in sec (or 0 if none) of last accepted share<br>Last Share Pool=N, <- pool number (or -1 if none)<br>Last Valid Work=NNN, <- standand long time in sec of last work returned that wasn't an HW:<br>Will not report PGAs if PGA mining is disabled<br>Will not report ASCs if ASC mining is disabled
+ edevs     |    DEVS       | The same as devs, except it ignores blacklisted devices and zombie devices<br>If you specify the optional 'old' parameter, then the output will include zombie devices that became zombies less than 'old' seconds ago<br>A value of zero for 'old', which is the default, means ignore all zombies<br>It will return an empty list of devices if all<br>devices are blacklisted or zombies
+ pga\|N    |    PGA        | The details of a single PGA number N in the same format and details as for DEVS<br>This is only available if PGA mining is enabled<br>Use 'pgacount' or 'config' first to see if there are any
 
  pgacount      PGAS           Count=N| <- the number of PGAs
                               Always returns 0 if PGA mining is disabled
