@@ -123,7 +123,8 @@ Description=string
                               Pool Count=N, <- the number of Pools
                               Strategy=Name, <- the current pool strategy
                               Log Interval=N, <- log interval (--log N)
-                              Device Code=ICA , <- spaced list of compiled device drivers
+                              Device Code=ICA , <- spaced list of compiled
+                                                       device drivers
                               OS=Linux/Apple/..., <- operating System
 
  summary       SUMMARY        The status summary of the miner
@@ -132,29 +133,43 @@ Description=string
  pools         POOLS          The status of each pool e.g.
                               Pool=0,URL=http://pool.com:6311,Status=Alive,...|
 
- devs          DEVS           Each available PGA and ASC with their details e.g. ASC=0,Accepted=NN,MHS av=NNN,...,Intensity=D
-                              Last Share Time=NNN, <- standand long time in sec (or 0 if none) of last accepted share
+ devs          DEVS           Each available PGA and ASC with their details
+                              e.g. ASC=0,Accepted=NN,MHS av=NNN,...,Intensity=D|
+                              Last Share Time=NNN, <- standand long time in sec
+                               (or 0 if none) of last accepted share
                               Last Share Pool=N, <- pool number (or -1 if none)
-                              Last Valid Work=NNN, <- standand long time in sec of last work returned that wasn't an HW:
+                              Last Valid Work=NNN, <- standand long time in sec
+                               of last work returned that wasn't an HW:
                               Will not report PGAs if PGA mining is disabled
                               Will not report ASCs if ASC mining is disabled
 
- edevs		   DEVS           The same as devs, except it ignores blacklisted devices and zombie devices
-                              If you specify the optional 'old' parameter, then the output will include zombie devices that became zombies less than 'old' seconds ago
-                              A value of zero for 'old', which is the default, means ignore all zombies
-                              It will return an empty list of devices if all devices are blacklisted or zombies
+ edevs[|old]   DEVS           The same as devs, except it ignores blacklisted
+                              devices and zombie devices
+                              If you specify the optional 'old' parameter, then
+                              the output will include zombie devices that became
+                              zombies less than 'old' seconds ago
+                              A value of zero for 'old', which is the default,
+                              means ignore all zombies
+                              It will return an empty list of devices if all
+                              devices are blacklisted or zombies
 
- pga|N         PGA            The details of a single PGA number N in the same format and details as for DEVS
+ pga|N         PGA            The details of a single PGA number N in the same
+                              format and details as for DEVS
                               This is only available if PGA mining is enabled
-                              Use 'pgacount' or 'config' first to see if there are any
+                              Use 'pgacount' or 'config' first to see if there
+                              are any
 
  pgacount      PGAS           Count=N| <- the number of PGAs
                               Always returns 0 if PGA mining is disabled
 
- switchpool|N  none           There is no reply section just the STATUS section stating the results of switching pool N to the highest priority (the pool is also enabled)
+ switchpool|N (*)
+               none           There is no reply section just the STATUS section
+                              stating the results of switching pool N to the
+                              highest priority (the pool is also enabled)
                               The Msg includes the pool URL
 
- enablepool|N  none           There is no reply section just the STATUS section
+ enablepool|N (*)
+               none           There is no reply section just the STATUS section
                               stating the results of enabling pool N
                               The Msg includes the pool URL
 
@@ -162,7 +177,8 @@ Description=string
                none           There is no reply section just the STATUS section
                               stating the results of attempting to add pool N
                               The Msg includes the pool number and URL
-                              Use '\\' to get a '\' and '\,' to include a comma inside URL, USR or PASS
+                              Use '\\' to get a '\' and '\,' to include a comma
+                              inside URL, USR or PASS
 
  poolpriority|N,... (*)
                none           There is no reply section just the STATUS section
@@ -188,17 +204,23 @@ Description=string
                none           There is no reply section just the STATUS section
                               stating success or failure saving the cgminer
                               config to filename
-                              The filename is optional and will use the cgminer default if not specified
+                              The filename is optional and will use the cgminer
+                              default if not specified
 
  quit (*)      none           Status is a single "BYE" reply before cgminer
                               quits
 
- notify        NOTIFY         The last status and history count of each devices problem
-                              This lists all devices including those not supported by the 'devs' command e.g. NOTIFY=0,Name=ASC,ID=0,Last Well=1332432290,...|
+ notify        NOTIFY         The last status and history count of each devices
+                              problem
+                              This lists all devices including those not
+                              supported by the 'devs' command e.g.
+                              NOTIFY=0,Name=ASC,ID=0,Last Well=1332432290,...|
 
  privileged (*)
                none           There is no reply section just the STATUS section
-                              stating an error if you do not have privileged access to the API and success if you do have privilege
+                              stating an error if you do not have privileged
+                              access to the API and success if you do have
+                              privilege
                               The command doesn't change anything in cgminer
 
  pgaenable|N (*)
@@ -215,29 +237,49 @@ Description=string
  pgaidentify|N (*)
                none           There is no reply section just the STATUS section
                               stating the results of the identify request
-                              This is only available if PGA mining is enabled and currently only BFL singles and Cairnsmore1's with the appropriate firmware support this command
-                              On a BFL single it will flash the led on the front of the device for appoximately 4s
-                              All other non BFL,ICA PGA devices will return a warning status message stating that they dont support it. Non-CMR ICAs will ignore the command.
-                              This adds a 4s delay to the BFL share being processed so you may get a message stating that procssing took longer than 7000ms if the request was sent towards the end of the timing of any work being worked on e.g.: BFL0: took 8438ms - longer than 7000ms
+                              This is only available if PGA mining is enabled
+                              and currently only BFL singles and Cairnsmore1's
+                              with the appropriate firmware support this command
+                              On a BFL single it will flash the led on the front
+                              of the device for appoximately 4s
+                              All other non BFL,ICA PGA devices will return a
+                              warning status message stating that they dont
+                              support it. Non-CMR ICAs will ignore the command.
+                              This adds a 4s delay to the BFL share being
+                              processed so you may get a message stating that
+                              procssing took longer than 7000ms if the request
+                              was sent towards the end of the timing of any work
+                              being worked on
+                              e.g.: BFL0: took 8438ms - longer than 7000ms
                               You should ignore this
 
  devdetails    DEVDETAILS     Each device with a list of their static details
-                              This lists all devices including those not supported by the 'devs' command e.g. DEVDETAILS=0,Name=ASC,ID=0,Driver=yuu,...
+                              This lists all devices including those not
+                              supported by the 'devs' command
+                              e.g. DEVDETAILS=0,Name=ASC,ID=0,Driver=yuu,...|
 
  restart (*)   none           Status is a single "RESTART" reply before cgminer
                               restarts
 
- stats         STATS          Each device or pool that has 1 or more getworks with a list of stats regarding getwork times
-                              The values returned by stats may change in future versions thus would not normally be displayed
-                              Device drivers are also able to add stats to the end of the details returned
+ stats         STATS          Each device or pool that has 1 or more getworks
+                              with a list of stats regarding getwork times
+                              The values returned by stats may change in future
+                              versions thus would not normally be displayed
+                              Device drivers are also able to add stats to the
+                              end of the details returned
 
- estats[|old]  STATS          The same as stats, except it ignores blacklisted devices, zombie devices and pools
-                              If you specify the optional 'old' parameter, then the output will include zombie devices that became zombies less than 'old' seconds ago
-                              A value of zero for 'old', which is the default, means ignore all zombies
-                              It will return an empty list of devices if all devices are blacklisted or zombies
+ estats[|old]  STATS          The same as stats, except it ignores blacklisted
+                              devices, zombie devices and pools
+                              If you specify the optional 'old' parameter, then
+                              the output will include zombie devices that became
+                              zombies less than 'old' seconds ago
+                              A value of zero for 'old', which is the default,
+                              means ignore all zombies
+                              It will return an empty list of devices if all
+                              devices are blacklisted or zombies
 
  check|cmd     CHECK          Exists=Y/N, <- 'cmd' exists in this version
-                              Access=Y/N <- you have access to use 'cmd'
+                              Access=Y/N| <- you have access to use 'cmd'
 
  failover-only|true/false (*)
                none           This command has been deprecated, only returning a
@@ -248,7 +290,7 @@ Description=string
                               Current Block Time=N.N, <- 0 means none
                               Current Block Hash=XXXX..., <- blank if none
                               LP=true/false, <- LP is in use on at least 1 pool
-                              Network Difficulty=NN.NN
+                              Network Difficulty=NN.NN|
 
  debug|setting (*)
                DEBUG          Debug settings
@@ -266,7 +308,7 @@ Description=string
                               Debug=true/false,
                               RPCProto=true/false,
                               PerDevice=true/false,
-                              WorkTime=true/false
+                              WorkTime=true/false|
 
  setconfig|name,N (*)
                none           There is no reply section just the STATUS section
@@ -277,9 +319,10 @@ Description=string
  usbstats      USBSTATS       Stats of all LIBUSB mining devices except ztex
                               e.g. Name=MMQ,ID=0,Stat=SendWork,Count=99,...|
 
- pgaset|N,opt    (*)
+ pgaset|N,opt[,val] (*)
                none           There is no reply section just the STATUS section
-                              stating the results of setting PGA N with opt
+                              stating the results of setting PGA N with
+                              opt[,val]
                               This is only available if PGA mining is enabled
 
                               If the PGA does not support any set options, it
@@ -383,6 +426,7 @@ Description=string
                               A warning reply means lock stats are not compiled
                               into cgminer
                               The API writes all the lock stats to stderr
+ 
 
 
 
