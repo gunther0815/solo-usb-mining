@@ -149,6 +149,16 @@ Description=string
  lcd       |    LCD        | An all-in-one short status summary of the miner e.g. Elapsed,GHS av,GHS 5m,GHS 5s,Temp, Last Share Difficulty,Last Share Time, Best Share,Last Valid Work,Found Blocks, Pool,User
  lockstats (\*) 		   |none    | There is no reply section just the STATUS section<br>stating the results of the request<br>A warning reply means lock stats are not compiled into cgminer<br>The API writes all the lock stats to stderr
  
+Im Falle von komplexen Befehlen wie `ascset` müssen verschachtelte Übergabeparameter in Anführungszeichen gesetzt werden:
+
+```console
+java API "asc|0"
+```
+
+```console
+~/Mining/cgminer_4.12.1/java API "ascset|0,freq,400"
+```
+
 ### java API estats
 
 ```console
