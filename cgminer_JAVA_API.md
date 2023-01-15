@@ -69,13 +69,15 @@ Diese Einstellung kann auch in der Konfigurationsdatei `cgminer.conf` gemacht we
 
 ```console
 ...
-"api-description" : "cgminer 4.12.1",
-"api-mcast-addr" : "224.0.0.75",
-"api-mcast-code" : "FTW",
-"api-mcast-des" : "",
-"api-mcast-port" : "4028",
-"api-port" : "4028",
-"api-host" : "W:127.0.0.1",
+"api-allow" : "W:192.168.2.0/24,W:127.0.0.1",                                                                                            
+"api-description" : "cgminer 4.12.1",                                                                                                    
+"api-listen" : true,                                                                                                                     
+"api-mcast-addr" : "224.0.0.75",                                                                                                         
+"api-mcast-code" : "FTW",                                                                                                                
+"api-mcast-des" : "",                                                                                                                    
+"api-mcast-port" : "4028",                                                                                                               
+"api-port" : "4028",                                                                                                                     
+"api-host" : "127.0.0.1",
 ...
 ```
 
