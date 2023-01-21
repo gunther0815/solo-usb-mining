@@ -16,7 +16,7 @@ sudo nano /home/admin/Mining/cgminer-api.sh
 
 und folgender Inhalt geschrieben werden:
 
-```shell
+```bash
 #!/bin/bash
 cd /home/admin/Mining/cgminer_4.12.1/
 
