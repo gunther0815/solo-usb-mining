@@ -25,7 +25,7 @@
 * [🌩 Übertakten](/uebertakten.md): Hier widmen wir uns dem Tuning.
 * [⚙️ R909](/R909.md): Hier widmen wir uns dem dem Gekkoscience Terminus R909.
 * [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md): Details zur Java API für cgminer.
-* [⚙️ cgminer API scripts](/cgminer_API_scripts.md): Python-Skriptbeispiele um API effizienter auszulesen bzw. um die Konfiguration zu automatiseren - **GEPLANT**
+* [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md): Python-Skriptbeispiele um API effizienter auszulesen bzw. um die Konfiguration zu automatiseren - **GEPLANT**
 * [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
 
 ## Weitere Links
