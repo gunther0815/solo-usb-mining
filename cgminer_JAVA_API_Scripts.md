@@ -39,8 +39,7 @@ Nun kann das Skript mit Übergabeparametern gestartet werden (der Pfad kann ggf.
 /home/admin/Mining/cgminer-api.sh 0 450 470
 ```
 
-Zur Erklärung:
-Der Übergabeparameter `0` entspricht dem `$1` des Skripts und wird der Variablen `device` zugewiesen. Ebenso werden die Werte `450` und `470` nach dem gleichen Mechanismus den Variablen `freq` und `target` zugewiesen. Das Skript setzt diese Variablen dann lediglich bei den beiden aufeinander folgenden Java API-Aufrufen ein.
+> :memo: **Zur Erklärung:** Der Übergabeparameter `0` entspricht dem `$1` des Skripts und wird der Variablen `device` zugewiesen. Ebenso werden die Werte `450` und `470` nach dem gleichen Mechanismus den Variablen `freq` und `target` zugewiesen. Das Skript setzt diese Variablen dann lediglich bei den beiden aufeinander folgenden Java API-Aufrufen ein.
 
 Die Ausführung wird mit der Rückgabe des Status quittiert:
 
