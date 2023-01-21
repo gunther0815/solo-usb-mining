@@ -408,4 +408,4 @@ erzeugt ein ähnliches Status-Fenster.
 
 ---
 
-#### [⚙️ R909](R909.md)  ᐊ  previous | next  ᐅ  [⚙️ cgminer API scripts](/cgminer_JAVA_API_scripts.md)
+#### [⚙️ R909](R909.md)  ᐊ  previous | next  ᐅ  [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)
