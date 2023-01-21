@@ -18,7 +18,7 @@
 ## Konfiguration
 
 * [⛏ Mining Software starten](start_mining.md)
-* [⛏ Mining Software - GUI Konfiguration](GUIConfiguration.md) - **GEPLANT**
+* [⛏ Mining Software - GUI Konfiguration](cgminer_GUIConfiguration.md) - **GEPLANT**
 * [⛏ Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md)
 * [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)
 * [⛏⛏ Mehrere Miner betreiben](multiple-usb-miner.md)

@@ -126,4 +126,4 @@ Möchte man die Miner verschieden ansteuern, dann sollte man zunächst durch Aus
 
 ---
 
-####  [Mining Software installieren](/install_miner.md)  ᐊ  previous | next  ᐅ  [Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md)
+####  [Mining Software installieren](/install_miner.md)  ᐊ  previous | next  ᐅ  [⛏ Mining Software - GUI Konfiguration](cgminer_GUIConfiguration.md)

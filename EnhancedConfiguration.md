@@ -193,4 +193,4 @@ Das Verwenden der Config-Datei hat den weiteren Charme, dass man nicht mehr säm
 
 ---
 
-####  [⛏ Mining Software starten](start_mining.md)  ᐊ  previous | next  ᐅ  [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)
+####  [⛏ Mining Software - GUI Konfiguration](cgminer_GUIConfiguration.md)  ᐊ  previous | next  ᐅ  [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)
