@@ -31,6 +31,22 @@ Tastatur-Shortcut | Beschreibung
 `D` | (`D`)isplay: Erweitern und Reduzieren der eingeblendeten Informationen.
 `Q` | (`Q`)uit cgminer, close process
 
+### (`U`)SB management
+
+<img src=".assets/cgminer_GUI_USB.png" alt="cgminer_GUI_USB.png" width="100%" />
+
+### (`P`)ool management
+
+<img src=".assets/cgminer_GUI_Pool.png" alt="cgminer_GUI_Pool.png" width="100%" />
+
+### (`S`)ettings
+
+<img src=".assets/cgminer_GUI_Settings.png" alt="cgminer_GUI_Settings.png" width="100%" />
+
+### (`D`)isplay
+
+<img src=".assets/cgminer_GUI_Display_highlighted.png" alt="cgminer_GUI_Display_highlighted.png" width="100%" />
+
 ---
 
 ####  [⛏ Mining Software starten](start_mining.md)  ᐊ  previous | next  ᐅ  [Mining Software - Erweiterte Konfiguration](EnhancedConfiguration.md)
