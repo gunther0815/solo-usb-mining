@@ -4,7 +4,7 @@ Die unten genannten Erklärungen beruhen auf Erfahrungswerten, Dokumentation und
 
 ## GUI - Main menu
 
-<img src=".assets/cgminer_GUI_Main_highlighted.png" alt="cgminer_GUI_Main_highlighted.png" width="800" />
+<img src=".assets/cgminer_GUI_Main_highlighted.png" alt="cgminer_GUI_Main_highlighted.png" width="100%" />
 
 Das Hauptmenü zeigt folgende Daten (siehe das Äquivalent in den roten Kästchen im obigen Screenshot):
 
