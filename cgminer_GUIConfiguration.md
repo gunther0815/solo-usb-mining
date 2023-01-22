@@ -19,7 +19,17 @@ Das Hauptmenü zeigt folgende Daten (siehe das Äquivalent in den roten Kästche
 `(2:2)` | Geschwindigkeit mit der Shares an die ASICs geleitet werden in ms
 `100% WU: 83%` | Effizienzindikator `WU` ist die Anzahl der Work Units, also die shares pro minute (accepted vs rejected)
 
+## GUI - Sub menues
+
 Vom Haupmenü aus gelangt man durch Drücken der Taste für den jeweiligen Buchstaben in weitere Untermenüs zur erweiterten Anzeige von Daten bzw. zur weiteren Konfiguration.
+
+Tastatur-Shortcut | Beschreibung
+------------------|-------------
+`U` | (`U`)SB management 
+`P` | (`P`)ool management: Hier können Pools hinzugefügt oder gelöscht werden, sowie Quotas und Prioritäten verwaltet werden.
+`S` | (`S`)ettings: Reset der Mining-Software und Schreiben einer Config-Datei
+`D` | (`D`)isplay: Erweitern und Reduzieren der eingeblendeten Informationen.
+`Q` | (`Q`)uit cgminer, close process
 
 ---
 
