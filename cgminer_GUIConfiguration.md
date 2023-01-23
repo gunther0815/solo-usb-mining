@@ -31,6 +31,8 @@ Tastatur-Shortcut | Beschreibung
 `D` | (`D`)isplay: Erweitern und Reduzieren der eingeblendeten Informationen.
 `Q` | (`Q`)uit cgminer, close process
 
+Die (für mich) relevantesten Shortcuts habe ich in den Screenshots farbig markiert.
+
 ### (`U`)SB management
 
 <img src=".assets/cgminer_GUI_USB_highlighted.png" alt="cgminer_GUI_USB_highlighted.png" width="100%" />
