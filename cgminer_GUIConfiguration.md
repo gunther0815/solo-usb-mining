@@ -33,15 +33,15 @@ Tastatur-Shortcut | Beschreibung
 
 ### (`U`)SB management
 
-<img src=".assets/cgminer_GUI_USB.png" alt="cgminer_GUI_USB.png" width="100%" />
+<img src=".assets/cgminer_GUI_USB_highlighted.png" alt="cgminer_GUI_USB_highlighted.png" width="100%" />
 
 ### (`P`)ool management
 
-<img src=".assets/cgminer_GUI_Pool.png" alt="cgminer_GUI_Pool.png" width="100%" />
+<img src=".assets/cgminer_GUI_Pool_highlighted.png" alt="cgminer_GUI_Pool_highlighted.png" width="100%" />
 
 ### (`S`)ettings
 
-<img src=".assets/cgminer_GUI_Settings.png" alt="cgminer_GUI_Settings.png" width="100%" />
+<img src=".assets/cgminer_GUI_Settings_highlighted.png" alt="cgminer_GUI_Settings_highlighted.png" width="100%" />
 
 ### (`D`)isplay
 
