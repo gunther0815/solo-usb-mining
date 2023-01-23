@@ -48,6 +48,7 @@ Die Priorität gibt an auf welchen Pool im Fehlerfall zuerst gemint werden soll.
 <img src=".assets/cgminer_GUI_Settings_highlighted.png" alt="cgminer_GUI_Settings_highlighted.png" width="100%" />
 
 (`W`)rite config file: Erstellen/Überschreiben der Konfigurationsdatei
+
 (`C`)gminer restart: Reset der Mining-Software und Rücksetzen der Statistiken. Durch den Reset wird auch die Nummerierung der Miner rückgesetzt, dies muss bei manchen API-calls berücksichtigt werden.
 
 ### (`D`)isplay
