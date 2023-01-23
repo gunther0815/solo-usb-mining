@@ -39,13 +39,22 @@ Tastatur-Shortcut | Beschreibung
 
 <img src=".assets/cgminer_GUI_Pool_highlighted.png" alt="cgminer_GUI_Pool_highlighted.png" width="100%" />
 
+Sehr hilfreiches Menü zusammen mit dem (`S`)ettings-Menü um mehrere Pools anzulegen, Quotas und Prioritäten festzulegen und diese dann direkt in die Config-Datei zu schreiben. Die Quotas können beliebig gewählt werden, beispielhaft ist ein Quota von Pool1 zu Pool2 von `3:1` gleich zu `75:25` (wenn man es lieber in % ausdrücken möchte).
+
+Die Priorität gibt an auf welchen Pool im Fehlerfall zuerst gemint werden soll.
+
 ### (`S`)ettings
 
 <img src=".assets/cgminer_GUI_Settings_highlighted.png" alt="cgminer_GUI_Settings_highlighted.png" width="100%" />
 
+(`W`)rite config file: Erstellen/Überschreiben der Konfigurationsdatei
+(`C`)gminer restart: Reset der Mining-Software und Rücksetzen der Statistiken. Durch den Reset wird auch die Nummerierung der Miner rückgesetzt, dies muss bei manchen API-calls berücksichtigt werden.
+
 ### (`D`)isplay
 
 <img src=".assets/cgminer_GUI_Display_highlighted.png" alt="cgminer_GUI_Display_highlighted.png" width="100%" />
+
+(`Z`)ero statistics: Rücksetzen der Statistiken bietet sich an bei Neukonfiguration des Miners, so dass z.B. alle gemittelten Werte neu berechnet werden.
 
 ---
 
