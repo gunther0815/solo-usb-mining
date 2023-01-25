@@ -51,4 +51,4 @@ sudo ./cgminer_4.12.1/cgminer --api-listen --api-allow "W:192.68.2.0/24,W:127.0.
 
 ---
 
-#### [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)  ᐊ  previous | next  ᐅ  [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
+#### [❄ Troubleshooting](/troubleshooting.md)  ᐊ  previous | next  ᐅ  [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
