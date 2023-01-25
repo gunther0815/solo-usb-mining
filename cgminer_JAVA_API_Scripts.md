@@ -2,7 +2,7 @@
 
 Als Ergänzung zur bereits bestehenden Abstraktionebene der Java API, können weitere Shell- oder Pythonskripte dienen. Weitere Beispiele sollen folgen, gerne können hier auch nützliche Skripte aus der Community geteilt werden.
 
-## Skript zum ändern der Frequenz
+## Skript zum Ändern der Frequenz
 
 Wenn man aus welchen Gründen auch immer häufig die Frequenz seines USB-Miners ändert, bietet es sich an diesen Schritt zu vereinfachen, da (für mich) die Syntax zum Verändern der Frequenz schwer merkbar ist, ich den Befehl doppelt ausführen muss (für `target` und `frequenz`) und gegebenfalls vorher in der Bash-Historie nachsehen muss.
 
@@ -68,11 +68,17 @@ Answer='STATUS=S,When=1674301922,Code=119,Msg=ASC 0 set OK,Description=cgminer 4
 
 ---
 
+## Skript zum Abfragen diverser Stati
+
+> :memo: Skript folgt.
+
+---
+
 ## API-Aufruf vom Host-PC
 
 Man hat nicht immer Lust sich auf den Raspberry Pi einzuloggen und dort Skripte auszuführen, wenn man diese auch bequem auf dem Host-Rechner laufen lassen kann. Diese Methodik wurde und Linux und OSX ausprobiert, wo jeweils eine Bash zur Verfügung steht und Shell-Scripting sehr einfach mit Boardmitteln zulässt. Das Prinzip sollte unter Windows ähnlich sein, jedoch müssen entsprechende Ableitungen nach Windows selbst gezogen werden.
 
-📝 **Notiz:** im Kapitel [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md) stehen weitere Details zur erleichterten Bedienung von SSH (z.B. Starten von SSH ohne Passworteingabe).
+> :memo: **Notiz:** im Kapitel [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md) stehen weitere Details zur erleichterten Bedienung von SSH (z.B. Starten von SSH ohne Passworteingabe).
 
 Details folgen...
 
