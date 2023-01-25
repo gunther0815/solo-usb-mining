@@ -70,7 +70,7 @@ Answer='STATUS=S,When=1674301922,Code=119,Msg=ASC 0 set OK,Description=cgminer 4
 
 ## Skript zum Abfragen diverser Stati
 
-> :memo: Skript folgt.
+> :memo: [Skript folgt.](red)
 
 ---
 
