@@ -16,7 +16,7 @@ Aktuell befindet sich also kein CG Mining Ordner im Verzeichnis `home`.
 
 <!--![image](https://user-images.githubusercontent.com/108099690/203105156-0626b9aa-b59f-486e-b3a8-645c4a9f4a02.png)-->
 <figure>
-    <img src="https://user-images.githubusercontent.com/108099690/203105156-0626b9aa-b59f-486e-b3a8-645c4a9f4a02.png" alt="" width="400" />
+    <img src="https://user-images.githubusercontent.com/108099690/203105156-0626b9aa-b59f-486e-b3a8-645c4a9f4a02.png" alt="" width="100%" />
     <!--<figcaption></figcaption>-->
 </figure>
 
@@ -36,7 +36,7 @@ sudo git clone https://github.com/kanoi/cgminer.git
 
 <!--![image](https://user-images.githubusercontent.com/108099690/203105854-38d40551-0ed4-4d53-beab-4014dfac00e8.png)-->
 <figure>
-    <img src="https://user-images.githubusercontent.com/108099690/203105854-38d40551-0ed4-4d53-beab-4014dfac00e8.png" alt="" width="400" />
+    <img src="https://user-images.githubusercontent.com/108099690/203105854-38d40551-0ed4-4d53-beab-4014dfac00e8.png" alt="" width="100%" />
     <!--<figcaption></figcaption>-->
 </figure>
 
@@ -44,7 +44,7 @@ Nun befindet sich der `cgminer` Ordner in unserem `home` Verzeichnis:
 
 <!--![image](https://user-images.githubusercontent.com/108099690/203105995-909c31ad-4f4a-4562-b50b-0ef444a3e1e0.png)-->
 <figure>
-    <img src="https://user-images.githubusercontent.com/108099690/203105995-909c31ad-4f4a-4562-b50b-0ef444a3e1e0.png" alt="" width="400" />
+    <img src="https://user-images.githubusercontent.com/108099690/203105995-909c31ad-4f4a-4562-b50b-0ef444a3e1e0.png" alt="" width="100%" />
     <!--<figcaption></figcaption>-->
 </figure>
 
