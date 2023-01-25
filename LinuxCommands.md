@@ -1,4 +1,4 @@
-# 💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi
+# 💡 Tipps und Tricks für eine erleichterte Bedienung unter Linux/Raspberry Pi
 
 Linux ist vor allem in der Kommandozeile stark. Um auch weniger versierten Bastlern ein paar hilfreiche Befehle mit an die Hand zu geben, die ihr Arbeitsleben unter Linux so komfortable wie möglich gestalten sollen, werde ich hier ein paar dieser Befehle aulisten.
 
@@ -48,6 +48,18 @@ cd /home/admin/Mining/
 
 sudo ./cgminer_4.12.1/cgminer --api-listen --api-allow "W:192.68.2.0/24,W:127.0.0.1" 2> "logs/run-`date +%Y%m%d%H%M%S`.log"
 ```
+
+---
+
+## SSH auth-key auf Raspberry Pi hinterlegen
+
+Durch Abspeichern eines Authentication Keys des Host-PCs auf dem Raspberry Pi entfallen bei der SSH-Verbindung die Passworteingaben. Dies ist vor allem hilfreich wenn man über die API Mining-Daten auf dem Host-PC automatisiert anzeigen lassen will.
+
+Erläuterungen folgen in Kürze
+- ssh-keygen --> private-key in `/home/<user>/.ssh/id_rsa` und public-key in `/home/user/.ssh/id_rsa.pub`
+- Ändern der Rechte: `cd ~/.ssh` und `chmod 600 id_rsa`
+- Übertragen des Keys auf den Raspi: `ssh-copy-id admin@raspberrypi.local`
+- einloggen mit `ssh admin@raspberrypi.local`
 
 ---
 
