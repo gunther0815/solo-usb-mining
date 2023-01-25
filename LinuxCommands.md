@@ -1,6 +1,8 @@
 # 💡 Tipps und Tricks für eine erleichterte Bedienung unter Linux/Raspberry Pi
 
-Linux ist vor allem in der Kommandozeile stark. Um auch weniger versierten Bastlern ein paar hilfreiche Befehle mit an die Hand zu geben, die ihr Arbeitsleben unter Linux so komfortable wie möglich gestalten sollen, werde ich hier ein paar dieser Befehle aulisten.
+Linux ist vor allem in der Kommandozeile stark. Um auch weniger versierten Bastlern ein paar hilfreiche Befehle mit an die Hand zu geben, die ihr Arbeitsleben unter Linux so komfortable wie möglich gestalten sollen, werde ich hier ein paar dieser Befehle auflisten.
+
+⚠️ Diese Befehle müssen so wie sie gezeigt werden keinen großen Sinn ergeben, sondern dienen der Illustration der Machbarkeit.
 
 ## `history`, `!`, `grep` und `tail`
 
