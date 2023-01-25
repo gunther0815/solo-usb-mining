@@ -70,7 +70,9 @@ Answer='STATUS=S,When=1674301922,Code=119,Msg=ASC 0 set OK,Description=cgminer 4
 
 ## Skript zum Abfragen diverser Stati
 
-> :memo: [Skript folgt.](red)
+> ```diff 
+> - Skript und Beschreibung folgen
+> ```
 
 ---
 
@@ -80,7 +82,9 @@ Man hat nicht immer Lust sich auf den Raspberry Pi einzuloggen und dort Skripte 
 
 > :memo: **Notiz:** im Kapitel [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md) stehen weitere Details zur erleichterten Bedienung von SSH (z.B. Starten von SSH ohne Passworteingabe).
 
-Details folgen...
+> ```diff 
+> - Details folgen
+> ```
 
 ---
 
