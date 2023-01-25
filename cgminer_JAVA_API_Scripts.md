@@ -68,4 +68,12 @@ Answer='STATUS=S,When=1674301922,Code=119,Msg=ASC 0 set OK,Description=cgminer 4
 
 ---
 
+## API-Aufruf vom Host-PC
+
+Man hat nicht immer Lust sich auf den Raspberry Pi einzuloggen und dort Skripte auszuführen, wenn man diese auch bequem auf dem Host-Rechner laufen lassen kann. Diese Methodik wurde und Linux und OSX ausprobiert, wo jeweils eine Bash zur Verfügung steht und Shell-Scripting sehr einfach mit Boardmitteln zulässt. Das Prinzip sollte unter Windows ähnlich sein, jedoch müssen entsprechende Ableitungen nach Windows selbst gezogen werden.
+
+📝 **Notiz:** im Kapitel xx stehen weitere Details zur erleichterten Bedienung von SSH
+
+---
+
 #### [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
