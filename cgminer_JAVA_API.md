@@ -434,6 +434,11 @@ Und man sollte die Rückmeldung in der aufrufenden Konsole sehen können.
 
 > :warning: Man muss sich für den Aufruf der API im Ordner der Datei `API.class` befinden.
 
+> ```diff 
+> - Hier hänge ich nun leider, weil ich es aktuell nicht gebacken bekomme, Port 4028 auf dem Raspiblitz in iptables freizugeben. Es scheint ein wrapper um iptables namens `ufw` zu laufen, ein Befehl wie `sudo ufw allow 4028` bringt nicht das gewünschte Ergebnis.
+> - Wenn es jemanden gibt der diese Problematik lösen kann, bitte hinterlasst eine Nachricht und am Besten auch gleich die Lösung!
+> ```
+
 ---
 
 #### [⚙️ R909](R909.md)  ᐊ  previous | next  ᐅ  [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)
