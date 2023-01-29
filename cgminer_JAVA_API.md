@@ -406,6 +406,34 @@ java API "ascset|0,freq,400"
 
 erzeugt ein ähnliches Status-Fenster.
 
+## Java API remote verwenden
+
+Um die Java API von extern zu verwenden, muss zunächst die Klassenbibliothek `API.class` aus dem Verzeichnis von cgminer auf den aufrufenden PC übertragen werden. In Beispiel hier soll die Datei `API.class` vom Raspberry Pi (Raspiblitz) auf einen Linux Desktop Rechner kopiert werden. Unter Linux kann hierfür scp (`secure copy`) verwendet werden, dies kann in beide Richtungen geschehen bzw. von beiden Systemen aus aufgerufen werden: also entweder vom Raspberry Pi aus `scp <Pfad>/API.class <USER>@<HOSTNAME>:<PFAD>` oder vom Host-PC aus wie im Beispiel unten `scp <USER>@<HOSTNAME>:<PFAD>/API.class <PFAD>`.
+
+Dazu wechseln wir in ein gewünschtes Verzeichnis auf dem Host-PC:
+
+```console
+cd /home/<USER>/Scripts
+```
+
+und starten den Kopiervorgang:
+
+```console
+scp admin@raspberrypi.local:/home/admin/Mining/cgminer_4.12.1/API.class .
+```
+
+Der abschliessende `.` bedeutet im Kontext von `scp <QUELLE> <ZIEL>` dass das Ziel der gegenwärtige Pfad ist. Nach dem eingeben des Passwortes für den Zugriff auf den Raspi beginnt der Download und die Datei befindet sich im gewählten Ordner.
+
+Nun kann man vom Host-PC aus die Java API bedienen nach dieser Syntax (ähnlich der Syntax auf dem Raspberry selbst):
+
+```console
+java API summary raspberrypi.local:4028
+```
+
+Und man sollte die Rückmeldung in der aufrufenden Konsole sehen können.
+
+> :warning: Man muss sich für den Aufruf der API im Ordner der Datei `API.class` befinden.
+
 ---
 
 #### [⚙️ R909](R909.md)  ᐊ  previous | next  ᐅ  [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)
