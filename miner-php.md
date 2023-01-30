@@ -61,7 +61,7 @@ und schon hat man eine theoretisch angepasste Seite nach eigenem Gusto:
 
 <img src=".assets/Miner-php3.png" alt="miner.php" width="100%" />
 
-> :memo: Die Felder und Tabellen können mit etwas Programmierkenntnissen auf eigene Bedürfnisse angepasst werden.
+> :memo: Die Felder und Tabellen können mit etwas Programmierkenntnissen auf eigene Bedürfnisse angepasst werden. Wenn ihr wisst wie es geht, sagt mir Bescheid ;-)
 
 ---
 
