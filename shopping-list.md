@@ -9,9 +9,9 @@
 
 ## - [GekkoScience NewPac 22 bis 45 GH/s](https://www.bitshopper.de/shop/sha-256-miner/usb-miner-bitcoin/newpac/)
 
-* übertaktet an die 100 GH/s
-* der Gekko Newpac USB Miner wird nicht mehr produziert und ist bei der oben verlinkten Seite nur noch begrenzt verfügbar (ca 70 Stück; Stand Juni 2022)
-* Es kann auch ein anderer Miner wie z.B. der Nachfolger des Newpac bestellt werden:
+> * übertaktet an die 100 GH/s
+> * der Gekko Newpac USB Miner wird nicht mehr produziert und ist bei der oben verlinkten Seite nur noch begrenzt verfügbar (ca 70 Stück; Stand Juni 2022)
+> * Es kann auch ein anderer Miner wie z.B. der Nachfolger des Newpac bestellt werden:
 
 ## - [GekkoScience Compac F 200 bis 400 GH/s](https://www.bitshopper.de/shop/sha-256-miner/usb-miner-bitcoin/compac-f/)
 
