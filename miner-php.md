@@ -61,6 +61,8 @@ und schon hat man eine theoretisch angepasste Seite nach eigenem Gusto:
 
 <img src=".assets/Miner-php3.png" alt="miner.php" width="100%" />
 
+> :memo: Die Felder und Tabellen können mit etwas Programmierkenntnissen auf eigene Bedürfnisse angepasst werden.
+
 ---
 
 #### [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
