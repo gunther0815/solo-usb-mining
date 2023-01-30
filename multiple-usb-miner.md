@@ -1,6 +1,15 @@
 # ☀ Multiple USB-Miner
 
-Mehrere Miner an einem USB-Hub zu betreiben überfordert ALLE Hubs die ich ausprobiert habe, außer der unten genannten Spezialhardware von Gekkoscience. Dies liegt vermutlich daran dass USB gar nicht für Ströme größer 1A spezifiziert ist und sich alle Hubs somit gemäß der Norm verhalten. Das hilft uns natürlich nicht weiter bei einem Stromhungrigen Gerät wie dem Gekkoscience Compac F.
+Mehrere Miner an einem USB-Hub zu betreiben überfordert ALLE Hubs die ich ausprobiert habe, außer der unten genannten Spezialhardware von Gekkoscience. Dies liegt vermutlich daran dass USB meist gar nicht für Ströme größer 1A spezifiziert ist und sich alle Hubs somit gemäß der Norm verhalten. Das hilft uns natürlich nicht weiter bei einem Stromhungrigen Gerät wie dem Gekkoscience Compac F.
+
+Standard	| Spannung	| max. Stromstärke	| max. Leistung
+---------------------------------------------------------
+USB 1.0/1.1	| 5 V	| 0,1 A	| 0,5 W
+USB 2.0	| 5 V	| 0,5 A	| 2,5 W
+USB 3.0/3.1 (Gen1)	| 5 V	| 0,9 A	| 4,5 W
+USB 3.1 (Gen2)	| 5 V	| 3 A	| 15 W
+USB-BC 	| 5 V	| 1,5 A	| 7,5 W
+USB-PD	| 5 V, 12 V, 20 V	| 5 A	| 100 W
 
 Mit einem Standard-Hub konte ich zwar auch 2 USB-Miner betreiben, jedoch bei mageren 270 MHz (bzw. 150GH/s (ich erinnere mich nicht genau)).
 
