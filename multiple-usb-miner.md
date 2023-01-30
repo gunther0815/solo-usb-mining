@@ -3,7 +3,7 @@
 Mehrere Miner an einem USB-Hub zu betreiben überfordert ALLE Hubs die ich ausprobiert habe, außer der unten genannten Spezialhardware von Gekkoscience. Dies liegt vermutlich daran dass USB meist gar nicht für Ströme größer 1A spezifiziert ist und sich alle Hubs somit gemäß der Norm verhalten. Das hilft uns natürlich nicht weiter bei einem Stromhungrigen Gerät wie dem Gekkoscience Compac F.
 
 Standard	| Spannung	| max. Stromstärke	| max. Leistung
----------------------------------------------------------
+--------- | --------- | ----------------- | -------------
 USB 1.0/1.1	| 5 V	| 0,1 A	| 0,5 W
 USB 2.0	| 5 V	| 0,5 A	| 2,5 W
 USB 3.0/3.1 (Gen1)	| 5 V	| 0,9 A	| 4,5 W
