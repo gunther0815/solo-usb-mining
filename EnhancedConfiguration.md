@@ -44,6 +44,8 @@ Dies zeigt entsprechende Prozess-IDs von cgminer an und können wie folgt beende
 sudo kill <PROZESSID>
 ```
 
+---
+
 ### ...mit `screen` (der elegantere Ansatz)
 
 zuerst muss screen installiert werden, wie zuvor auch mittels apt-get:
@@ -102,6 +104,8 @@ sudo screen -r miner
 Die Angabe von `miner` ist bei einem screen nicht notwendig.
 
 Mittels `<CTRL><A>` und anschließendem `<CTRL><D>` kann der Prozess wieder in den Hintergrund gebracht werden. 
+
+---
 
 ### Automatischer Start des Miners nach einem Reboot 
 
