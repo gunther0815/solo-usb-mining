@@ -76,4 +76,4 @@ Answer='STATUS=S,When=1674301922,Code=119,Msg=ASC 0 set OK,Description=cgminer 4
 
 ---
 
-#### [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
+#### [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md)  ᐊ  previous | next  ᐅ  [⚙️ miner-php](/miner-php.md)
