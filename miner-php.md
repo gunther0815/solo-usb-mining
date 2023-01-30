@@ -16,7 +16,11 @@ ln -s /home/admin/Mining/cgminer_4.12.1/miner.php /var/www/html/
 
 Nun kann man überprüfen ob sich unter der Adresse des Webservers ein Datei `miner.php` befindet durch Aufrufen der Adresse `http://<HOSTNAME>/miner.php` im Browser, `<HOSTNAME>` muss eben durch die IP-Adresse Eures Raspis ersetzt werden. Das Ergebnis sieht dann so aus:
 
-<img src=".assets/miner-php.JPG" alt="miner.php" width="100%" />
+<img src=".assets/miner-php1.png" alt="miner.php" width="100%" />
+
+oder so (je nach Einstellung):
+
+<img src=".assets/miner-php2.png" alt="miner.php" width="100%" />
 
 ---
 
