@@ -453,6 +453,8 @@ In dem man ein gewünschten Befehl an `ssh` anhängt, kann man diesen auch inner
 ssh admin@raspberrypi.local "cd /home/admin/Mining && java API lcd"
 ```
 
+Der Output ist der gleiche wie wenn man `java API lcd` auf dem Raspberry Pi aufruft, jedoch wird diese an den aufrufenden PC umgeleitet. Einfach mal ausprobieren, es kann ja nichts kaputt gehen...
+
 ---
 
 #### [⚙️ R909](R909.md)  ᐊ  previous | next  ᐅ  [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)
