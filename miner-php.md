@@ -4,4 +4,4 @@ cgminer ab der Version 4.12.1 liefert eine PHP-Datei aus namens `miner.php` und 
 
 ---
 
-#### [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
+#### [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
