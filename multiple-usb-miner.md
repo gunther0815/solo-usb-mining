@@ -38,7 +38,7 @@ Standard-Pin-Belegung eines 24-poligen ATX-Steckers:
 
 Alternativ zur Brücke oben kann man auch einen Schalter für den 20- bzw. 24-poligen Anschluss bestellen:
 
-<img src=".assets/ATXSchalter.png" alt="ATX Schalter" width="400" />
+<img src=".assets/ATX Schalter.png" alt="ATX Schalter" width="400" />
 
 ---
 
