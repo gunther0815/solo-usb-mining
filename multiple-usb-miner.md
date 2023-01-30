@@ -26,11 +26,11 @@ Das Netzteil funktioniert nur wenn der Mainborad-Connector überbrückt wird, so
 
 <img src=".assets/ATXNetzteil.jpg" alt="ATX Netzteil" width="400" />
 
-Dazu reicht es in meinme Fall Pin 16 (PS_ON) und 18 (Masse) zu überbrücken:
+Dazu reicht es in meinem Fall `Pin 16` (`PS_ON`) und `18` (`Masse`) zu überbrücken:
 
 <img src=".assets/ATXStecker.jpg" alt="Stecker des ATX-Netzteils" width="400" />
 
-Standard-Pin-Belegung eines 24poligen ATX-Steckers:
+Standard-Pin-Belegung eines 24-poligen ATX-Steckers:
 
 <img src=".assets/ATXPinBelegung.png" alt="ATX Pinbelegung" width="200" />
 
