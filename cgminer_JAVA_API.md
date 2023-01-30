@@ -408,6 +408,12 @@ erzeugt ein ähnliches Status-Fenster.
 
 ## Java API remote verwenden
 
+### API-Aufruf vom Host-PC
+
+Man hat nicht immer Lust sich auf den Raspberry Pi einzuloggen und dort Skripte auszuführen, wenn man diese auch bequem auf dem Host-Rechner laufen lassen kann. Diese Methodik wurde und Linux und OSX ausprobiert, wo jeweils eine Bash zur Verfügung steht und Shell-Scripting sehr einfach mit Boardmitteln zulässt. Das Prinzip sollte unter Windows ähnlich sein, jedoch müssen entsprechende Ableitungen nach Windows selbst gezogen werden.
+
+> :memo: **Notiz:** im Kapitel [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md) stehen weitere Details zur erleichterten Bedienung von SSH (z.B. Starten von SSH ohne Passworteingabe).
+
 Um die Java API von extern zu verwenden, muss zunächst die Klassenbibliothek `API.class` aus dem Verzeichnis von cgminer auf den aufrufenden PC übertragen werden. In Beispiel hier soll die Datei `API.class` vom Raspberry Pi (Raspiblitz) auf einen Linux Desktop Rechner kopiert werden. Unter Linux kann hierfür scp (`secure copy`) verwendet werden, dies kann in beide Richtungen geschehen bzw. von beiden Systemen aus aufgerufen werden: also entweder vom Raspberry Pi aus `scp <Pfad>/API.class <USER>@<HOSTNAME>:<PFAD>` oder vom Host-PC aus wie im Beispiel unten `scp <USER>@<HOSTNAME>:<PFAD>/API.class <PFAD>`.
 
 Dazu wechseln wir in ein gewünschtes Verzeichnis auf dem Host-PC:
@@ -438,6 +444,14 @@ Und man sollte die Rückmeldung in der aufrufenden Konsole sehen können.
 > - Hier hänge ich nun leider, weil ich es aktuell nicht gebacken bekomme, Port 4028 auf dem Raspiblitz in iptables freizugeben. Es scheint ein wrapper um iptables namens `ufw` zu laufen, ein Befehl wie `sudo ufw allow 4028` bringt nicht das gewünschte Ergebnis.
 > - Wenn es jemanden gibt der diese Problematik lösen kann, bitte hinterlasst eine Nachricht und am Besten auch gleich die Lösung!
 > ```
+
+### Alternativ kann man auch an den ssh-Befehl Übergabeparameter anhängen
+
+In dem man ein gewünschten Befehl an `ssh` anhängt, kann man diesen auch innerhalb einer ssh-Session ausführen lassen. Mehrere Befehle müssen dazu allerdings in der Übergabe mit `&&` gebündelt werden:
+
+```console
+ssh admin@raspberrypi.local "cd /home/admin/Mining && java API lcd"
+```
 
 ---
 
