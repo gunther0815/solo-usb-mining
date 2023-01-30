@@ -27,4 +27,10 @@ Standard-Pin-Belegung eines 24poligen ATX-Steckers:
 
 ---
 
+Alternativ kann man auch einen Schalter für den 20- bzw. 24-poligen Anschluss bestellen:
+
+<img src=".assets/ATXSchalter.png" alt="ATX Schalter" width="400" />
+
+---
+
 #### [⛏ Miner Einstellungen MHz/ mV](miner-settings.md)  ᐊ  previous | next  ᐅ  [🌩 Übertakten](/uebertakten.md)
