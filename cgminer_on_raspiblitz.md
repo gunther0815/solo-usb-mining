@@ -34,6 +34,8 @@ Nun klonen wir die Mining Software, von Github, auf unseren Raspiblitz, mit:
 sudo git clone https://github.com/kanoi/cgminer.git
 ```
 
+> :warning: es gibt etliche alte Forks der cgminer Software, aber auch dubiose neue Quellen. Unsere Doku bezieht sich ausschliesslich auf die Variante von kanoi wie oben erwähnt. Der Entwickler ist nach wie vor aktiv an der Weiterentwicklung von cgminer beschäftigt und wird als vertrauenswürdig eingestuft.
+
 <!--![image](https://user-images.githubusercontent.com/108099690/203105854-38d40551-0ed4-4d53-beab-4014dfac00e8.png)-->
 <figure>
     <img src="https://user-images.githubusercontent.com/108099690/203105854-38d40551-0ed4-4d53-beab-4014dfac00e8.png" alt="" width="100%" />
