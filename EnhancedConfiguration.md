@@ -87,8 +87,6 @@ Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halt
 screen -dm -S miner /home/admin/cgminer/cgminer.sh
 ```
 
----
-
 Zur Überprüfung des im Hintergrund nun laufenden Screens kann folgender Befehl verwendet werden:
 
 ```console
