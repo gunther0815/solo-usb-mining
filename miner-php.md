@@ -37,11 +37,11 @@ mit dem Inhalt:
 ```bash
 <?php                                                                                                                                    
 $rigs = array('127.0.0.1:4028:R909');                                                                                                    
-$readonly = false;                                                                                                                       
+$readonly = true;                                                                                                                       
 $allowgen = true;                                                                                                                        
 $rigbuttons = false;                                                                                                                     
 $rigipsecurity = false;                                                                                                                  
-$customsummarypages = array('Kano' => 0, 'GekkoChips' => 0);                                                                             
+$customsummarypages = array('Summary' => 1, 'Kano' => 1);                                                                             
 ?>
 ```
 
@@ -63,6 +63,35 @@ und schon hat man eine theoretisch angepasste Seite nach eigenem Gusto:
 
 > :memo: Die Felder und Tabellen können mit etwas Programmierkenntnissen auf eigene Bedürfnisse angepasst werden. Wenn ihr wisst wie es geht, sagt mir Bescheid ;-)
 
+---
+
+## Für die Gekko-Freunde (R909 und Compac F)
+
+Zuerst müssen wir die neueste Version von `miner.php` über Github holen:
+
+```console
+cd /home/admin/Mining/cgminer_4.12.1/
+git pull
+```
+
+Diese beinhaltet spezielle Anpassungen für die Gekko-Fraktion. Durch Anpassen der `mymoner.php` können wir nun auf diese Anpassungen zugreifen:
+
+```bash
+<?php                                                                                                                                    
+$rigs = array('127.0.0.1:4028:R909');                                                                                                    
+$readonly = true;                                                                                                                       
+$allowgen = true;                                                                                                                        
+$rigbuttons = false;                                                                                                                     
+$rigipsecurity = false;                                                                                                                  
+$customsummarypages = array('Gekko' => 1, 'GekkoChips' => 1);                                                                             
+?>
+```
+
+Das Ergebnis ist dann wie folgt:
+
+<img src=".assets/miner-php-R909_1.png" alt="Miner.php für R909" width="100%" />
+
+<img src=".assets/miner-php-R909_2.png" alt="Miner.php für R909" width="100%" />
 ---
 
 #### [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
