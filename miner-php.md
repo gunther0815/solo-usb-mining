@@ -127,7 +127,7 @@ $colouroverride = array(
 
 Das Ergebnis im obigen Versuch ist folgendes:
 
-img src=".assets/miner-php-R909_3.png" alt="Miner.php für R909" width="100%" />
+<img src=".assets/miner-php-R909_3.png" alt="Miner.php für R909" width="100%" />
 
 ---
 
