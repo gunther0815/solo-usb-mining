@@ -430,6 +430,8 @@ scp admin@raspberrypi.local:/home/admin/Mining/cgminer_4.12.1/API.class .
 
 Der abschliessende `.` bedeutet im Kontext von `scp <QUELLE> <ZIEL>` dass das Ziel der gegenwärtige Pfad ist. Nach dem eingeben des Passwortes für den Zugriff auf den Raspi beginnt der Download und die Datei befindet sich im gewählten Ordner.
 
+Beim Aufruf von cgminer muss man nun den Parameter --api-host "0.0.0.0" hinzufügen oder in der Konfigurations-Datei cgminer.conf die Variable `API-host = "127.0.0.1"` auf `API-host = "0.0.0.0"` ändern, so dass Anfragen an cgminer auch von einem externen API-Host zugelassen werden (`0.0.0.0` ist hier eine wild card).
+
 Nun kann man vom Host-PC aus die Java API bedienen nach dieser Syntax (ähnlich der Syntax auf dem Raspberry selbst):
 
 ```console
@@ -439,11 +441,6 @@ java API summary raspberrypi.local:4028
 Und man sollte die Rückmeldung in der aufrufenden Konsole sehen können.
 
 > :warning: Man muss sich für den Aufruf der API im Ordner der Datei `API.class` befinden.
-
-> ```diff 
-> - Hier hänge ich nun leider, weil ich es aktuell nicht gebacken bekomme, Port 4028 auf dem Raspiblitz in iptables freizugeben. Es scheint ein wrapper um iptables namens `ufw` zu laufen, ein Befehl wie `sudo ufw allow 4028` bringt nicht das gewünschte Ergebnis.
-> - Wenn es jemanden gibt der diese Problematik lösen kann, bitte hinterlasst eine Nachricht und am Besten auch gleich die Lösung!
-> ```
 
 ### Alternativ kann man auch an den ssh-Befehl Übergabeparameter anhängen
 
