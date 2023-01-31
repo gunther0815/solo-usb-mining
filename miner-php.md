@@ -34,7 +34,7 @@ sudo nano /home/admin/Mining/cgminer_4.12.1/myminer.php
 
 mit dem Inhalt:
 
-```bash
+```php
 <?php                                                                                                                                    
 $rigs = array('127.0.0.1:4028:R909');                                                                                                    
 $readonly = true;                                                                                                                       
@@ -76,7 +76,7 @@ git pull
 
 Diese beinhaltet spezielle Anpassungen für die Gekko-Fraktion. Durch Anpassen der `mymoner.php` können wir nun auf diese Anpassungen zugreifen:
 
-```bash
+```php
 <?php                                                                                                                                    
 $rigs = array('127.0.0.1:4028:R909');                                                                                                    
 $readonly = true;                                                                                                                       
@@ -92,6 +92,43 @@ Das Ergebnis ist dann wie folgt:
 <img src=".assets/miner-php-R909_1.png" alt="Miner.php für R909" width="100%" />
 
 <img src=".assets/miner-php-R909_2.png" alt="Miner.php für R909" width="100%" />
+
+---
+
+## Fun Section
+
+Für die Verspielten unter Euch: Wenn ihr folgendes in die Datei myminer.php eintragt, könnt ihr die Farben der `miner.php` nach belieben anpassen:
+
+```php
+$colouroverride = array(                                                                                                                 
+          'body bgcolor'          => '#0a0a0f',                                                                                           
+          'td color'              => '#6666cc',                                                                                           
+          'td.two color'          => '#8888ee',                                                                                           
+          'td.two background'     => '#1a1a1f',                                                                                           
+          'td.h color'            => 'blue',                                                                                              
+          'td.h background'       => '#a64dff',                                                                                           
+          'td.err color'          => 'black',                                                                                             
+          'td.err background'     => '#ff3050',                                                                                           
+          'td.bad color'          => 'black',                                                                                             
+          'td.bad background'     => '#ff3050',                                                                                           
+          'td.warn color'         => 'black',                                                                                             
+          'td.warn background'    => '#ffb050',                                                                                           
+          'td.sta color'          => 'green',                                                                                             
+          'td.tot color'          => 'white',                                                                                             
+          'td.tot background'     => '#666699',                                                                                           
+          'td.lst color'          => 'red',                                                                                               
+          'td.lst background'     => '#6666cc',                                                                                           
+          'td.hi color'           => 'blue',                                                                                              
+          'td.hi background'      => '#6666cc',                                                                                           
+          'td.lo color'           => 'blue',                                                                                              
+          'td.lo background'      => '#6666cc'                                                                                            
+); 
+```
+
+Das Ergebnis im obigen Versuch ist folgendes:
+
+img src=".assets/miner-php-R909_3.png" alt="Miner.php für R909" width="100%" />
+
 ---
 
 #### [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
