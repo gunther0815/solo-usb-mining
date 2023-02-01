@@ -129,6 +129,10 @@ Das Ergebnis im obigen Versuch ist folgendes:
 
 <img src=".assets/miner-php-R909_3.png" alt="Miner.php für R909" width="100%" />
 
+Oder hier eine Alternative:
+
+<img src=".assets/miner-php_R909_black.png" alt="Miner.php für R909" width="100%" />
+
 ---
 
 #### [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md)  ᐊ  previous | next  ᐅ  [❄ Troubleshooting](/troubleshooting.md)
