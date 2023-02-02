@@ -114,6 +114,8 @@ Description=string
 
 ## Übersicht der gängigsten und mit cgminer 4.12.1 lauffähigen Befehle
 
+> :warning: Nicht alle Befehle wurden getestet. Manche Befehle funktionieren eingeschränkt, z.B. `zero` setzt zwar die Statistiken zurück, verändert aber die Anzeige in der Text-basierten GUI von cgminer 4.12.1 in dem z.B. Frequenz und Target nicht mehr angezeigt werden. Also Vorsicht, alles auf eigene Gefahr!! 
+
  Request   |    Reply Section | Details
  -------   |    ------------- | -------
  version   |    VERSION    | CGMiner=cgminer, version<br>API=API version
