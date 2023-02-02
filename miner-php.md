@@ -18,11 +18,11 @@ ln -s /home/admin/Mining/cgminer_4.12.1/miner.php /var/www/html/
 
 Nun kann man überprüfen ob sich unter der Adresse des Webservers ein Datei `miner.php` befindet durch Aufrufen der Adresse `http://<HOSTNAME>/miner.php` im Browser, `<HOSTNAME>` muss eben durch die IP-Adresse Eures Raspis ersetzt werden. Das Ergebnis sieht dann so aus:
 
-<img src=".assets/Miner-php1.png" alt="miner.php" width="100%" />
+<img src=".assets/Miner-php1.png" alt="miner.php" width="70%" />
 
 oder so (je nach Einstellung):
 
-<img src=".assets/Miner-php2.png" alt="miner.php" width="100%" />
+<img src=".assets/Miner-php2.png" alt="miner.php" width="70%" />
 
 ---
 
@@ -61,7 +61,7 @@ ln -s /home/admin/Mining/cgminer_4.12.1/myminer.php /var/www/html/
 
 und schon hat man eine theoretisch angepasste Seite nach eigenem Gusto:
 
-<img src=".assets/Miner-php3.png" alt="miner.php" width="100%" />
+<img src=".assets/Miner-php3.png" alt="miner.php" width="70%" />
 
 > :memo: Die Felder und Tabellen können mit etwas Programmierkenntnissen auf eigene Bedürfnisse angepasst werden. Wenn ihr wisst wie es geht, sagt mir Bescheid ;-)
 
@@ -91,9 +91,9 @@ $customsummarypages = array('Gekko' => 1, 'GekkoChips' => 1);
 
 Das Ergebnis ist dann wie folgt:
 
-<img src=".assets/miner-php-R909_1.png" alt="Miner.php für R909" width="100%" />
+<img src=".assets/miner-php-R909_1.png" alt="Miner.php für R909" width="70%" />
 
-<img src=".assets/miner-php-R909_2.png" alt="Miner.php für R909" width="100%" />
+<img src=".assets/miner-php-R909_2.png" alt="Miner.php für R909" width="70%" />
 
 ---
 
@@ -103,6 +103,7 @@ Für die Verspielten unter Euch: Wenn ihr folgendes in die Datei myminer.php ein
 
 ```php
 <?php
+//...
 $colouroverride = array(                                                                                                                 
           'body bgcolor'          => '#0a0a0f',                                                                                           
           'td color'              => '#6666cc',                                                                                           
@@ -125,17 +126,18 @@ $colouroverride = array(
           'td.hi background'      => '#6666cc',                                                                                           
           'td.lo color'           => 'blue',                                                                                              
           'td.lo background'      => '#6666cc'                                                                                            
-); 
+);
+//....
 ?>
 ```
 
 Das Ergebnis im obigen Versuch ist folgendes:
 
-<img src=".assets/miner-php-R909_3.png" alt="Miner.php für R909" width="100%" />
+<img src=".assets/miner-php-R909_3.png" alt="Miner.php für R909" width="70%" />
 
 Oder hier eine Alternative:
 
-<img src=".assets/miner-php_R909_black.png" alt="Miner.php für R909" width="100%" />
+<img src=".assets/miner-php_R909_black.png" alt="Miner.php für R909" width="70%" />
 
 ---
 
