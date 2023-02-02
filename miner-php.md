@@ -8,6 +8,8 @@ Auf dem RaspiBlitz läuft bereits eine Version des Apache2, der man nur noch bei
 sudo apt-get install libapache2-mod-php7.4
 ```
 
+> :memo: Wieder mal, wie bereits an anderer Stelle in dieser Doku erwähnt, kann es auch andere Versionen von `libapache3-mod-php` geben. Um die richtige zu finden kann man diese mit `sudo apt-cache search libpache2-mod-php` suchen und die gefundene Version nach obigem Schema installieren.
+
 Für die Darstellung der Datei `miner.php` im Browser muss man diese Datei zunächst in das Verzeichnis des Webservers kopieren (auf dem Raspi ist das `/var/www/html`) oder man legt einen sogenannten Softlink (oder symlink oder symbolic link) im Verzeichnis des Webservers an und veweist auf die genannte Datei nach diesem Schema `ln -s /path/to/file /path/to/symlink`:
 
 ```console
