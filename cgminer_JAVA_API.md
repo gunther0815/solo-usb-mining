@@ -81,7 +81,7 @@ Diese Einstellung kann auch in der Konfigurationsdatei `cgminer.conf` gemacht we
 ...
 ```
 
-> :warninig: `"api-host" : "0.0.0.0",` ist eine wildcard und erlaubt API-Befehle von überall her von wo die `API.class` aufgerufen wird. 
+> :warning: `"api-host" : "0.0.0.0",` ist eine wildcard und erlaubt API-Befehle von überall her von wo die `API.class` aufgerufen wird. 
 
 ## Beschreibung der API
 
