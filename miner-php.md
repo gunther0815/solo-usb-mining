@@ -76,7 +76,7 @@ cd /home/admin/Mining/cgminer_4.12.1/
 git pull
 ```
 
-Diese beinhaltet spezielle Anpassungen für die Gekko-Fraktion. Durch Anpassen der `mymoner.php` können wir nun auf diese Anpassungen zugreifen:
+Diese beinhaltet spezielle Anpassungen für die Gekko-Fraktion. Durch Anpassen der `myminer.php` können wir nun auf diese Anpassungen zugreifen:
 
 ```php
 <?php                                                                                                                                    
