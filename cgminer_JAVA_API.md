@@ -77,9 +77,11 @@ Diese Einstellung kann auch in der Konfigurationsdatei `cgminer.conf` gemacht we
 "api-mcast-des" : "",                                                                                                                    
 "api-mcast-port" : "4028",                                                                                                               
 "api-port" : "4028",                                                                                                                     
-"api-host" : "127.0.0.1",
+"api-host" : "0.0.0.0",
 ...
 ```
+
+> :warninig: `"api-host" : "0.0.0.0",` ist eine wildcard und erlaubt API-Befehle von überall her von wo die `API.class` aufgerufen wird. 
 
 ## Beschreibung der API
 
