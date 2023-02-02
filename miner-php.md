@@ -102,6 +102,7 @@ Das Ergebnis ist dann wie folgt:
 Für die Verspielten unter Euch: Wenn ihr folgendes in die Datei myminer.php eintragt, könnt ihr die Farben der `miner.php` nach belieben anpassen:
 
 ```php
+<?php
 $colouroverride = array(                                                                                                                 
           'body bgcolor'          => '#0a0a0f',                                                                                           
           'td color'              => '#6666cc',                                                                                           
@@ -125,6 +126,7 @@ $colouroverride = array(
           'td.lo color'           => 'blue',                                                                                              
           'td.lo background'      => '#6666cc'                                                                                            
 ); 
+?>
 ```
 
 Das Ergebnis im obigen Versuch ist folgendes:
