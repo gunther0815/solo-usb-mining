@@ -5,7 +5,7 @@ cgminer ab der Version 4.12.1 liefert eine PHP-Datei aus namens `miner.php` und 
 Auf dem RaspiBlitz läuft bereits eine Version des Apache2, der man nur noch beibringen muss PHP-Dateien zu akzeptieren. Dazu gibt es mehrere Dutzend Anleitungen im Netz, in Kürze läuft das etwa so:
 
 ```console
-sudo apt-get install -y libphp_XXX YYYY
+sudo apt-get install libapache2-mod-php7.4
 ```
 
 Für die Darstellung der Datei `miner.php` im Browser muss man diese Datei zunächst in das Verzeichnis des Webservers kopieren (auf dem Raspi ist das `/var/www/html`) oder man legt einen sogenannten Softlink (oder symlink oder symbolic link) im Verzeichnis des Webservers an und veweist auf die genannte Datei nach diesem Schema `ln -s /path/to/file /path/to/symlink`:
