@@ -70,7 +70,7 @@ Der Inhalt des Skriptes ist der Startbefehl für die Mining-Software cgminer (`<
 #!/bin/bash
 cd /home/<USER>/cgminer
 
-sudo ./cgminer -c /home/admin/.cgminer/cgminer.conf 2> "run-`date +%Y%m%d%H%M%S`.log"
+sudo ./cgminer -c /root/.cgminer/cgminer.conf 2> "run-`date +%Y%m%d%H%M%S`.log"
 ```
 
 Hier wurde der gekürzte Startbefehl für cgminer verwendet, die Konfiguration wird aus der Konfigurationsdatei `cgminer.conf` gelesen. Der Befehl `2> "run-'date +%Y%m%d%H%M%S'.log"` lenkt die Ausgabe, wenn der Prozess mit screen im Hintergrund läuft in eine log-Datei um, welche sich auch im cgminer-Verzeichnis befindet.
