@@ -32,7 +32,7 @@
 
 <img src=".assets/Galerie_013_1.jpg" alt="" width="50%" />
 
-<img src=".assets/Galerie_013_-_2.jpg" alt="" width="50%" />
+<img src=".assets/Galerie_013_2.jpg" alt="" width="50%" />
 
 <img src=".assets/Galerie_014.jpg" alt="" width="50%" />
 
