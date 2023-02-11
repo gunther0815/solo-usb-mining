@@ -12,4 +12,4 @@
 
 ---
 
-#### [⚙️ miner-php](/miner-php.md)  ᐊ  previous | next  ᐅ  [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
+#### [⚙️ miner-php](/miner-php.md)  ᐊ  previous | next  ᐅ  [💡 Bildergalerie](Galerie.md)
