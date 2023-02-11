@@ -30,7 +30,7 @@
 * [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
 
 ## Weitere Links
-* [Galerie](/Galerie.md): "When Plebs Go Wild"
+* [💡 Bildergalerie](/Galerie.md): "When Plebs Go Wild"
 * [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
 * [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
 * 💡 Autoren & [Solo-USB-Mining Telegram Gruppe](https://t.me/BTC_solo_mining)
