@@ -69,4 +69,4 @@ Durch Abspeichern eines Authentication Keys des Host-PCs auf dem Raspberry Pi en
 
 ---
 
-#### [❄ Troubleshooting](/troubleshooting.md)  ᐊ  previous | next  ᐅ  [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
+#### [💡 Bildergalerie](Galerie.md)  ᐊ  previous | next  ᐅ  [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
