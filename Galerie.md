@@ -4,7 +4,7 @@
 
 <img src=".assets/Galerie_001.jpg" alt="" width="70%" />
 
-<img src=".assets/Galerie_002.jpg" alt="" width="70%" />
+<!--<img src=".assets/Galerie_002.jpg" alt="" width="70%" />-->
 
 <img src=".assets/Galerie_003.jpg" alt="" width="70%" />
 
