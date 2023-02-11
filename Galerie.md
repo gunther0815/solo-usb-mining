@@ -10,9 +10,7 @@
 
 <img src=".assets/Galerie_004.jpg" alt="" width="70%" />
 
-<video width="320" height="270" volume=0 loop>
-<source src=".assets/Galerie_005.mp4" type="video/mp4“></source>
-</video>
+<video width="320" height="270" volume=0 loop><source src=".assets/Galerie_005.mp4" type="video/mp4“></source></video>
 
 <img src=".assets/Galerie_006.jpg" alt="" width="70%" />
 
