@@ -22,7 +22,7 @@
 
 <img src=".assets/Galerie_009.jpg" alt="" width="50%" />
 
-<img src=".assets/Galerie_010.jpg" alt="" width="50%" />
+<!--<img src=".assets/Galerie_010.jpg" alt="" width="50%" />-->
 
 <img src=".assets/Galerie_011.jpg" alt="" width="50%" />
 
