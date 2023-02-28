@@ -65,7 +65,42 @@ Durch Abspeichern eines Authentication Keys des Host-PCs auf dem Raspberry Pi en
 > - einloggen mit `ssh admin@raspberrypi.local`
 > ```
 
+## crontab verwenden für zeitgesteuerte Leistungsanpassung (z.B. des R909)
 
+> :warning: Für dieses Beispiel wird eine funktionierende Java API benötigt. Siehe dazu [⚙️ cgminer JAVA API](/cgminer_JAVA_API.md).
+
+Mittels crontab können auf einem Raspberrypi oder anderem Linux-basiertem System abhängig von der Zeit Befehle ausgeführt werden. Als Beispiel dient hier der Versuch den R909 USB-Miner von Monatg 00:00 Uhr bis Freitag 23:59 Uhr mit einer Frequenz von 350MHz zu betreiben, am Wochenende von Samstag 00:00 Uhr bis Sonntag 23:59 Uhr jedoch mit 470 MHz. Ob dies ein realistisches Szenario ist, bleibt jedem selbst überlassen, als Anschauungsbeispiel ist es aber hervorragend geeignet.
+
+Als erstes öffnen wir in der Konsole die Konfigurationsdatei in der alle cronjobs gespeichert sind. Dies geht ganz einfach so:
+
+```console
+crontab -e
+```
+
+beim ersten Aufruf kann hierzu einfach der Editor ausgesucht werden. Später wird crontab die Konfigurationsdatei immer mit diesem Editor verwenden. Wir verwenden für die zeitliche Steuerung das Skript aus Kapitel [⚙️ cgminer API scripts](/cgminer_JAVA_API_Scripts.md):
+
+```console
+# Starte Montag 00:00 Uhr mit 350MHz
+00 00 * * MON /home/admin/Mininig/cgminer-API.sh 0 350 350
+
+# Starte Samstag 00:00 Uhr mit 470MHZ
+00 00 * * SAT /home/admin/Mininig/cgminer-API.sh 0 470 470
+```
+
+Wie gewohnt mit dem Editor Eurer Wahl speichern. Die angelegten Jobs können mir `crontab -l` ausgegeben werden, mit `crontab -r` können sie gelöscht werden. Es gibt nahezu keine Einschränkunegn der zeitlichen Steuerung, einfach mal ein bisschen im Internet recherchieren.
+
+Von nun an wird der R909 zeitlich ferngesteuert. Zum Ausprobieren der Syntax in cron kann man die Zeiten in die nahe Zukunft legen und einfach live beobachten:
+
+```console
+# Starte Dienstag 14:30 Uhr mit 350MHz
+30 14 * * TUE /home/admin/Mininig/cgminer-API.sh 0 350 350
+
+# Starte Dienstag 14:35 Uhr mit 400MHz
+35 14 * * TUE /home/admin/Mininig/cgminer-API.sh 0 400 400
+
+# Starte Dienstag 14:40 Uhr mit 415MHz
+40 14 * * TUE /home/admin/Mininig/cgminer-API.sh 0 415 415
+```
 
 ---
 
