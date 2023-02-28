@@ -95,10 +95,18 @@ Wenn man den Befehl für den cgminer im Hintergrund mehrmals gestartet hat, läu
 
 ## Statistiken abrufen:
 
+### Für ckpool
+
 https://solo.ckpool.org/
 Seite aufrufen und unter `Statistics` seine BTC Adresse eingeben, die im Befehl verwendet wurde. Dort sind dann alle relevanten Daten hinterlegt.
 
-> :bulb: **Fertig!** Prost und Glückauf beim Block finden! 👷
+### Für Kano-Pool
+
+Worker-Adresse aufrufen (ohne Anmeldung, ideal für solo-mining-pools): `https://kano.is/index.php?k=work&username=<USERNAME>&api=<API-KEY>` wobei `<USERNAME>` dem angemeldeten Benutzer bei Knao entspricht und `<API-KEY>` durch den im Userinterface hinterlegten Key ersetzt werden muss. Alternativ anmelden bei kano.is (für solo-Miner).
+  
+### Mit uns minen und Daten ganz einfach hier `http://solomining.info:8080` vergleichen.
+  
+> :bulb: **Fertig!** Glückwunsch und viel Erfolg beim Block finden! 👷
 
 ---
 
