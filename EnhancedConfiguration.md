@@ -81,10 +81,10 @@ Nun muss nur noch das Skript ausführbar gemacht werden (`<USER>` einsetzen):
 sudo chmod +x /home/<USER>/cgminer/cgminer.sh
 ```
 
-Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halten wenn die SSH-Session beendet wird, rufen wir nun das Shellskript mit dem Startbefehl des Miners mittels `screen` auf:
+Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halten wenn die SSH-Session beendet wird, rufen wir nun das Shellskript mit dem Startbefehl des Miners mittels `screen` auf (`<USER>` einsetzen):
 
 ```console
-screen -dm -S miner /home/admin/cgminer/cgminer.sh
+screen -dm -S miner /home/<USER>/cgminer/cgminer.sh
 ```
 
 Zur Überprüfung des im Hintergrund nun laufenden Screens kann folgender Befehl verwendet werden:
@@ -113,13 +113,13 @@ Damit die Mining-Software nach jedem Neustart automatisch wieder anläuft, könn
 sudo nano -w /etc/rc.local
 ``` 
 
-Vor dem `Exit 0` fügen wir folgende Codezeile ein:
+Vor dem `Exit 0` fügen wir folgende Codezeile ein (`<USER>` einsetzen):
 
 ```console
-sudo su - -c "screen -dm -S miner /home/user einsetzen/cgminer/cgminer.sh"
+sudo su - -c "screen -dm -S miner /home/<USER>/cgminer/cgminer.sh"
 ```
 
-Mittels `-c` wird dem Superuser ein Kommando mitgegeben, in unserem Fall der Aufruf des Miners via Shellskript. Die `rc.local` sieht dann aus wie folgt:
+Mittels `-c` wird dem Superuser ein Kommando mitgegeben, in unserem Fall der Aufruf des Miners via Shellskript. Die `rc.local` sieht dann aus wie folgt (`<USER>` einsetzen):
 
 ```console
 #!/bin/sh -e
@@ -141,7 +141,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-sudo su - -c "screen -dm -S miner /home/admin/cgminer/cgminer.sh"
+sudo su - -c "screen -dm -S miner /home/<USER>/cgminer/cgminer.sh"
 
 exit 0
 ```
