@@ -59,7 +59,7 @@ sudo ./cgminer_4.12.1/cgminer --api-listen --api-allow "W:192.68.2.0/24,W:127.0.
 
 Durch Abspeichern eines Authentication Keys des Host-PCs auf dem Raspberry Pi entfallen bei der SSH-Verbindung die Passworteingaben. Dies ist vor allem hilfreich wenn man über die API Mining-Daten auf dem Host-PC automatisiert anzeigen lassen will.
 
-> ```diff 
+> ```diff
 > Erläuterungen folgen in Kürze
 > - ssh-keygen --> private-key in `/home/<user>/.ssh/id_rsa` und public-key in `/home/user/.ssh/id_rsa.pub`
 > - Ändern der Rechte: `cd ~/.ssh` und `chmod 600 id_rsa`
