@@ -10,6 +10,8 @@
 
 * Ungenügende Kühlung scheint den Miner instabil laufen zu lassen. Es wird dringend empfohlen ab einer Taktung von 200MHz aktiv zu kühlen. Das sollte sich auch positiv auf die Lebensdauer des Miners auswirken. Siehe dazu auch das Kapitel [uebertakten.md](uebertakten.md "mention").
 
+* Für das Debugging unter Linux muss ein Grundverständnis für Dateien und Pfade vorhanden sein. Siehe dazu den Link auf dieser Unterseite: [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
+
 ---
 
 #### [⚙️ miner-php](/miner-php.md)  ᐊ  previous | next  ᐅ  [💡 Bildergalerie](Galerie.md)

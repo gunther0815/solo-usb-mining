@@ -3,6 +3,8 @@
 > :bulb: Strom und Internet des Raspberry Pis müssen verbunden sein.
 > :bulb: USB Miner verbinden bzw. USB Hub einschalten.
 
+⚠️ Die Pfadangaben müssen nicht für Dein System zutreffen. Es ist ratsam sich vor der Installation kurz mit `relativen` und `absoluten` Pfaden/Pfadangaben in Linux zu beschäftigen (siehe auch [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)).
+
 Um nun vom eigenen Computer auf den Raspberry Pi via SSH zugreifen zu können muss sich der Computer im selben Netzwerk befinden. Ist dies der Fall öffnet man das Terminal. Dazu einfach auf dem PC nach dem Programm „Terminal“ suchen. Im Terminal geht es dann los:
 
 Via SSH auf den Raspberry Pi zugreifen:
