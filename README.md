@@ -1,7 +1,7 @@
 # Inhalt
 
 ## Allgemeines
-   
+
 * 💡 Warum USB-Mining
 * 💡 Was ist Lottery-Mining?
 
@@ -30,6 +30,7 @@
 * [❄ Troubleshooting](/troubleshooting.md) zeigt die Probleme denen ich begegnet bin.
 
 ## Weitere Links
+
 * [💡 Bildergalerie](/Galerie.md): "When Plebs Go Wild"
 * [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
 * [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
