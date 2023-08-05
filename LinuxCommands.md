@@ -4,6 +4,8 @@ Linux ist vor allem in der Kommandozeile stark. Um auch weniger versierten Bastl
 
 ⚠️ Diese Befehle müssen so wie sie gezeigt werden keinen großen Sinn ergeben, sondern dienen der Illustration der Machbarkeit.
 
+⚠️ Unter Linux kann man Pfade `relativ` oder `absolut` angeben. Wenn man den Unterschied kennt, ist die Navigation durch die Pfade sehr viel einfacher und auch die Lesbarkeit von Beispielen erhöht sich massiv. Siehe hierzu z.B. https://www.selflinux.org/selflinux/html/verzeichnisse_unter_linux02.html
+
 ## `history`, `!`, `grep` und `tail`
 
 `history` zeigt alle Befehle die bereits einmal eingegeben wurden, als Liste an:
