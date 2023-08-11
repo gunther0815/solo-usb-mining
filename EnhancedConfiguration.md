@@ -84,7 +84,7 @@ sudo chmod +x /home/<USER>/cgminer/cgminer.sh
 Um den Mining-Prozess im Hintergrund zu starten und somit auch am Laufen zu halten wenn die SSH-Session beendet wird, rufen wir nun das Shellskript mit dem Startbefehl des Miners mittels `screen` auf (`<USER>` einsetzen):
 
 ```console
-screen -dm -S miner /home/<USER>/cgminer/cgminer.sh
+sudo screen -dm -S miner /home/<USER>/cgminer/cgminer.sh
 ```
 
 Zur Überprüfung des im Hintergrund nun laufenden Screens kann folgender Befehl verwendet werden:
