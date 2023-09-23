@@ -27,7 +27,7 @@ Die Standard-Spannung liegt bei 1.45V. Aus der Beschreibung des **Gekkoscience C
 
 Spannung kann am Potentiometer eingestellt und wie folgt gemessen werden:
 <figure>
-    <img src=".assets/Potentiometer2.JPG" alt="Potentiometer" width="400" />
+    <img src=".assets/Potentiometer2.jpg" alt="Potentiometer" width="400" />
     <figcaption>Bild vom Potentiometer</figcaption>
 </figure>
 Die Einstellung am Potentiometer sollte umgehend mit einem Multimeter verifiziert werden. Da der Abgriff auf der Rückseite des zu kühlenden ASICs ist, kann die Überprüfung schon in Stress ausarten, da man ja eine höhere Spannung einstellt und somit zwangsläufig mehr Wärme abführen muss.
@@ -38,7 +38,7 @@ Die Einstellung am Potentiometer sollte umgehend mit einem Multimeter verifizier
 </figure>
 
 <figure>
-    <img src=".assets/poti3.JPG" alt="Spannungsabgriff" width="400" />
+    <img src=".assets/poti3.jpg" alt="Spannungsabgriff" width="400" />
     <figcaption>Bild2 vom Spannungsabgriff</figcaption>
 </figure>
 
