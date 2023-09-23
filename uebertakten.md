@@ -33,7 +33,6 @@ Die Einstellung am Potentiometer sollte umgehend mit einem Multimeter verifizier
 
 <figure><img src=".assets/Spannungsabgriff.JPG" alt="Spannungsabgriff" width="400" /><figcaption>Bild vom Spannungsabgriff</figcaption></figure>
 
-
 <figure><img src=".assets/poti3.jpg" alt="Spannungsabgriff" width="400" /><figcaption>Bild2 vom Spannungsabgriff</figcaption></figure>
 
 Zum eigentlichen übertakten kann nun die Core-Spannung von standardmäßig 1.45V durch drehen am Potentiometer erhöht werde. Grundsätzlich sollte die Erhöhung in winzigen Schritten erfolgen mit anschließender Prüfung ob die Kühlung noch ausreicht und ob das Mining noch stabil läuft.
