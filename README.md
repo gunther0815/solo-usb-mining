@@ -31,6 +31,7 @@
 
 ## Weitere Links
 
+* [💡 English Version](https://github.com/OneOfThePlebs/solo-usb-mining-english)
 * [💡 Bildergalerie](/Galerie.md): "When Plebs Go Wild"
 * [💡 Hilfreiche Kommandos für erleichterte Bedienung unter Linux/Raspberry Pi](LinuxCommands.md)
 * [💡 PV/HomeAssistent/InfoTicker etc.](additional-links.md)
