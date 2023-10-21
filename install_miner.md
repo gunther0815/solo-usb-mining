@@ -22,6 +22,9 @@ Updates durchführen:
 
 ```console
 sudo apt-get update 
+```
+
+```console
 sudo apt-get upgrade -y
 ```
 
@@ -35,7 +38,13 @@ Jetzt kann der CGMiner Branch aus GIT geklont werden:
 
 ```console
 mkdir -p mining; cd mining 
+```
+
+```console
 git clone https://github.com/kanoi/cgminer.git
+```
+
+```console
 cd cgminer
 ```
 
@@ -43,7 +52,13 @@ Nach erfolgreichem Klonen aus GIT kann der CGMiner nun kompiliert werden:
 
 ```console
 ./autogen.sh
+```
+
+```console
 CFLAGS="-O2 -Wall -march=native -fcommon" ./configure --enable-gekko
+```
+
+```console
 sudo make
 ```
 
